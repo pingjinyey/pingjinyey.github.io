@@ -1,0 +1,39 @@
+# Navigation Links
+#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
+#     desired widget in your `content/home/` folder.
+#   The weight parameter defines the order that the links will appear in.
+
+main:
+  - name: Home
+    url: /
+    weight: 10
+  - name: Research
+    url: researches/
+    identifier: research
+    weight: 11
+  - name: Wireless Communications
+    url: researches/
+    parent: research
+    weight: 1
+  - name: IC Design
+    url: researches/
+    parent: research
+    weight: 2
+  - name: Project
+    url: projects/
+    weight: 12
+  - name: Teaching
+    url: teaching/
+    weight: 13
+  - name: People
+    url: people/
+    weight: 14
+  - name: Publications
+    url: /publications
+    weight: 15
+  - name: Events
+    url: /#news
+    weight: 16
+  - name: Join Us
+    url: opportunities/
+    weight: 17

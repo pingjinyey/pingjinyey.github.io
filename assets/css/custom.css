@@ -1,0 +1,6 @@
+
+.navbar-brand svg {
+  height: 1.8em !important;          /* 放大一点 */
+  width: auto !important;
+  vertical-align: middle;
+}
