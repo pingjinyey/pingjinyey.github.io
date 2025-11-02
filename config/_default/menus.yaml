@@ -8,32 +8,32 @@ main:
     url: /
     weight: 10
   - name: Research
-    url: researches/
+    url: /researches/
     identifier: research
     weight: 11
   - name: Wireless Communications
-    url: researches/
+    url: /researches/wireless-communications/
     parent: research
     weight: 1
   - name: IC Design
-    url: researches/
+    url: /researches/ic-design/
     parent: research
     weight: 2
   - name: Project
-    url: projects/
+    url: /projects/
     weight: 12
   - name: Teaching
-    url: teaching/
+    url: /teaching/
     weight: 13
   - name: People
-    url: people/
+    url: /people/
     weight: 14
   - name: Publications
-    url: /publications
+    url: /publications/
     weight: 15
   - name: Events
-    url: /#news
+    url: /events
     weight: 16
   - name: Join Us
-    url: opportunities/
+    url: /opportunities/
     weight: 17

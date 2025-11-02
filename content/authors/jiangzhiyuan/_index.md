@@ -28,7 +28,7 @@ highlight_name: true
 # Role/position/tagline
 role: Senior AI Research Scientist
 
-bio: Research interests include machine learning and computational biology.
+# bio: Research interests include machine learning and computational biology.
 
 # Organizations/Affiliations to display in Biography blox
 organizations:

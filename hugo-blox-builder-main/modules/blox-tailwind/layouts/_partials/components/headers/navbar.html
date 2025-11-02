@@ -57,72 +57,99 @@
       {{ $menuURL := .URL | absLangURL }}
       {{ $pageURL:= $currentPage.Permalink | absLangURL }}
       {{ $active := eq $menuURL $pageURL }}
-      {{ if .HasChildren }}
-      <li class="nav-item nav-dropdown group relative">
-            <span
-              role="button"
-              tabindex="0"
-              aria-haspopup="true"
-              aria-expanded="false"
-              class="nav-link cursor-pointer select-none {{ range .Children }}
-                {{ $childURL := .URL | absLangURL }}
-                {{ $active := eq $childURL $pageURL }}
-                {{ if $active }}active{{ end }}
-              {{ end }} inline-flex items-center">
-              {{ .Name }}
-              <svg class="h-4 w-4 fill-current inline-block" viewBox="0 0 20 20">
-                <path
-                  d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
-              </svg>
-            </span>
-        <ul
-          class="nav-dropdown-list lg:group-hover:visible lg:group-hover:opacity-100">
-          {{ range .Children }}
-          {{ $childURL := .URL | absLangURL }}
-          {{ $active := eq $childURL $pageURL }}
-          {{ $url := "" }}
-          {{- if findRE `^#` .URL -}}
-            {{- if not $.IsHome -}}
-              {{- $url = site.Home.RelPermalink -}}
-            {{- end }}
-            {{- $url = .URL -}}
-          {{- else -}}
-            {{- $url = .URL | relLangURL -}}
-          {{- end -}}
-          <li class="nav-dropdown-item">
-            <a
-              class="nav-dropdown-link {{ if $active }}active{{- end -}}"
-              {{ if findRE `^http` .URL }}
-              target="_blank" rel="noopener"
-              {{ end }}
-              href="{{$url}}">
-              {{ .Name }}
-            </a>
-          </li>
-          {{ end }}
-        </ul>
-      </li>
-      {{ else }}
-      {{ $url := "" }}
-      {{- if findRE `^#` .URL -}}
-        {{- if not $.IsHome -}}
-          {{- $url = site.Home.RelPermalink -}}
-        {{- end }}
-        {{- $url = .URL -}}
+{{ if .HasChildren }}
+  {{/* 计算父级 URL（兼容 #锚点 / 外链 / 常规相对路径） */}}
+  {{ $purl := "" }}
+  {{- if findRE `^#` .URL -}}
+    {{- if not $.IsHome -}}
+      {{- $purl = site.Home.RelPermalink -}}
+    {{- end }}
+    {{- $purl = .URL -}}
+  {{- else if findRE `^http` .URL -}}
+    {{- $purl = .URL -}}
+  {{- else -}}
+    {{- $purl = .URL | relLangURL -}}
+  {{- end -}}
+
+  <li class="nav-item nav-dropdown group relative">
+    <div class="flex items-center gap-1">
+      <!-- 父级：可点击跳转 -->
+      <a href="{{ $purl }}"
+         class="nav-link inline-flex items-center hover:text-primary
+                {{ range .Children }}
+                  {{ $childURL := .URL | absLangURL }}
+                  {{ $pageURL := $.Permalink | absLangURL }}
+                  {{ if eq $childURL $pageURL }}active{{ end }}
+                {{ end }}">
+        {{ .Name }}
+      </a>
+
+      <!-- caret：只负责展开/收起子菜单 -->
+      <button type="button"
+              class="px-1 py-1 -mr-1 rounded hover:bg-gray-100 dark:hover:bg-gray-800"
+              aria-haspopup="true" aria-expanded="false"
+              data-dropdown-toggle>
+        <svg class="h-4 w-4 fill-current inline-block" viewBox="0 0 20 20" aria-hidden="true">
+          <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
+        </svg>
+        <span class="sr-only">Open submenu</span>
+      </button>
+    </div>
+
+    <!-- 子菜单：hover 或点击 caret 显示 -->
+    <ul class="nav-dropdown-list lg:group-hover:visible lg:group-hover:opacity-100 hidden"
+        data-dropdown-menu>
+      {{ range .Children }}
+        {{ $childURL := .URL | absLangURL }}
+        {{ $pageURL := $.Permalink | absLangURL }}
+        {{ $active := eq $childURL $pageURL }}
+        {{ $url := "" }}
+        {{- if findRE `^#` .URL -}}
+          {{- if not $.IsHome -}}
+            {{- $url = site.Home.RelPermalink -}}
+          {{- end }}
+          {{- $url = .URL -}}
         {{- else -}}
-        {{- $url = .URL | relLangURL -}}
-      {{- end -}}
-      <li class="nav-item">
-        <a
-          class="nav-link {{ if $active }}active{{- end -}}"
-          {{ if findRE `^http` .URL }}
-          target="_blank" rel="noopener"
-          {{ end }}
-          href="{{$url}}"
-        >{{ .Name }}</a
-        >
-      </li>
+          {{- $url = .URL | relLangURL -}}
+        {{- end -}}
+        <li class="nav-dropdown-item">
+          <a class="nav-dropdown-link {{ if $active }}active{{ end }}"
+             {{ if findRE `^http` .URL }}target="_blank" rel="noopener"{{ end }}
+             href="{{ $url }}">{{ .Name }}</a>
+        </li>
       {{ end }}
+    </ul>
+  </li>
+
+  {{/* 小脚本：点击 caret 切换子菜单显示（不影响父级链接） */}}
+  <script>
+    document.addEventListener('click', function(e){
+      const btn = e.target.closest('[data-dropdown-toggle]');
+      if (!btn) return;
+      const menu = btn.closest('li')?.querySelector('[data-dropdown-menu]');
+      if (!menu) return;
+      e.preventDefault();
+      menu.classList.toggle('hidden');
+    });
+  </script>
+{{ else }}
+  {{/* 无子项：保持原实现 */}}
+  {{ $url := "" }}
+  {{- if findRE `^#` .URL -}}
+    {{- if not $.IsHome -}}
+      {{- $url = site.Home.RelPermalink -}}
+    {{- end }}
+    {{- $url = .URL -}}
+  {{- else -}}
+    {{- $url = .URL | relLangURL -}}
+  {{- end -}}
+  <li class="nav-item">
+    <a class="nav-link {{ if (eq (.URL | absLangURL) ($.Permalink | absLangURL)) }}active{{ end }}"
+       {{ if findRE `^http` .URL }}target="_blank" rel="noopener"{{ end }}
+       href="{{ $url }}">{{ .Name }}</a>
+  </li>
+{{ end }}
+
       {{ end }}
       {{ if site.Params.header.navbar.button.enable }}
       <li class="mt-4 inline-block lg:hidden">

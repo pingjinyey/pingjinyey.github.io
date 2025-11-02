@@ -2,8 +2,6 @@
 title: Publications
 cms_exclude: true
 
-type: blog
-
 # View.
 view: citation
 

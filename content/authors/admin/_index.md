@@ -1,6 +1,7 @@
 ---
 # Display name
 title: Alex Johnson
+type: landing
 
 # Name pronunciation (optional)
 name_pronunciation: ''
@@ -167,6 +168,32 @@ awards:
     icon: hero/academic-cap
     summary: |
       Recognized for contributions to scaling laws in deep learning.
+
+user_groups:
+  - Postdoctoral Researchers
+
+sections:
+  - block: resume-biography-3
+    content:
+      # Choose a user profile to display (a folder name within `content/authors/`)
+      username: huzeyu
+      text: ''
+      # Show a call-to-action button under your biography? (optional)
+      button:
+        text: Download CV
+        url: uploads/resume.pdf
+      headings:
+        about: ''
+        education: ''
+        interests: ''
+    design:
+      # Apply a gradient background
+      css_class: hbx-bg-gradient
+      # Avatar customization
+      avatar:
+        size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
+        shape: circle # Options: circle (default), square, rounded
+
 ---
 
 Alex Johnson is a Senior AI Research Scientist at Meta AI, where he leads groundbreaking work on large language models and multimodal systems. His research has been published in top conferences like NeurIPS and ICML, with over 10,000 citations. Alex is passionate about pushing the boundaries of AI while ensuring ethical development. Outside of work, he enjoys hiking in the Rockies, building custom PCs, and mentoring the next generation of AI talent.
