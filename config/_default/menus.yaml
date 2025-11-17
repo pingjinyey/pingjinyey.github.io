@@ -11,14 +11,18 @@ main:
     url: /researches/
     identifier: research
     weight: 11
-  - name: Wireless Communications
-    url: /researches/wireless-communications/
+  - name: Wireless Communication Systems and Dedicated Baseband Processors
+    url: /researches/Wireless-Communication-Systems-and-Dedicated-Baseband-Processors/
     parent: research
     weight: 1
-  - name: IC Design
-    url: /researches/ic-design/
+  - name: AI Chips and Neural Network Processors
+    url: /researches/AI-Chips-and-Neural-Network-Processors/
     parent: research
     weight: 2
+  - name: Communication–AI Fusion and Integrated Compute–Communication Architectures for 6G
+    url: /researches/Communication–AI-Fusion-and-Integrated-Compute–Communication-Architectures-for-6G/
+    parent: research
+    weight: 3
   - name: Project
     url: /projects/
     weight: 12
