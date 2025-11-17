@@ -1,16 +1,16 @@
 ---
 # Display name
-title: jiangzhiyuan
+title: Zeyu Hu
 type: landing
 
 # Name pronunciation (optional)
 name_pronunciation: ''
 
 # Full name (for SEO)
-first_name: zhiyuan
-last_name: jiang
+first_name: Zeyu
+last_name: Hu
 
-weight: 1
+weight: 3
 
 # Pronouns (optional)
 pronouns: he/him
@@ -39,54 +39,55 @@ organizations:
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:alex.johnson@meta.com'
+    url: 'mailto:cshan@shu.edu.cn'
     label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/AlexAIResearch
-  - icon: brands/github
-    url: https://github.com/alexjohnsonai
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/in/alexjohnsonai/
+  # - icon: brands/x
+  #   url: https://twitter.com/AlexAIResearch
+  # - icon: brands/github
+  #   url: https://github.com/alexjohnsonai
+  # - icon: brands/linkedin
+  #   url: https://www.linkedin.com/in/alexjohnsonai/
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=alexjohnson
-  - icon: academicons/orcid
-    url: https://orcid.org/0000-0002-1825-0097
+    url: https://scholar.google.com/citations?user=BCHphJQAAAAJ
+  # - icon:  academicons/researchgate
+  #   url: https://www.researchgate.net/profile/Zhiyuan-Jiang-4
 
 interests:
-  - Large Language Models
-  - Computer Vision
-  - Reinforcement Learning
-  - AI Ethics
-
+  - Digital and SoC Design
+  - AI Acceleration
+  - Wireless Signal Processing
+  - Model Compression
+  
 education:
-  - area: PhD Computer Science (AI Focus)
-    institution: Stanford University
+  - area: Ph.D. in Electronic Science and Technology
+    institution:  Tsinghua University
     icon: ""
-    date_start: 2015-09-01
-    date_end: 2019-06-30
+    date_start: 2009-09-01
+    date_end: 2015-07-01
     summary: |
-      Thesis on _Scaling Laws for Neural Language Models_. Supervised by Prof. Andrew Ng. Published 5 papers in NeurIPS and ICML, with 2 best paper awards.
+       
     button:
       text: 'Read Thesis'
       url: 'https://example.com/thesis.pdf'
-  - area: MS Computer Science
-    institution: Carnegie Mellon University
+  - area: B.E. in Electronic Science and Technology
+    institution: Tsinghua University
     icon: ""
-    date_start: 2013-09-01
-    date_end: 2015-05-31
+    date_start: 2005-09-01
+    date_end: 2009-07-01
     summary: |
       GPA: 4.0/4.0
 
       Specialized in machine learning and robotics.
-  - area: BS Computer Science
-    institution: MIT
+  - area: Postdoctoral Research, School of Information and Electronics
+    institution: Beijing Institute of Technology
     icon: ""
-    date_start: 2009-09-01
-    date_end: 2013-05-31
+    date_start: 2015-09-01
+    date_end: 2017-07-01
     summary: |
       GPA: 3.9/4.0
 
       Minored in Mathematics. President of AI Club.
+        
 
 work:
   - position: Senior AI Research Scientist
@@ -191,7 +192,7 @@ sections:
   - block: resume-biography-3
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
-      username: jiangzhiyuan
+      username: ZeyuHu
       text: ''
       # Show a call-to-action button under your biography? (optional)
       button:
@@ -209,5 +210,3 @@ sections:
         size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: circle # Options: circle (default), square, rounded
 ---
-
-Alex Johnson is a Senior AI Research Scientist at Meta AI, where he leads groundbreaking work on large language models and multimodal systems. His research has been published in top conferences like NeurIPS and ICML, with over 10,000 citations. Alex is passionate about pushing the boundaries of AI while ensuring ethical development. Outside of work, he enjoys hiking in the Rockies, building custom PCs, and mentoring the next generation of AI talent.

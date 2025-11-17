@@ -1,41 +1,45 @@
 ---
-title: huzeyu
+# Display name
+title: Shan Cao
 type: landing
 
 # Name pronunciation (optional)
 name_pronunciation: ''
 
 # Full name (for SEO)
-first_name: zeyu
-last_name: hu
+first_name: Shan
+last_name: Cao
 
-weight: 3
+weight: 2
 
 # Pronouns (optional)
-# pronouns: he/him
+pronouns: he/him
 
 # Status emoji
-# status:
-#   icon: 🚀
+status:
+  icon: 🚀
 
 # Is this the primary user of the site?
-superuser: false
+superuser: true
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 
-role: Experimenter
+# Role/position/tagline
+role: Senior AI Research Scientist
 
 # bio: Research interests include machine learning and computational biology.
 
+# Organizations/Affiliations to display in Biography blox
 organizations:
-  - name:  Shanghai University 
-    url: https://www.shu.edu.cn/
+  - name: Meta AI
+    url: https://ai.meta.com/
+
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:alex.johnson@meta.com'
+    url: 'mailto:cshan@shu.edu.cn'
     label: E-mail Me
   # - icon: brands/x
   #   url: https://twitter.com/AlexAIResearch
@@ -44,44 +48,47 @@ profiles:
   # - icon: brands/linkedin
   #   url: https://www.linkedin.com/in/alexjohnsonai/
   - icon: academicons/google-scholar
-    url: https://scholar.google.com.hk/citations?user=DNgq9FoAAAAJ&hl=zh-CN&oi=ao
-  # - icon: academicons/orcid
-  #   url: https://orcid.org/0000-0002-1825-0097
+    url: https://scholar.google.com/citations?user=BCHphJQAAAAJ
+  # - icon:  academicons/researchgate
+  #   url: https://www.researchgate.net/profile/Zhiyuan-Jiang-4
+
 interests:
-  - Machine Learning
-  - Computational Biology
-  - Data Science
-    
+  - Digital and SoC Design
+  - AI Acceleration
+  - Wireless Signal Processing
+  - Model Compression
+  
 education:
-  - area: PhD Computer Science (AI Focus)
-    institution: Stanford University
+  - area: Ph.D. in Electronic Science and Technology
+    institution:  Tsinghua University
     icon: ""
-    date_start: 2015-09-01
-    date_end: 2019-06-30
+    date_start: 2009-09-01
+    date_end: 2015-07-01
     summary: |
-      Thesis on _Scaling Laws for Neural Language Models_. Supervised by Prof. Andrew Ng. Published 5 papers in NeurIPS and ICML, with 2 best paper awards.
+       
     button:
       text: 'Read Thesis'
       url: 'https://example.com/thesis.pdf'
-  - area: MS Computer Science
-    institution: Carnegie Mellon University
+  - area: B.E. in Electronic Science and Technology
+    institution: Tsinghua University
     icon: ""
-    date_start: 2013-09-01
-    date_end: 2015-05-31
+    date_start: 2005-09-01
+    date_end: 2009-07-01
     summary: |
       GPA: 4.0/4.0
 
       Specialized in machine learning and robotics.
-  - area: BS Computer Science
-    institution: MIT
+  - area: Postdoctoral Research, School of Information and Electronics
+    institution: Beijing Institute of Technology
     icon: ""
-    date_start: 2009-09-01
-    date_end: 2013-05-31
+    date_start: 2015-09-01
+    date_end: 2017-07-01
     summary: |
       GPA: 3.9/4.0
 
       Minored in Mathematics. President of AI Club.
-    
+        
+
 work:
   - position: Senior AI Research Scientist
     company_name: Meta AI
@@ -167,7 +174,6 @@ awards:
     summary: |
       Recognized for contributions to scaling laws in deep learning.
 
-    
 social:
   - icon: envelope
     icon_pack: fas
@@ -178,20 +184,20 @@ social:
   - icon: github
     icon_pack: fab
     link: https://github.com/janedoe
-    
 user_groups:
   - Teachers
+
 
 sections:
   - block: resume-biography-3
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
-      username: huzeyu
+      username: ShanCao
       text: ''
       # Show a call-to-action button under your biography? (optional)
-      # button:
-      #   text: Download CV
-      #   url: /uploads/resume.pdf
+      button:
+        text: Download CV
+        url: uploads/resume.pdf
       headings:
         about: ''
         education: ''
@@ -203,42 +209,10 @@ sections:
       avatar:
         size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: circle # Options: circle (default), square, rounded
-  - block: resume-awards
-    content:
-      username: huzeyu
-      title: "My Section Title"
-      text: "This is sample text content for the section."
-    design:
-      background:
-        color: ""
-        # gradient_start: "#4f46e5"
-        # gradient_end: "#7c3aed"
-        # text_color_light: true
-      # spacing:
-      #   padding: ["6", "6", "6", "6"]
-      # columns: "1"
-  # - block: resume-experience
-  #   content:
-  #     username: huzeyu
-  #     title: "???"
-  #     # items:
-  #     #   - title: "Senior Developer"
-  #     #     company: "Tech Company"
-  #     #     location: "San Francisco, CA"
-  #     #     date_start: "2020-01-01"
-  #     #     date_end: ""
-  #     #     description: |
-  #     #       * Led development of key features
-  #     #       * Mentored junior developers
-  #     #       * Improved system performance by 40%
-  #     #   - title: "Software Engineer"
-  #     #     company: "Startup Inc"
-  #     #     location: "New York, NY"
-  #     #     date_start: "2018-06-01"
-  #     #     date_end: "2019-12-31"
-  #     #     description: "Developed web applications using modern technologies"
-  #   design:
-  #     columns: "1"
 ---
 
-Full biography content here...
+**Shan Cao**, Ph.D., is an **Associate Professor** at the School of Communications and Information Engineering (**SCIE**), Shanghai University. She received her B.E. (2009) and Ph.D. (2015) degrees in Electronic Engineering from **Tsinghua University**, China, and completed her postdoctoral research at the School of Information and Electronics, Beijing Institute of Technology in 2017. She then joined **Shanghai University** as a faculty member in the Department of Communication Engineering, where she is currently an Associate Professor.
+
+She was selected for the **Shanghai Overseas High-Level Talent Program (2017)** and received the **Shanghai University Outstanding Young Faculty Award (2020)**. She serves as a member of the **IEEE Circuits and Systems Society COMCAS Technical Committee**, the **IEEE ISCAS Review Committee**, and has chaired special sessions for **ICTC 2022** and **IEEE SiPS 2019**.
+
+Her recent research projects span the design of low-power communication chips for 6G, AI-driven channel coding and signal processing architectures, and heterogeneous computing for wireless systems.

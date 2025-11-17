@@ -35,7 +35,7 @@ sections:
       user_groups:
         - Teachers
       sort_by: 'Params.weight'
-      sort_ascending: true
+      sort_ascending: false
     design:
       show_role: true
       show_organizations: false
