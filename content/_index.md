@@ -91,26 +91,26 @@ sections:
       auto_play: true
       interval_ms: 2000
       css_class: ""
-  - block: resume-biography-3
-    content:
-      # Choose a user profile to display (a folder name within `content/authors/`)
-      username: admin
-      text: ''
-      # Show a call-to-action button under your biography? (optional)
-      button:
-        text: Download CV
-        url: uploads/resume.pdf
-      headings:
-        about: ''
-        education: ''
-        interests: ''
-    design:
-      # Apply a gradient background
-      css_class: hbx-bg-gradient
-      # Avatar customization
-      avatar:
-        size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
-        shape: circle # Options: circle (default), square, rounded
+  # - block: resume-biography-3
+  #   content:
+  #     # Choose a user profile to display (a folder name within `content/authors/`)
+  #     username: admin
+  #     text: ''
+  #     # Show a call-to-action button under your biography? (optional)
+  #     button:
+  #       text: Download CV
+  #       url: uploads/resume.pdf
+  #     headings:
+  #       about: ''
+  #       education: ''
+  #       interests: ''
+  #   design:
+  #     # Apply a gradient background
+  #     css_class: hbx-bg-gradient
+  #     # Avatar customization
+  #     avatar:
+  #       size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
+  #       shape: circle # Options: circle (default), square, rounded
   - block: portfolio-lite
     content:
       title: Our Projects
@@ -139,50 +139,50 @@ sections:
         Please reach out to collaborate 😃
     design:
       columns: '1'
-  - block: slider-tw
-    content:
-      slides:
-        - title: "1"
-          content: "Pushing the frontier of **UAV + 5G** research."
-          align: center     # left | center | right
-          background:
-            color: "#0b1020"
-            gradient_start: "#0b1020"
-            gradient_end: "#14204a"
-            gradient_angle: 120
-            image:
-              filename: hero1.png      # 放在 assets/media/hero1.jpg
-              position: center
-              size: cover
-              filters:
-                brightness: 0.85
-          link:
-            url: /projects
-            text: "Explore Projects"
+  # - block: slider-tw
+  #   content:
+  #     slides:
+  #       - title: "1"
+  #         content: "Pushing the frontier of **UAV + 5G** research."
+  #         align: center     # left | center | right
+  #         background:
+  #           color: "#0b1020"
+  #           gradient_start: "#0b1020"
+  #           gradient_end: "#14204a"
+  #           gradient_angle: 120
+  #           image:
+  #             filename: hero1.png      # 放在 assets/media/hero1.jpg
+  #             position: center
+  #             size: cover
+  #             filters:
+  #               brightness: 0.85
+  #         link:
+  #           url: /projects
+  #           text: "Explore Projects"
 
-        - title: "2"
-          content: "Pushing the frontier of **UAV + 5G** research."
-          align: center     # left | center | right
-          background:
-            color: "#0b1020"
-            gradient_start: "#0b1020"
-            gradient_end: "#14204a"
-            gradient_angle: 120
-            image:
-              filename: hero2.png      # 放在 assets/media/hero1.jpg
-              position: center
-              size: cover
-              filters:
-                brightness: 0.85
-          link:
-            url: /projects
-            text: "Explore Projects"
-    design:
-      is_fullscreen: true      # 或者用 slide_height: "70vh"
-      # slide_height: "80vh"
-      auto_play: true
-      interval_ms: 5000
-      css_class: ""
+  #       - title: "2"
+  #         content: "Pushing the frontier of **UAV + 5G** research."
+  #         align: center     # left | center | right
+  #         background:
+  #           color: "#0b1020"
+  #           gradient_start: "#0b1020"
+  #           gradient_end: "#14204a"
+  #           gradient_angle: 120
+  #           image:
+  #             filename: hero2.png      # 放在 assets/media/hero1.jpg
+  #             position: center
+  #             size: cover
+  #             filters:
+  #               brightness: 0.85
+  #         link:
+  #           url: /projects
+  #           text: "Explore Projects"
+  #   design:
+  #     is_fullscreen: true      # 或者用 slide_height: "70vh"
+  #     # slide_height: "80vh"
+  #     auto_play: true
+  #     interval_ms: 5000
+  #     css_class: ""
   - block: collection
     id: researches
     content:
