@@ -1,10 +1,20 @@
 ---
 title: Research
-# type: landing
+type: landing
 # cms_exclude: true
-# type: landing
 
-# section:
+sections: 
+  - block: collection
+    content:
+      title: Researches
+      filters:
+        folders:
+          - researches
+        featured_only: true
+    design:
+      view: card
+    #   view: article-grid
+      columns: 1
 #   - block: markdown
 #     content:
 #       title: '📚 My Research'
@@ -17,7 +27,6 @@ title: Research
 #         Please reach out to collaborate 😃
 #     design:
 #       columns: '1'
-# View.
-# view: citation
+#     view: citation
 
 ---

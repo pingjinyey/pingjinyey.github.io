@@ -10,6 +10,7 @@ type: landing
 #   - HugoBlox
 #   - Markdown
 
+featured: false
 
 sections:
   - block: cta-card

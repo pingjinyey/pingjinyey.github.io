@@ -178,12 +178,12 @@ social:
   - icon: envelope
     icon_pack: fas
     link: 'mailto:jane@example.edu'
-  - icon: twitter
-    icon_pack: fab
-    link: https://twitter.com/janedoe
-  - icon: github
-    icon_pack: fab
-    link: https://github.com/janedoe
+  # - icon: twitter
+  #   icon_pack: fab
+  #   link: https://twitter.com/janedoe
+  # - icon: github
+  #   icon_pack: fab
+  #   link: https://github.com/janedoe
 user_groups:
   - Teachers
 
@@ -195,9 +195,9 @@ sections:
       username: ZeyuHu
       text: ''
       # Show a call-to-action button under your biography? (optional)
-      button:
-        text: Download CV
-        url: uploads/resume.pdf
+      # button:
+      #   text: Download CV
+      #   url: uploads/resume.pdf
       headings:
         about: ''
         education: ''

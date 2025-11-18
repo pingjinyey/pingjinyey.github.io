@@ -13,7 +13,7 @@ last_name: Cao
 weight: 2
 
 # Pronouns (optional)
-pronouns: he/him
+pronouns: she/her
 
 # Status emoji
 status:
@@ -26,19 +26,23 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Senior AI Research Scientist
+role: Associate Professor
+
+
 
 # bio: Research interests include machine learning and computational biology.
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: Meta AI
-    url: https://ai.meta.com/
+  - name: School of Communications and Information Engineering, Shanghai University
+    url: https://scie.shu.edu.cn/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
-  - icon: at-symbol
+  # - icon: at-symbol
+  - icon: envelope
+    icon_pack: fas
     url: 'mailto:cshan@shu.edu.cn'
     label: E-mail Me
   # - icon: brands/x
@@ -177,13 +181,15 @@ awards:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:jane@example.edu'
-  - icon: twitter
-    icon_pack: fab
-    link: https://twitter.com/janedoe
-  - icon: github
-    icon_pack: fab
-    link: https://github.com/janedoe
+    url: 'mailto:cshan@shu.edu.cn'
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=BCHphJQAAAAJ
+  # - icon: twitter
+  #   icon_pack: fab
+  #   link: https://twitter.com/janedoe
+  # - icon: github
+  #   icon_pack: fab
+  #   link: https://github.com/janedoe
 user_groups:
   - Teachers
 
@@ -195,9 +201,9 @@ sections:
       username: ShanCao
       text: ''
       # Show a call-to-action button under your biography? (optional)
-      button:
-        text: Download CV
-        url: uploads/resume.pdf
+      # button:
+      #   text: Download CV
+      #   url: uploads/resume.pdf
       headings:
         about: ''
         education: ''

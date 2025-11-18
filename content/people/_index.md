@@ -35,7 +35,7 @@ sections:
       user_groups:
         - Teachers
       sort_by: 'Params.weight'
-      sort_ascending: false
+      sort_ascending: true
     design:
       show_role: true
       show_organizations: false
@@ -50,6 +50,26 @@ sections:
       # text: Our diverse team brings together expertise from multiple disciplines.
       user_groups:
         - Postdoctoral Researchers
+      sort_by: 'Params.weight'
+      sort_ascending: true
+      # cta:
+      #   text: Join Our Team
+      #   url: /opportunities
+      #   icon: user-plus
+    design:
+      show_role: true
+      show_organizations: false
+      show_interests: true
+      show_social: true
+      # Section background color (CSS class)
+      css_class: "bg-gray-50 dark:bg-gray-900"
+  - block: team-showcase
+    content:
+      title: Students
+      # subtitle: World-class researchers advancing science
+      # text: Our diverse team brings together expertise from multiple disciplines.
+      user_groups:
+        - Students
       sort_by: 'Params.weight'
       sort_ascending: true
       cta:

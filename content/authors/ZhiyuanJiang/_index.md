@@ -36,7 +36,9 @@ organizations:
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
-  - icon: at-symbol
+  # - icon: at-symbol
+  - icon: envelope
+    icon_pack: fas
     url: 'mailto:zhiyjiang@foxmail.com'
     label: E-mail Me
   # - icon: brands/x
@@ -174,13 +176,17 @@ awards:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:jane@example.edu'
-  - icon: twitter
-    icon_pack: fab
-    link: https://twitter.com/janedoe
-  - icon: github
-    icon_pack: fab
-    link: https://github.com/janedoe
+    link: 'mailto:zhiyjiang@foxmail.com'
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=DH4HG-4AAAAJ&hl=en
+  - icon:  academicons/researchgate
+    url: https://www.researchgate.net/profile/Zhiyuan-Jiang-4
+  # - icon: twitter
+  #   icon_pack: fab
+  #   link: https://twitter.com/janedoe
+  # - icon: github
+  #   icon_pack: fab
+  #   link: https://github.com/janedoe
 user_groups:
   - Teachers
 
@@ -192,9 +198,9 @@ sections:
       username: ZhiyuanJiang
       text: ''
       # Show a call-to-action button under your biography? (optional)
-      button:
-        text: Download CV
-        url: uploads/resume.pdf
+      # button:
+      #   text: Download CV
+      #   url: uploads/resume.pdf
       headings:
         about: ''
         education: ''

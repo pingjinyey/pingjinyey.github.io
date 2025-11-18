@@ -30,6 +30,67 @@ sections:
         color: ""
         gradient_start: "#4f46e5"
         gradient_end: "#7c3aed"
+  - block: slider-tw
+    content:
+      slides:
+        - title: ""
+          # content: "Pushing the frontier of **UAV + 5G** research."
+          align: center     # left | center | right
+          background:
+            color: "#0b1020"
+            gradient_start: "#0b1020"
+            gradient_end: "#14204a"
+            gradient_angle: 120
+            image:
+              filename: 1.png      # 放在 assets/media/hero1.jpg
+              position: center
+              size: cover
+              filters:
+                brightness: 0.85
+          # link:
+          #   url: /projects
+          #   text: "Explore Projects"
+
+        - title: ""
+          # content: "Pushing the frontier of **UAV + 5G** research."
+          align: center     # left | center | right
+          background:
+            color: "#0b1020"
+            gradient_start: "#0b1020"
+            gradient_end: "#14204a"
+            gradient_angle: 120
+            image:
+              filename: 2.png      # 放在 assets/media/hero1.jpg
+              position: center
+              size: cover
+              filters:
+                brightness: 0.85
+          # link:
+          #   url: /projects
+          #   text: "Explore Projects"
+        - title: ""
+          # content: "Pushing the frontier of **UAV + 5G** research."
+          align: center     # left | center | right
+          background:
+            color: "#0b1020"
+            gradient_start: "#0b1020"
+            gradient_end: "#14204a"
+            gradient_angle: 120
+            image:
+              filename: 3.png      # 放在 assets/media/hero1.jpg
+              position: center
+              size: cover
+              filters:
+                brightness: 0.85
+          # link:
+          #   url: /projects
+          #   text: "Explore Projects"
+    design:
+      is_fullscreen: true      # 或者用 slide_height: "70vh"
+      # slide_height: "80vh"
+      auto_play: true
+      interval_ms: 2000
+      css_class: ""
   - block: resume-biography-3
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
@@ -117,8 +178,8 @@ sections:
             url: /projects
             text: "Explore Projects"
     design:
-      # is_fullscreen: true      # 或者用 slide_height: "70vh"
-      slide_height: "80vh"
+      is_fullscreen: true      # 或者用 slide_height: "70vh"
+      # slide_height: "80vh"
       auto_play: true
       interval_ms: 5000
       css_class: ""
