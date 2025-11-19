@@ -3,62 +3,88 @@
     const slides = Array.from(root.querySelectorAll(".hbxtw-slide"));
     if (!slides.length) return;
 
-    const indicators = Array.from(root.querySelectorAll("[data-indicator]"));
+    const indicators = Array.from(
+      root.querySelectorAll("[data-indicator]")
+    );
+    const counterEl = root.querySelector("[data-counter]");
 
-    let idx = 0,
-      timer = null;
+    let index = 0;
+    let timer = null;
+
     const COUNT = slides.length;
     const AUTO = root.dataset.autoPlay === "true";
     const INTERVAL = parseInt(root.dataset.interval || "5000", 10);
 
-    // 让容器可聚焦，才能接收键盘事件
     if (!root.hasAttribute("tabindex")) root.setAttribute("tabindex", "0");
 
-    function setActive(i, dir) {
-      const cur = slides[idx];
-      const nxt = slides[i];
+    function updateCounter(i) {
+      if (counterEl) {
+        counterEl.textContent = String(i + 1);
+      }
+    }
 
-      if (nxt) nxt.classList.remove("hidden");
+    function setActive(newIndex, direction) {
+      const current = slides[index];
+      const next = slides[newIndex];
 
-      if (cur) {
-        cur.classList.remove("translate-x-0", "opacity-100");
-        cur.classList.add(
-          dir === -1 ? "translate-x-full" : "-translate-x-full",
+      if (next) next.classList.remove("hidden");
+
+      if (current && current !== next) {
+        current.classList.remove("translate-x-0", "opacity-100");
+        current.classList.add(
+          direction === -1 ? "translate-x-full" : "-translate-x-full",
           "opacity-0"
         );
-        cur.style.pointerEvents = "none";
-        setTimeout(() => cur.classList.add("hidden"), 500);
+        current.style.pointerEvents = "none";
+        window.setTimeout(() => current.classList.add("hidden"), 500);
       }
 
-      if (nxt) {
-        nxt.classList.remove(
+      if (next) {
+        next.classList.remove(
           "translate-x-full",
           "-translate-x-full",
           "opacity-0"
         );
-        nxt.classList.add("translate-x-0", "opacity-100");
-        nxt.style.pointerEvents = "auto";
+        next.classList.add("translate-x-0", "opacity-100");
+        next.style.pointerEvents = "auto";
       }
 
-      indicators.forEach(
-        (b, k) => (b.dataset.active = k === i ? "true" : "false")
-      );
-      idx = i;
+      indicators.forEach((btn, i) => {
+        btn.dataset.active = i === newIndex ? "true" : "false";
+      });
+
+      updateCounter(newIndex);
+      index = newIndex;
     }
 
-    function go(i, dir = 0) {
-      const t = (i + COUNT) % COUNT;
-      if (t === idx) return;
-      setActive(t, dir);
+    function goTo(newIndex, direction) {
+      const target = (newIndex + COUNT) % COUNT;
+      if (target === index) return;
+      setActive(target, direction);
     }
+
     function next() {
-      go(idx + 1, +1);
-    }
-    function prev() {
-      go(idx - 1, -1);
+      goTo(index + 1, +1);
     }
 
-    // 初始化：第 0 张可见，其它 hidden
+    function prev() {
+      goTo(index - 1, -1);
+    }
+
+    function startAuto() {
+      if (!AUTO) return;
+      stopAuto();
+      timer = window.setInterval(next, INTERVAL);
+    }
+
+    function stopAuto() {
+      if (timer) {
+        window.clearInterval(timer);
+        timer = null;
+      }
+    }
+
+    // ---- 初始化 ----
     slides.forEach((el, i) => {
       if (i === 0) {
         el.classList.remove(
@@ -79,120 +105,100 @@
         el.style.pointerEvents = "none";
       }
     });
-    indicators.forEach(
-      (b, k) => (b.dataset.active = k === 0 ? "true" : "false")
-    );
+    indicators.forEach((btn, i) => {
+      btn.dataset.active = i === 0 ? "true" : "false";
+    });
+    updateCounter(0);
 
-    // —— 点击：事件委托（按钮 & 指示点）——
-    root.addEventListener("click", (e) => {
-      const t = e.target;
+    // ---- 事件 ----
+    // 点击箭头 & 分页条
+    root.addEventListener("click", (event) => {
+      const target = event.target;
 
-      // ---- 早退：点击真实链接就让浏览器自己处理（不阻止默认）----
-      const linkEl = t.closest?.("a[href]");
-      if (linkEl) {
-        // 如果你页面里有 data-next/data-prev 包裹了 <a>，下面的控件判断会命中并阻止默认。
-        // 所以必须把“真实链接”早退放在最前面。
-        return;
-      }
+      const arrowNext = target.closest?.("[data-next]");
+      const arrowPrev = target.closest?.("[data-prev]");
+      const indicator = target.closest?.("[data-indicator]");
 
-      // 原有控件命中逻辑
-      const hitNext = t.closest?.("[data-next]");
-      const hitPrev = t.closest?.("[data-prev]");
-      const hitInd = t.closest?.("[data-indicator]");
-
-      if (hitNext) {
-        e.preventDefault();
+      if (arrowNext) {
+        event.preventDefault();
         next();
+        startAuto();
         return;
       }
-      if (hitPrev) {
-        e.preventDefault();
+      if (arrowPrev) {
+        event.preventDefault();
         prev();
+        startAuto();
         return;
       }
-      if (hitInd) {
-        e.preventDefault();
-        const to = parseInt(hitInd.getAttribute("data-indicator"), 10);
-        if (!Number.isNaN(to)) go(to, 0);
+      if (indicator) {
+        event.preventDefault();
+        const to = parseInt(indicator.getAttribute("data-indicator") || "0", 10);
+        if (!Number.isNaN(to)) {
+          goTo(to, 0);
+          startAuto();
+        }
       }
     });
 
-    // —— 键盘：左右箭头 ——（容器需可聚焦）
-    root.addEventListener("keydown", (e) => {
-      if (e.key === "ArrowRight") next();
-      if (e.key === "ArrowLeft") prev();
+    // 键盘左右键
+    root.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowRight") {
+        next();
+        startAuto();
+      } else if (event.key === "ArrowLeft") {
+        prev();
+        startAuto();
+      }
     });
 
-    // —— 手势滑动（鼠标/触控统一 Pointer 事件）——
-    // 只在非控件区域启用；点到按钮/指示点时完全不接管指针
-    let startX = 0,
-      tracking = false,
-      moved = false;
+    // 滑动切换
+    let startX = 0;
+    let tracking = false;
     const SWIPE_THRESHOLD = 40;
 
     function isControl(el) {
       return !!el.closest?.("[data-prev], [data-next], [data-indicator]");
     }
     function isLink(el) {
-      return !!el.closest?.('a[href], [role="link"]');
+      return !!el.closest?.("a[href], [role='link']");
     }
 
-    root.addEventListener("pointerdown", (e) => {
-      // 点到控件或链接：完全不启用手势，不 capture
-      if (isControl(e.target) || isLink(e.target)) {
+    root.addEventListener("pointerdown", (event) => {
+      if (isControl(event.target) || isLink(event.target)) {
         return;
       }
       tracking = true;
-      moved = false;
-      startX = e.clientX;
-      // 只在“普通区域”才捕获指针，避免影响链接点击
-      if (root.setPointerCapture) root.setPointerCapture(e.pointerId);
+      startX = event.clientX;
+      if (root.setPointerCapture) {
+        root.setPointerCapture(event.pointerId);
+      }
     });
 
-    root.addEventListener(
-      "pointermove",
-      (e) => {
-        if (!tracking) return;
-        const dx = e.clientX - startX;
-        if (Math.abs(dx) > 6) moved = true;
-        // 不调用 preventDefault，避免影响 click 生成
-      },
-      { passive: true }
-    );
-
-    root.addEventListener("pointerup", (e) => {
+    root.addEventListener("pointerup", (event) => {
       if (!tracking) return;
-      const dx = e.clientX - startX;
       tracking = false;
+      const dx = event.clientX - startX;
       if (Math.abs(dx) > SWIPE_THRESHOLD) {
-        dx < 0 ? next() : prev();
+        if (dx < 0) {
+          next();
+        } else {
+          prev();
+        }
+        startAuto();
       }
-      if (root.releasePointerCapture) root.releasePointerCapture(e.pointerId);
+      if (root.releasePointerCapture) {
+        root.releasePointerCapture(event.pointerId);
+      }
     });
-    // —— 自动播放（悬停/聚焦暂停）——
-    function tick() {
-      next();
-    }
-    function start() {
-      if (AUTO) {
-        stop();
-        timer = setInterval(tick, INTERVAL);
-      }
-    }
-    function stop() {
-      if (timer) {
-        clearInterval(timer);
-        timer = null;
-      }
-    }
 
-    root.addEventListener("mouseenter", stop);
-    root.addEventListener("mouseleave", start);
-    root.addEventListener("focusin", stop);
-    root.addEventListener("focusout", start);
+    // 自动播放：不会因为点击图片而停下
+    startAuto();
 
-    // 启动
-    start();
+    // 可选：销毁时清理
+    root.addEventListener("hbxtw:destroy", () => {
+      stopAuto();
+    });
   }
 
   function initAll() {

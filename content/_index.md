@@ -9,108 +9,44 @@ design:
   spacing: '6rem'
 
 sections:
-  - block: hero
-    content:
-      title: "ACE-Lab"
-      text: "Advanced Communication and Computing Electronics Lab"
-      primary_action:
-        text: "Join Our Team"
-        url: /opportunities
-        icon: "user-group"
-      secondary_action:
-        text: "View Publications"
-        url: /publications
-      announcement:
-        text: "🎉 Welcome to join our team!"
-        link:
-          text: "Apply now"
-          url: /opportunities
-    design:
-      background:
-        color: ""
-        gradient_start: "#4f46e5"
-        gradient_end: "#7c3aed"
   - block: slider-tw
     content:
       slides:
-        - title: ""
-          # content: "Pushing the frontier of **UAV + 5G** research."
-          align: center     # left | center | right
-          background:
-            color: "#0b1020"
-            gradient_start: "#0b1020"
-            gradient_end: "#14204a"
-            gradient_angle: 120
+        - background:
             image:
-              filename: 1.png      # 放在 assets/media/hero1.jpg
+              filename: team1.jpg      # 放在 assets/media/hero1.jpg
               position: center
               size: cover
-              filters:
-                brightness: 0.85
-          # link:
-          #   url: /projects
-          #   text: "Explore Projects"
-
-        - title: ""
-          # content: "Pushing the frontier of **UAV + 5G** research."
-          align: center     # left | center | right
-          background:
-            color: "#0b1020"
-            gradient_start: "#0b1020"
-            gradient_end: "#14204a"
-            gradient_angle: 120
+        - background:
             image:
-              filename: 2.png      # 放在 assets/media/hero1.jpg
+              filename: team2.jpg      # 放在 assets/media/hero1.jpg
               position: center
               size: cover
-              filters:
-                brightness: 0.85
-          # link:
-          #   url: /projects
-          #   text: "Explore Projects"
-        - title: ""
-          # content: "Pushing the frontier of **UAV + 5G** research."
-          align: center     # left | center | right
-          background:
-            color: "#0b1020"
-            gradient_start: "#0b1020"
-            gradient_end: "#14204a"
-            gradient_angle: 120
+        - background:
             image:
-              filename: 3.png      # 放在 assets/media/hero1.jpg
+              filename: team3.jpg      # 放在 assets/media/hero1.jpg
               position: center
               size: cover
-              filters:
-                brightness: 0.85
-          # link:
-          #   url: /projects
-          #   text: "Explore Projects"
     design:
       is_fullscreen: true      # 或者用 slide_height: "70vh"
-      # slide_height: "80vh"
+      slide_height: "calc(100vh - 120px)"
       auto_play: true
-      interval_ms: 2000
+      interval_ms: 4000
       css_class: ""
-  # - block: resume-biography-3
-  #   content:
-  #     # Choose a user profile to display (a folder name within `content/authors/`)
-  #     username: admin
-  #     text: ''
-  #     # Show a call-to-action button under your biography? (optional)
-  #     button:
-  #       text: Download CV
-  #       url: uploads/resume.pdf
-  #     headings:
-  #       about: ''
-  #       education: ''
-  #       interests: ''
-  #   design:
-  #     # Apply a gradient background
-  #     css_class: hbx-bg-gradient
-  #     # Avatar customization
-  #     avatar:
-  #       size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
-  #       shape: circle # Options: circle (default), square, rounded
+  - block: cta-card
+    id: lab-intro
+    content:
+      title: "ACE-Lab"
+      text: "Advanced Communication and Computing Electronics Lab"
+    design:
+      css_class: "relative z-[60]"
+      background:
+        color: ""
+      card:
+        align: center
+        border_radius: 3xl
+        padding: xl
+        shadow: 2xl
   - block: portfolio-lite
     content:
       title: Our Projects

@@ -4,3 +4,30 @@
   width: auto !important;
   vertical-align: middle;
 }
+
+/* 只针对顶部轮播和介绍这两个 section，去掉 Hugo Blox 默认的 6rem padding */
+#section-slider-tw,
+#lab-intro {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* 让 lab-intro 这块卡片往上“吃进”图片，并压在图片之上 */
+#lab-intro {
+  margin-top: -8rem;        /* 先试 -4rem，不够再加大一点 */
+  position: relative;
+  z-index: 60;
+}
+
+/* 根据屏幕尺寸微调重叠深度 */
+@media (min-width: 768px) {
+  #lab-intro {
+    margin-top: -8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  #lab-intro {
+    margin-top: -9rem;
+  }
+}
