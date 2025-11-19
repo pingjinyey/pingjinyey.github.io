@@ -14,17 +14,17 @@ sections:
       title: "ACE-Lab"
       text: "Advanced Communication and Computing Electronics Lab"
       primary_action:
-        text: "Get Started"
-        url: "https://example.com"
-        icon: "sparkles"
+        text: "Join Our Team"
+        url: /opportunities
+        icon: "user-group"
       secondary_action:
-        text: "Learn More"
-        url: "https://docs.hugoblox.com"
+        text: "View Publications"
+        url: /publications
       announcement:
-        text: "🎉 New features available now!"
+        text: "🎉 Welcome to join our team!"
         link:
-          text: "Read more"
-          url: "https://example.com/news"
+          text: "Apply now"
+          url: /opportunities
     design:
       background:
         color: ""
