@@ -1,0 +1,10 @@
+---
+title: Age of Information in an M/M/2 Queue with In-Order Delivery
+authors:
+- Yijie Huang
+- Zhiyuan Jiang
+date: -01-01
+publishDate: '2025-11-23T16:16:50.163784Z'
+publication_types:
+- article-journal
+---
