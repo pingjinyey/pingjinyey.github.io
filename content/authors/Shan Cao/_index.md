@@ -75,9 +75,6 @@ education:
     date_start: 2009-09-01
     date_end: 2015-07-01
     summary: |
-    # button:
-    #   text: 'Read Thesis'
-    #   url: 'https://example.com/thesis.pdf'
   - area: B.E. in Electronic Science and Technology
     institution: Tsinghua University
     icon: ""
