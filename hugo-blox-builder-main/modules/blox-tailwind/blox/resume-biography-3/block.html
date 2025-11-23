@@ -30,9 +30,9 @@
 {{ $shape_classes := dict "circle" "rounded-full" "square" "rounded-none" "rounded" "rounded-lg" }}
 {{ $shape_class := index $shape_classes $avatar_shape | default "rounded-full" }}
 
-<div class="resume-biography py-8 px-4 sm:py-12 md:py-16 lg:py-24 xl:py-32 relative overflow-hidden">
+<div class="resume-biography py-0 px-4 sm:py-0 md:py-0 lg:py-0 xl:py-0 relative overflow-hidden">
   {{/* Add subtle top gradient for navbar transition */}}
-  <div class="max-w-7xl mx-auto">
+  <div class="max-w-6xl mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-start">
       
       {{/* Left Column: Flexible span */}}
@@ -82,7 +82,7 @@
 
         {{/* Name and Role - Centered */}}
         <div class="space-y-3">
-          <h1 class="text-5xl lg:text-6xl font-black text-gray-900 dark:text-white leading-tight">
+          <h1 class="text-4xl lg:text-4xl text-gray-900 dark:text-white leading-tight">
             {{- if $person.name_pronunciation -}}
               <ruby>
                 <rb>{{ $person_page.Title }}</rb>
@@ -98,7 +98,8 @@
           {{- end -}}
           
           {{ with $person.role }}
-            <p class="text-2xl font-semibold text-primary-600 dark:text-primary-400">{{ . | markdownify | emojify }}</p>
+            <!-- <p class="text-2xl font-semibold text-primary-600 dark:text-primary-400">{{ . | markdownify | emojify }}</p> -->
+            <p class="text-xl text-gray-700 dark:text-gray-300">{{ . | markdownify | emojify }}</p>
           {{ end }}
           
           {{ range $person.organizations }}
@@ -145,14 +146,14 @@
         {{/* Bio Section */}}
         {{ with ($block.content.text | emojify | $page.RenderString) | default $person_page.Content }}
         <div class="mb-12">
-          <div class="flex items-center gap-4 mb-8">
-            <div class="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900/50 rounded-full flex items-center justify-center">
+          <div class="flex items-center gap-4 mb-4">
+            <!-- <div class="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900/50 rounded-full flex items-center justify-center">
               {{ partial "functions/get_icon" (dict "name" "identification" "attributes" "class='w-6 h-6 text-primary-600 dark:text-primary-400'") }}
-            </div>
+            </div> -->
             {{ $i18n_about := i18n "about_me" }}
             {{ $about_default := cond (eq $i18n_about "about_me") "Professional Summary" $i18n_about }}
             {{ $about_heading := $block.content.headings.about | default $about_default }}
-            <h2 class="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white tracking-tight">{{ $about_heading }}</h2>
+            <h2 class="text-4xl sm:text-3xl lg:text-4xl text-gray-900 dark:text-white tracking-tight">{{ $about_heading }}</h2>
           </div>
           <div class="prose prose-lg dark:prose-invert text-gray-800 dark:text-gray-200 text-base sm:text-lg leading-relaxed">
             <div class="bio-text" {{ with $block.design.biography.style }}{{ (printf "style=\"%s\"" .) | safe.HTMLAttr }}{{end}}>
@@ -175,15 +176,58 @@
 
         {{/* Education Section */}}
         {{ with $person.education }}
-        <div class="mb-16">
-          <div class="flex items-center gap-4 mb-8">
-            <div class="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900/50 rounded-full flex items-center justify-center">
+        <div class="mb-12">
+          <div class="flex items-center gap-4 mb-4">
+            <!-- <div class="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900/50 rounded-full flex items-center justify-center">
               {{ partial "functions/get_icon" (dict "name" "academic-cap" "attributes" "class='w-6 h-6 text-primary-600 dark:text-primary-400'") }}
-            </div>
+            </div> -->
             {{ $education_heading := $block.content.headings.education | default (i18n "education") }}
-            <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white tracking-tight">{{ $education_heading | markdownify }}</h3>
+            <h3 class="text-xl sm:text-2xl lg:text-2xl font-bold text-gray-900 dark:text-white tracking-tight">{{ $education_heading | markdownify }}</h3>
           </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+          <div class="space-y-6">
+          {{ range . }}
+            {{/* 把 date_start/date_end 转成年份区间 */}}
+            {{ $startYear := "" }}
+            {{ $endYear := "" }}
+
+            {{ with .date_start }}
+              {{ $startYear = (time .).Format "2006" }}
+            {{ end }}
+            {{ with .date_end }}
+              {{ $endYear = (time .).Format "2006" }}
+            {{ end }}
+
+            {{ $dateStr := "" }}
+            {{ if and $startYear $endYear }}
+              {{ $dateStr = printf "%s–%s" $startYear $endYear }}
+            {{ else if $startYear }}
+              {{ $dateStr = printf "%s–Present" $startYear }}
+            {{ else if .year }}
+              {{/* 兼容原来的 year 字段 */}}
+              {{ $dateStr = .year }}
+            {{ end }}
+
+            <div class="flex items-start gap-3">
+
+              <!-- 图标 -->
+              <div class="flex-shrink-0 mt-1">
+                {{ partial "functions/get_icon" (dict "name" "academic-cap" "attributes" "class='w-6 h-6 text-gray-800 dark:text-gray-200'") }}
+              </div>
+
+              <!-- 文本 -->
+              <div>
+                <p class="text-lg font-semibold text-gray-900 dark:text-white">
+                  {{ .area }}{{ if $dateStr }}, {{ $dateStr }}{{ end }}
+                </p>
+                <p class="text-gray-600 dark:text-gray-400 text-lg">
+                  {{ .institution }}
+                </p>
+              </div>
+
+            </div>
+          {{ end }}
+          </div>
+          <!-- <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
             {{ range . }}
             <div class="group h-full flex flex-col bg-gradient-to-br from-white/90 to-primary-50/30 dark:from-gray-800/90 dark:to-primary-900/20 rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-transparent hover:border-primary-200 dark:hover:border-primary-800 backdrop-blur-md">
               <div class="flex gap-4">
@@ -203,21 +247,35 @@
               </div>
             </div>
             {{ end }}
-          </div>
+          </div> -->
         </div>
         {{ end }}
 
         {{/* Interests Section */}}
         {{ with $person.interests }}
         <div>
-          <div class="flex items-center gap-4 mb-8">
-            <div class="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900/50 rounded-full flex items-center justify-center">
+          <div class="flex items-center gap-4 mb-4">
+            <!-- <div class="flex-shrink-0 w-12 h-12 bg-primary-100 dark:bg-primary-900/50 rounded-full flex items-center justify-center">
               {{ partial "functions/get_icon" (dict "name" "sparkles" "attributes" "class='w-6 h-6 text-primary-600 dark:text-primary-400'") }}
-            </div>
+            </div> -->
             {{ $interests_heading := $block.content.headings.interests | default (i18n "interests") }}
-            <h3 class="text-xl font-bold text-gray-900 dark:text-white tracking-tight">{{ $interests_heading | markdownify }}</h3>
+            <h3 class="text-xl sm:text-2xl lg:text-2xl font-bold text-gray-900 dark:text-white tracking-tight">{{ $interests_heading | markdownify }}</h3>
           </div>
-          <div class="flex flex-wrap gap-3">
+          <ul class="list-disc list-outside pl-6 space-y-2 text-lg text-gray-800 dark:text-gray-200 marker:text-gray-500">
+            {{ range . }}
+            <li>
+                {{ . | markdownify | emojify }}
+              <!-- <span class="inline-block bg-primary-50 dark:bg-gray-800 text-primary-800 dark:text-primary-200 text-base font-medium px-4 py-2 rounded-full border border-primary-200/50 dark:border-primary-800/50
+                             hover:bg-primary-100 
+                             dark:hover:bg-primary-500 dark:hover:text-gray-900 dark:hover:border-primary-500
+                             transition-all duration-200 cursor-default">
+                {{ . | markdownify | emojify }}
+              </span> -->
+            </li>
+            {{ end }}
+          </ul>
+
+          <!-- <div class="flex flex-wrap gap-3">
             {{ range . }}
             <span class="inline-block bg-primary-50 dark:bg-gray-800 text-primary-800 dark:text-primary-200 text-base font-medium px-4 py-2 rounded-full border border-primary-200/50 dark:border-primary-800/50
                            hover:bg-primary-100 
@@ -226,7 +284,7 @@
               {{ . | markdownify | emojify }}
             </span>
             {{ end }}
-          </div>
+          </div> -->
         </div>
         {{ end }}
       </div>

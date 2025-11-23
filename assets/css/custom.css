@@ -5,6 +5,22 @@
   vertical-align: middle;
 }
 
+/* 让分页条在 lab-card 上方 */
+.slider-pagination {
+  bottom: 8rem !important; /* 越大越靠上 */
+}
+
+/* 让 slider 分页条当前页使用主题色 */
+.slider-pagination button[data-active="true"] {
+  background-color: var(--color-primary-600) !important;
+}
+
+/* 非激活状态依然半透明 */
+.slider-pagination button {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
+
 /* 只针对顶部轮播和介绍这两个 section，去掉 Hugo Blox 默认的 6rem padding */
 #section-slider-tw,
 #lab-intro {
@@ -14,20 +30,64 @@
 
 /* 让 lab-intro 这块卡片往上“吃进”图片，并压在图片之上 */
 #lab-intro {
-  margin-top: -8rem;        /* 先试 -4rem，不够再加大一点 */
+  margin-top: -7rem;        /* 先试 -4rem，不够再加大一点 */
   position: relative;
-  z-index: 60;
+  z-index: 25;
 }
 
 /* 根据屏幕尺寸微调重叠深度 */
 @media (min-width: 768px) {
   #lab-intro {
-    margin-top: -8rem;
+    margin-top: -6rem;
   }
 }
 
 @media (min-width: 1024px) {
   #lab-intro {
-    margin-top: -9rem;
+    margin-top: -7rem;
   }
+}
+
+/* Lab Intro Description — 字体更稳重 */
+.lab-card-desc {
+  font-weight: 400 !important;
+  letter-spacing: 0.1px;
+}
+
+/* 卡片阴影更柔和 */
+.lab-card-shadow {
+  box-shadow:
+    0px 20px 35px rgba(0,0,0,0.06),
+    0px 8px 15px rgba(0,0,0,0.05);
+}
+
+
+ul.list-disc {
+  list-style: disc !important;
+  margin-left: 1.25rem; /* 相当于 pl-5 */
+}
+
+.prose a {
+  color: var(--color-primary-600) !important;
+  text-decoration: none !important;
+  font-weight: 500;
+}
+
+.prose a:hover {
+  text-decoration: underline !important;
+  text-decoration-color: var(--color-primary-600) !important;
+}
+
+.dark .prose a {
+  color: var(--color-primary-300) !important;
+}
+
+.prose p {
+  margin-top: 0.75em !important;
+  margin-bottom: 0.75em !important;
+  line-height: 1.65 !important;
+}
+
+.prose {
+  max-width: none !important;
 }

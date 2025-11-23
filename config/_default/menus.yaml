@@ -33,7 +33,7 @@ main:
     url: /people/
     weight: 14
   - name: Publications
-    url: /publications/
+    url: /publication/
     weight: 15
   - name: Events
     url: /events

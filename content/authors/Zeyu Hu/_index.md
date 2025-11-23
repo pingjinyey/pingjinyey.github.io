@@ -1,34 +1,32 @@
 ---
 # Display name
-title: Shan Cao
+title: Zeyu Hu
 type: landing
 
 # Name pronunciation (optional)
 name_pronunciation: ''
 
 # Full name (for SEO)
-first_name: Shan
-last_name: Cao
+first_name: Zeyu
+last_name: Hu
 
-weight: 2
+weight: 3
 
 # Pronouns (optional)
-pronouns: she/her
+# pronouns: he/him
 
 # Status emoji
-status:
-  icon: 🚀
+# status:
+#   icon: 🚀
 
 # Is this the primary user of the site?
-superuser: true
+superuser: false
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 
 # Role/position/tagline
-role: Associate Professor
-
-
+role: Assistant Professor
 
 # bio: Research interests include machine learning and computational biology.
 
@@ -40,10 +38,8 @@ organizations:
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
-  # - icon: at-symbol
-  - icon: envelope
-    icon_pack: fas
-    url: 'mailto:cshan@shu.edu.cn'
+  - icon: at-symbol
+    url: 'mailto:huzeyu@shu.edu.cn'
     label: E-mail Me
   # - icon: brands/x
   #   url: https://twitter.com/AlexAIResearch
@@ -52,64 +48,57 @@ profiles:
   # - icon: brands/linkedin
   #   url: https://www.linkedin.com/in/alexjohnsonai/
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=BCHphJQAAAAJ
+    url: https://scholar.google.com/citations?user=DNgq9FoAAAAJ
   # - icon:  academicons/researchgate
   #   url: https://www.researchgate.net/profile/Zhiyuan-Jiang-4
 
 interests:
-  - Digital and SoC Design
-  - AI Acceleration
-  - Wireless Signal Processing
-  - Model Compression
+  - Wireless Communication
   
 education:
-  - area: Ph.D. in Electronic Science and Technology
-    institution:  Tsinghua University
+  - area: Postdoc in Information and Communication Engineering
+    institution: Shanghai University
     icon: ""
-    date_start: 2009-09-01
-    date_end: 2015-07-01
+    date_start: 2023-06-01
+    date_end: ""
     summary: |
-       
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com/thesis.pdf'
-  - area: B.E. in Electronic Science and Technology
-    institution: Tsinghua University
+  - area: Joint Ph.D in Department of Computer and Network Engineering
+    institution: The University of Electro-Communications
     icon: ""
-    date_start: 2005-09-01
-    date_end: 2009-07-01
+    date_start: 2022-04-01
+    date_end: 2023-04-01
     summary: |
-      GPA: 4.0/4.0
-
-      Specialized in machine learning and robotics.
-  - area: Postdoctoral Research, School of Information and Electronics
-    institution: Beijing Institute of Technology
+  - area: Ph.D. in Information and Communication Engineering
+    institution:  Beijing University of Posts and Telecommunications
     icon: ""
-    date_start: 2015-09-01
-    date_end: 2017-07-01
+    date_start: 2017-09-01
+    date_end: 2023-06-01
     summary: |
-      GPA: 3.9/4.0
-
-      Minored in Mathematics. President of AI Club.
+  - area: B.E. in Automation
+    institution: Beijing Forestry University
+    icon: ""
+    date_start: 2013-09-01
+    date_end: 2017-06-01
+    summary: |
         
 
-work:
-  - position: Senior AI Research Scientist
-    company_name: Meta AI
-    company_url: 'https://ai.meta.com/'
-    icon: ''
-    date_start: 2020-01-01
-    date_end: ''
-    summary: |2-
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models. 50+ citations in 3 years.
-  - position: AI Research Intern
-    company_name: OpenAI
-    company_url: 'https://openai.com/'
-    icon: ''
-    date_start: 2019-06-01
-    date_end: 2019-12-31
-    summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
+# work:
+#   - position: Assistant Professor  
+#     company_name: Meta AI
+#     company_url: 'https://ai.meta.com/'
+#     icon: ''
+#     date_start: 2020-01-01
+#     date_end: ''
+#     summary: |2-
+#       Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models. 50+ citations in 3 years.
+#   - position: AI Research Intern
+#     company_name: OpenAI
+#     company_url: 'https://openai.com/'
+#     icon: ''
+#     date_start: 2019-06-01
+#     date_end: 2019-12-31
+#     summary: |
+#       Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
@@ -181,9 +170,9 @@ awards:
 social:
   - icon: envelope
     icon_pack: fas
-    url: 'mailto:cshan@shu.edu.cn'
+    link: 'mailto:huzeyu@shu.edu.cn'
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=BCHphJQAAAAJ
+    url: https://scholar.google.com/citations?user=DNgq9FoAAAAJ
   # - icon: twitter
   #   icon_pack: fab
   #   link: https://twitter.com/janedoe
@@ -198,7 +187,7 @@ sections:
   - block: resume-biography-3
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
-      username: ShanCao
+      username: Zeyu Hu
       text: ''
       # Show a call-to-action button under your biography? (optional)
       # button:
@@ -210,15 +199,21 @@ sections:
         interests: ''
     design:
       # Apply a gradient background
-      css_class: hbx-bg-gradient
+      # css_class: hbx-bg-gradient
       # Avatar customization
       avatar:
-        size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
+        size: large # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: circle # Options: circle (default), square, rounded
+  - block: collection
+    content:
+      count: 0
+      title: Publications
+      text: ''
+      filters:
+        folders:
+          - publication
+        author: Zeyu Hu
+        exclude_featured: false
+    design:
+      view: citation
 ---
-
-**Shan Cao**, Ph.D., is an **Associate Professor** at the School of Communications and Information Engineering (**SCIE**), Shanghai University. She received her B.E. (2009) and Ph.D. (2015) degrees in Electronic Engineering from **Tsinghua University**, China, and completed her postdoctoral research at the School of Information and Electronics, Beijing Institute of Technology in 2017. She then joined **Shanghai University** as a faculty member in the Department of Communication Engineering, where she is currently an Associate Professor.
-
-She was selected for the **Shanghai Overseas High-Level Talent Program (2017)** and received the **Shanghai University Outstanding Young Faculty Award (2020)**. She serves as a member of the **IEEE Circuits and Systems Society COMCAS Technical Committee**, the **IEEE ISCAS Review Committee**, and has chaired special sessions for **ICTC 2022** and **IEEE SiPS 2019**.
-
-Her recent research projects span the design of low-power communication chips for 6G, AI-driven channel coding and signal processing architectures, and heterogeneous computing for wireless systems.

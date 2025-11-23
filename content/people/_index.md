@@ -29,7 +29,7 @@ design:
 sections:
   - block: team-showcase
     content:
-      title: Teachers
+      title: Faculties
       # subtitle: World-class researchers advancing science
       # text: Our diverse team brings together expertise from multiple disciplines.
       user_groups:
@@ -38,14 +38,14 @@ sections:
       sort_ascending: true
     design:
       show_role: true
-      show_organizations: false
-      show_interests: true
+      show_organizations: true
+      show_interests: false
       show_social: true
       # Section background color (CSS class)
       css_class: "bg-gray-50 dark:bg-gray-900"
   - block: team-showcase
     content:
-      title: Postdoctoral Researchers
+      title: Postdoc Researchers
       # subtitle: World-class researchers advancing science
       # text: Our diverse team brings together expertise from multiple disciplines.
       user_groups:
@@ -58,8 +58,8 @@ sections:
       #   icon: user-plus
     design:
       show_role: true
-      show_organizations: false
-      show_interests: true
+      show_organizations: true
+      show_interests: false
       show_social: true
       # Section background color (CSS class)
       css_class: "bg-gray-50 dark:bg-gray-900"
@@ -79,7 +79,7 @@ sections:
     design:
       show_role: true
       show_organizations: false
-      show_interests: true
+      show_interests: false
       show_social: true
       # Section background color (CSS class)
       css_class: "bg-gray-50 dark:bg-gray-900"

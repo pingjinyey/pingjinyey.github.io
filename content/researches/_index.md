@@ -12,9 +12,9 @@ sections:
           - researches
         featured_only: true
     design:
-      view: card
-    #   view: article-grid
+      view: date-title-summary
       columns: 1
+      show_read_time: false
 #   - block: markdown
 #     content:
 #       title: '📚 My Research'

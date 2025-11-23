@@ -28,31 +28,54 @@ sections:
               position: center
               size: cover
     design:
-      is_fullscreen: true      # 或者用 slide_height: "70vh"
       slide_height: "calc(100vh - 120px)"
       auto_play: true
       interval_ms: 4000
       css_class: ""
-  - block: cta-card
-    id: lab-intro
-    content:
-      title: "ACE-Lab"
-      text: "Advanced Communication and Computing Electronics Lab"
-    design:
-      css_class: "relative z-[60]"
-      background:
-        color: ""
-      card:
-        align: center
-        border_radius: 3xl
-        padding: xl
-        shadow: 2xl
+    blocks:
+      - block: lab-card
+        id: lab-intro
+        content:
+          title: "ACE-Lab"
+          subtitle: "Advanced Communication and Computing Electronics Lab, Shanghai University"
+          description: >
+            ACE-Lab focuses on wireless communication, intelligent computing,
+            and integrated electronic systems, bridging fundamental research
+            and real-world applications.
+  # - block: lab-card
+  #   id: lab-intro
+  #   content:
+  #     title: "ACE-Lab"
+  #     subtitle: "Advanced Communication and Computing Electronics Lab, Shanghai University"
+  #     description: >
+  #       ACE-Lab focuses on wireless communication, intelligent computing,
+  #       and integrated electronic systems, bridging fundamental research
+  #       and real-world applications.
+  # - block: cta-card
+  #   id: lab-intro
+  #   content:
+  #     title: "ACE-Lab"
+  #     text: "Advanced Communication and Computing Electronics Lab"
+  #   design:
+  #     css_class: "relative z-[30] -mt-32 max-w-4xl mx-auto"
+  #     background:
+  #       color: "white"
+  #     card:
+  #       align: center
+  #       border_radius: 2xl
+  #       padding: lg
+  #       shadow: xl
   - block: portfolio-lite
     content:
-      title: Our Projects
-      # 聚合什么类型的内容（最常见是 project）
-      page_type: projects
-      # 定义过滤按钮（name 是按钮文本，filter 对应内容的 tag）
+      offset: 0
+      count: 0
+      title: PROJECT
+      # page_type: projects
+      filters:
+        folders:
+          - researches
+        exclude_featured: false
+      tag_param: "tags"
       buttons:
         - name: All
           filter: "*"
@@ -61,93 +84,53 @@ sections:
         - name: UAV
           filter: "uav"
     design:
-      view: card        # 也可 masonry / showcase 等，视版本而定
-      columns: 3 
-  - block: markdown
-    content:
-      title: '📚 My Research'
-      subtitle: ''
-      text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
-
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
-
-        Please reach out to collaborate 😃
-    design:
-      columns: '1'
-  # - block: slider-tw
+      view: article-grid        # card / article-grid / date-title-summary
+      columns: 2 
+      fill_image: false
+      show_date: true
+      show_read_time: false
+      show_read_more: false
+  # - block: markdown
   #   content:
-  #     slides:
-  #       - title: "1"
-  #         content: "Pushing the frontier of **UAV + 5G** research."
-  #         align: center     # left | center | right
-  #         background:
-  #           color: "#0b1020"
-  #           gradient_start: "#0b1020"
-  #           gradient_end: "#14204a"
-  #           gradient_angle: 120
-  #           image:
-  #             filename: hero1.png      # 放在 assets/media/hero1.jpg
-  #             position: center
-  #             size: cover
-  #             filters:
-  #               brightness: 0.85
-  #         link:
-  #           url: /projects
-  #           text: "Explore Projects"
+  #     title: '📚 My Research'
+  #     subtitle: ''
+  #     text: |-
+  #       Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
 
-  #       - title: "2"
-  #         content: "Pushing the frontier of **UAV + 5G** research."
-  #         align: center     # left | center | right
-  #         background:
-  #           color: "#0b1020"
-  #           gradient_start: "#0b1020"
-  #           gradient_end: "#14204a"
-  #           gradient_angle: 120
-  #           image:
-  #             filename: hero2.png      # 放在 assets/media/hero1.jpg
-  #             position: center
-  #             size: cover
-  #             filters:
-  #               brightness: 0.85
-  #         link:
-  #           url: /projects
-  #           text: "Explore Projects"
+  #       I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
+
+  #       Please reach out to collaborate 😃
   #   design:
-  #     is_fullscreen: true      # 或者用 slide_height: "70vh"
-  #     # slide_height: "80vh"
-  #     auto_play: true
-  #     interval_ms: 5000
-  #     css_class: ""
-  - block: collection
-    id: researches
-    content:
-      title: Recent Publications
-      filters:
-        folders:
-          - researches
-        exclude_featured: false
-    design:
-      view: card
-      # columns: 2
-  - block: collection
-    id: papers
-    content:
-      title: Featured Publications
-      filters:
-        folders:
-          - publications
-        featured_only: true
-    design:
-      view: article-grid
-      columns: 2
+  #     columns: '1'
+  # - block: collection
+  #   id: researches
+  #   content:
+  #     title: Recent Publications
+  #     filters:
+  #       folders:
+  #         - researches
+  #       exclude_featured: false
+  #   design:
+  #     view: article-grid
+  #     columns: 2
+  # - block: collection
+  #   id: papers
+  #   content:
+  #     title: Featured Publications
+  #     filters:
+  #       folders:
+  #         - publication
+  #       featured_only: true
+  #   design:
+  #     view: article-grid
+  #     columns: 2
   - block: collection
     content:
       title: Recent Publications
       text: ''
       filters:
         folders:
-          - publications
+          - publication
         exclude_featured: false
     design:
       view: citation
