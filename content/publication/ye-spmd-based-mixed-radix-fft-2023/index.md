@@ -12,5 +12,7 @@ publication_types:
 - paper-conference
 publication: '*2023 International Conference on Future Communications and Networks
   (FCN)*'
-doi: 10.1109/fcn60432.2023.10544302
+hugoblox:
+  ids:
+    doi: 10.1109/fcn60432.2023.10544302
 ---

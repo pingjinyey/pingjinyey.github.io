@@ -12,5 +12,7 @@ publication_types:
 - paper-conference
 publication: '*2022 IEEE 4th International Conference on Artificial Intelligence Circuits
   and Systems (AICAS)*'
-doi: 10.1109/aicas54282.2022.9869904
+hugoblox:
+  ids:
+    doi: 10.1109/aicas54282.2022.9869904
 ---

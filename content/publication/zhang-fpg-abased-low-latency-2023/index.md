@@ -18,5 +18,7 @@ publication_types:
 - paper-conference
 publication: '*2023 IEEE 24th International Workshop on Signal Processing Advances
   in Wireless Communications (SPAWC)*'
-doi: 10.1109/spawc53906.2023.10304478
+hugoblox:
+  ids:
+    doi: 10.1109/spawc53906.2023.10304478
 ---

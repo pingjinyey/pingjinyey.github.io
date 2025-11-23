@@ -9,5 +9,7 @@ publishDate: '2025-11-23T16:16:50.258864Z'
 publication_types:
 - paper-conference
 publication: '*2012 IEEE Global Communications Conference (GLOBECOM)*'
-doi: 10.1109/glocom.2012.6503846
+hugoblox:
+  ids:
+    doi: 10.1109/glocom.2012.6503846
 ---

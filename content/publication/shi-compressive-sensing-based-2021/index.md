@@ -13,5 +13,7 @@ publication_types:
 - paper-conference
 publication: '*2021 13th International Conference on Wireless Communications and Signal
   Processing (WCSP)*'
-doi: 10.1109/wcsp52459.2021.9613184
+hugoblox:
+  ids:
+    doi: 10.1109/wcsp52459.2021.9613184
 ---

@@ -197,6 +197,18 @@ sections:
       avatar:
         size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: circle # Options: circle (default), square, rounded
+  - block: collection
+    content:
+      count: 0
+      title: Publications
+      text: ''
+      filters:
+        folders:
+          - publication
+        author: Zhiyuan Jiang
+        exclude_featured: false
+    design:
+      view: citation
 ---
 
 Zhiyuan Jiang is a Professor at the School of Communications and Information Engineering(SCIE), Shanghai University, and serves as the Head of the Key Laboratory of Special Optical Fibers and Optical Access Networks (ACE-LAB). He received his B.E. and Ph.D. degrees from the Department of Electronic Engineering, Tsinghua University, China, in 2010 and 2015, respectively, under the supervision of Prof. [Zhisheng Niu](https://network.ee.tsinghua.edu.cn/niulab/?p=1413).

@@ -10,5 +10,7 @@ publishDate: '2025-11-23T16:16:50.099383Z'
 publication_types:
 - article-journal
 publication: '*China Communications*'
-doi: 10.23919/jcc.2021.06.007
+hugoblox:
+  ids:
+    doi: 10.23919/jcc.2021.06.007
 ---

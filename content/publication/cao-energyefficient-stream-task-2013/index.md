@@ -13,5 +13,7 @@ publishDate: '2025-11-23T16:16:49.913120Z'
 publication_types:
 - article-journal
 publication: '*Journal of Systems Architecture*'
-doi: 10.1016/j.sysarc.2013.03.014
+hugoblox:
+  ids:
+    doi: 10.1016/j.sysarc.2013.03.014
 ---

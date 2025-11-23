@@ -12,7 +12,9 @@ publishDate: '2025-11-23T16:16:51.083100Z'
 publication_types:
 - article-journal
 publication: '*IEEE Transactions on Very Large Scale Integration (VLSI) Systems*'
-doi: 10.1109/TVLSI.2025.3602401
+hugoblox:
+  ids:
+    doi: 10.1109/TVLSI.2025.3602401
 abstract: Wireless baseband processing (WBP) serves as an ideal scenario for utilizing
   vector processing, which excels in managing data-parallel operations due to its
   parallel structure. However, conventional vector architectures face certain constraints

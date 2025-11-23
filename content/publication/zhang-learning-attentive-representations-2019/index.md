@@ -11,5 +11,7 @@ publishDate: '2025-11-23T16:16:50.908945Z'
 publication_types:
 - article-journal
 publication: '*IEEE Access*'
-doi: 10.1109/access.2019.2939495
+hugoblox:
+  ids:
+    doi: 10.1109/access.2019.2939495
 ---

@@ -195,16 +195,29 @@ sections:
       #   text: Download CV
       #   url: uploads/resume.pdf
       headings:
-        about: ''
-        education: ''
-        interests: ''
+        about: Biography
+        education: Education
+        interests: Interests
     design:
       # Apply a gradient background
-      css_class: hbx-bg-gradient
+      # css_class: hbx-bg-gradient
+      css_class: "py-8"
       # Avatar customization
       avatar:
         size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: circle # Options: circle (default), square, rounded
+  - block: collection
+    content:
+      count: 0
+      title: Publications
+      text: ''
+      filters:
+        folders:
+          - publication
+        author: Shan Cao
+        exclude_featured: false
+    design:
+      view: citation
 ---
 
 **Shan Cao**, Ph.D., is an **Associate Professor** at the School of Communications and Information Engineering (**SCIE**), Shanghai University. She received her B.E. (2009) and Ph.D. (2015) degrees in Electronic Engineering from **Tsinghua University**, China, and completed her postdoctoral research at the School of Information and Electronics, Beijing Institute of Technology in 2017. She then joined **Shanghai University** as a faculty member in the Department of Communication Engineering, where she is currently an Associate Professor.

@@ -12,5 +12,7 @@ publication_types:
 - paper-conference
 publication: '*IEEE INFOCOM 2020-IEEE Conference on Computer Communications Workshops
   (INFOCOM WKSHPS)*'
-doi: 10.1109/infocomwkshps50562.2020.9162929
+hugoblox:
+  ids:
+    doi: 10.1109/infocomwkshps50562.2020.9162929
 ---

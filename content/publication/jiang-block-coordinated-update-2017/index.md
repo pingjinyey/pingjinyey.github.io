@@ -10,5 +10,7 @@ publishDate: '2025-11-23T16:16:50.245821Z'
 publication_types:
 - paper-conference
 publication: '*2017 23rd Asia-Pacific Conference on Communications (APCC)*'
-doi: 10.23919/apcc.2017.8303973
+hugoblox:
+  ids:
+    doi: 10.23919/apcc.2017.8303973
 ---

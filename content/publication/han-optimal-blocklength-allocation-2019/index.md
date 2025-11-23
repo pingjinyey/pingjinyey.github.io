@@ -12,5 +12,7 @@ publishDate: '2025-11-23T16:16:50.131230Z'
 publication_types:
 - paper-conference
 publication: '*2019 IEEE Globecom Workshops (GC Wkshps)*'
-doi: 10.1109/gcwkshps45667.2019.9024516
+hugoblox:
+  ids:
+    doi: 10.1109/gcwkshps45667.2019.9024516
 ---

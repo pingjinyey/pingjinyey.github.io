@@ -14,5 +14,7 @@ publication_types:
 publication: '*2019 International Conference on Internet of Things (iThings) and IEEE
   Green Computing and Communications (GreenCom) and IEEE Cyber, Physical and Social
   Computing (CPSCom) and IEEE Smart Data (SmartData)*'
-doi: 10.1109/ithings/greencom/cpscom/smartdata.2019.00139
+hugoblox:
+  ids:
+    doi: 10.1109/ithings/greencom/cpscom/smartdata.2019.00139
 ---

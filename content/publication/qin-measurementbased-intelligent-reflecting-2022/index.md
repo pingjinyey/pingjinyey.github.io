@@ -13,5 +13,7 @@ publishDate: '2025-11-23T16:16:50.605892Z'
 publication_types:
 - paper-conference
 publication: '*2022 16th European Conference on Antennas and Propagation (EuCAP)*'
-doi: 10.23919/eucap53622.2022.9769425
+hugoblox:
+  ids:
+    doi: 10.23919/eucap53622.2022.9769425
 ---

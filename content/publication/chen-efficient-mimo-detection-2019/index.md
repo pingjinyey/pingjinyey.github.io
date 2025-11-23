@@ -10,5 +10,7 @@ publishDate: '2025-11-23T16:16:49.986256Z'
 publication_types:
 - paper-conference
 publication: '*2019 IEEE Wireless Communications and Networking Conference (WCNC)*'
-doi: 10.1109/wcnc.2019.8885582
+hugoblox:
+  ids:
+    doi: 10.1109/wcnc.2019.8885582
 ---

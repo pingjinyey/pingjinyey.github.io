@@ -12,5 +12,7 @@ publication_types:
 - paper-conference
 publication: '*2024 16th International Conference on Wireless Communications and Signal
   Processing (WCSP)*'
-doi: 10.1109/wcsp62071.2024.10827476
+hugoblox:
+  ids:
+    doi: 10.1109/wcsp62071.2024.10827476
 ---

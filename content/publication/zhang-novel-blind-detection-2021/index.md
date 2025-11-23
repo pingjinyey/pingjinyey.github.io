@@ -11,7 +11,9 @@ publishDate: '2025-11-23T16:16:51.164182Z'
 publication_types:
 - paper-conference
 publication: '*2021 IEEE Workshop on Signal Processing Systems (SiPS)*'
-doi: 10.1109/SiPS52927.2021.00010
+hugoblox:
+  ids:
+    doi: 10.1109/SiPS52927.2021.00010
 abstract: A novel physical sidelink control channel (PSCCH) blind detection method
   based on demodulation reference signal (DMRS) detection is proposed for sidelink
   communications in cellular vehicular-to-everything (C-V2X). In the proposed method,

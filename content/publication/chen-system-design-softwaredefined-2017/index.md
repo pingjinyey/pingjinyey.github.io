@@ -13,5 +13,7 @@ publishDate: '2025-11-23T16:16:50.027759Z'
 publication_types:
 - article-journal
 publication: '*Sci. China Inf. Sci*'
-doi: 10.1360/n112017-00040
+hugoblox:
+  ids:
+    doi: 10.1360/n112017-00040
 ---

@@ -12,5 +12,7 @@ publishDate: '2025-11-23T16:16:50.150610Z'
 publication_types:
 - article-journal
 publication: '*Computer Communications*'
-doi: 10.1016/j.comcom.2022.05.030
+hugoblox:
+  ids:
+    doi: 10.1016/j.comcom.2022.05.030
 ---

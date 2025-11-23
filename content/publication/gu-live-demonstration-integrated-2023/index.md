@@ -18,5 +18,7 @@ publication_types:
 - paper-conference
 publication: '*2023 IEEE 5th International Conference on Artificial Intelligence Circuits
   and Systems (AICAS)*'
-doi: 10.1109/aicas57966.2023.10168600
+hugoblox:
+  ids:
+    doi: 10.1109/aicas57966.2023.10168600
 ---

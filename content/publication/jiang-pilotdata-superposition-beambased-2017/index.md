@@ -11,5 +11,7 @@ publishDate: '2025-11-23T16:16:51.061780Z'
 publication_types:
 - article-journal
 publication: '*IEEE Communications Letters*'
-doi: 10.1109/lcomm.2017.2678465
+hugoblox:
+  ids:
+    doi: 10.1109/lcomm.2017.2678465
 ---

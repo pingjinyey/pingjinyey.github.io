@@ -10,5 +10,7 @@ publishDate: '2025-11-23T16:16:50.719484Z'
 publication_types:
 - article-journal
 publication: '*Digital Signal Processing*'
-doi: 10.1016/j.dsp.2017.06.013
+hugoblox:
+  ids:
+    doi: 10.1016/j.dsp.2017.06.013
 ---

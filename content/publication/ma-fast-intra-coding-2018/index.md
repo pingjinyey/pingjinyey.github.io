@@ -11,5 +11,7 @@ publishDate: '2025-11-23T16:16:50.533570Z'
 publication_types:
 - article-journal
 publication: '*Multimedia Tools and Applications*'
-doi: 10.1007/s11042-017-5074-2
+hugoblox:
+  ids:
+    doi: 10.1007/s11042-017-5074-2
 ---

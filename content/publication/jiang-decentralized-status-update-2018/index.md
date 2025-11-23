@@ -12,5 +12,7 @@ publishDate: '2025-11-23T16:16:50.265338Z'
 publication_types:
 - paper-conference
 publication: '*Isit*'
-doi: 10.1109/isit.2018.8437625
+hugoblox:
+  ids:
+    doi: 10.1109/isit.2018.8437625
 ---

@@ -10,5 +10,7 @@ publishDate: '2025-11-23T16:16:50.047610Z'
 publication_types:
 - paper-conference
 publication: '*GLOBECOM 2017-2017 IEEE Global Communications Conference*'
-doi: 10.1109/glocom.2017.8254888
+hugoblox:
+  ids:
+    doi: 10.1109/glocom.2017.8254888
 ---

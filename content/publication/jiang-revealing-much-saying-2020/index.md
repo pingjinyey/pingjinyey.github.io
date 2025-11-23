@@ -13,7 +13,9 @@ publishDate: '2025-11-23T16:16:51.074943Z'
 publication_types:
 - paper-conference
 publication: '*IEEE INFOCOM 2020-IEEE Conference on Computer Communications*'
-doi: 10.1109/INFOCOM41043.2020.9155225
+hugoblox:
+  ids:
+    doi: 10.1109/INFOCOM41043.2020.9155225
 abstract: 'Wireless communications for status update are becoming increasingly important,
   especially for machine-type control applications. Existing work has been mainly
   focused on Age of Information (AoI) optimizations. In this paper, a status-aware

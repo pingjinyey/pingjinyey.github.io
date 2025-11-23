@@ -16,5 +16,7 @@ publishDate: '2025-11-23T16:16:50.176738Z'
 publication_types:
 - article-journal
 publication: '*Nano Research*'
-doi: 10.1007/s12274-015-0776-0
+hugoblox:
+  ids:
+    doi: 10.1007/s12274-015-0776-0
 ---

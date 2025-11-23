@@ -13,5 +13,7 @@ publication_types:
 - paper-conference
 publication: '*Proceedings of the 2020 4th International Conference on Digital Signal
   Processing*'
-doi: 10.1145/3408127.3408187
+hugoblox:
+  ids:
+    doi: 10.1145/3408127.3408187
 ---

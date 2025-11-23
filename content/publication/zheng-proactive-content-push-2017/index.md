@@ -11,5 +11,7 @@ publishDate: '2025-11-23T16:16:50.962816Z'
 publication_types:
 - paper-conference
 publication: '*2017 IEEE 85th Vehicular Technology Conference (VTC Spring)*'
-doi: 10.1109/vtcspring.2017.8108470
+hugoblox:
+  ids:
+    doi: 10.1109/vtcspring.2017.8108470
 ---

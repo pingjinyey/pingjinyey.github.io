@@ -13,5 +13,7 @@ publishDate: '2025-11-23T16:16:51.028568Z'
 publication_types:
 - paper-conference
 publication: '*2025 IEEE International Symposium on Circuits and Systems (ISCAS)*'
-doi: 10.1109/iscas56072.2025.11043447
+hugoblox:
+  ids:
+    doi: 10.1109/iscas56072.2025.11043447
 ---

@@ -10,5 +10,7 @@ publication_types:
 - paper-conference
 publication: '*2017 IEEE International Conference on Communications Workshops (ICC
   Workshops)*'
-doi: 10.1109/iccw.2017.7962824
+hugoblox:
+  ids:
+    doi: 10.1109/iccw.2017.7962824
 ---

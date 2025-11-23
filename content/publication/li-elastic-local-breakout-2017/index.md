@@ -13,5 +13,7 @@ publication_types:
 - paper-conference
 publication: '*2017 9th International Conference on Wireless Communications and Signal
   Processing (WCSP)*'
-doi: 10.1109/wcsp.2017.8170977
+hugoblox:
+  ids:
+    doi: 10.1109/wcsp.2017.8170977
 ---

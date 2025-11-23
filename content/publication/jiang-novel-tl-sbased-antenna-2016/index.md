@@ -8,5 +8,7 @@ publishDate: '2025-11-23T16:16:51.055379Z'
 publication_types:
 - article-journal
 publication: '*IEEE Communications Letters*'
-doi: 10.1109/lcomm.2016.2586040
+hugoblox:
+  ids:
+    doi: 10.1109/lcomm.2016.2586040
 ---

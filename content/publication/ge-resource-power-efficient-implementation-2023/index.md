@@ -12,5 +12,7 @@ publishDate: '2025-11-23T16:16:51.035238Z'
 publication_types:
 - chapter
 publication: '*IoT as a Service*'
-doi: 10.1007/978-3-031-37139-4_13
+hugoblox:
+  ids:
+    doi: 10.1007/978-3-031-37139-4_13
 ---

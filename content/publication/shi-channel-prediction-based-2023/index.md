@@ -10,5 +10,7 @@ publishDate: '2025-11-23T16:16:50.632356Z'
 publication_types:
 - article-journal
 publication: '*Journal of Communications and Networks*'
-doi: 10.23919/jcn.2023.000010
+hugoblox:
+  ids:
+    doi: 10.23919/jcn.2023.000010
 ---

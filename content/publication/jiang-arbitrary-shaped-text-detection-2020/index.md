@@ -10,7 +10,9 @@ publishDate: '2025-11-23T16:16:50.237983Z'
 publication_types:
 - article-journal
 publication: '*IEEE Access*'
-doi: 10.1109/ACCESS.2020.2999069
+hugoblox:
+  ids:
+    doi: 10.1109/ACCESS.2020.2999069
 abstract: Text detection/localization, as an important task in computer vision, has
   witnessed substantialadvancements in methodology and performance with convolutional
   neural networks. However, the vastmajority of popular methods use rectangles or

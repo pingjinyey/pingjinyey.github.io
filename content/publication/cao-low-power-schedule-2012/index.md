@@ -14,5 +14,7 @@ publication_types:
 publication: '*2012 IEEE 14th International Conference on High Performance Computing
   and Communication & 2012 IEEE 9th International Conference on Embedded Software
   and Systems*'
-doi: 10.1109/hpcc.2012.198
+hugoblox:
+  ids:
+    doi: 10.1109/hpcc.2012.198
 ---

@@ -11,5 +11,7 @@ publishDate: '2025-11-23T16:16:50.482268Z'
 publication_types:
 - paper-conference
 publication: '*2019 IEEE Asia Pacific Conference on Circuits and Systems (APCCAS)*'
-doi: 10.1109/apccas47518.2019.8953182
+hugoblox:
+  ids:
+    doi: 10.1109/apccas47518.2019.8953182
 ---

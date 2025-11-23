@@ -14,5 +14,7 @@ publication_types:
 - paper-conference
 publication: '*2019 15th International Wireless Communications & Mobile Computing
   Conference (IWCMC)*'
-doi: 10.1109/iwcmc.2019.8766577
+hugoblox:
+  ids:
+    doi: 10.1109/iwcmc.2019.8766577
 ---

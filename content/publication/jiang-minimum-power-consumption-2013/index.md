@@ -9,5 +9,7 @@ publishDate: '2025-11-23T16:16:50.357428Z'
 publication_types:
 - paper-conference
 publication: '*2013 19th Asia-Pacific Conference on Communications (APCC)*'
-doi: 10.1109/apcc.2013.6765953
+hugoblox:
+  ids:
+    doi: 10.1109/apcc.2013.6765953
 ---

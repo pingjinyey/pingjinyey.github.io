@@ -10,5 +10,7 @@ publishDate: '2025-11-23T16:16:50.429920Z'
 publication_types:
 - article-journal
 publication: '*Materials Chemistry and Physics*'
-doi: 10.1016/j.matchemphys.2012.03.065
+hugoblox:
+  ids:
+    doi: 10.1016/j.matchemphys.2012.03.065
 ---

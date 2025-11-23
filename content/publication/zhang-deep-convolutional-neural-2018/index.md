@@ -10,5 +10,7 @@ publishDate: '2025-11-23T16:16:50.869479Z'
 publication_types:
 - chapter
 publication: '*Pattern Recognition and Computer Vision*'
-doi: 10.1007/978-3-030-03335-4_31
+hugoblox:
+  ids:
+    doi: 10.1007/978-3-030-03335-4_31
 ---

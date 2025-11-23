@@ -13,5 +13,7 @@ publishDate: '2025-11-23T16:16:50.658446Z'
 publication_types:
 - article-journal
 publication: '*IEEE Transactions on vehicular technology*'
-doi: 10.1109/tvt.2019.2895593
+hugoblox:
+  ids:
+    doi: 10.1109/tvt.2019.2895593
 ---

@@ -13,5 +13,7 @@ publishDate: '2025-11-23T16:16:50.849573Z'
 publication_types:
 - paper-conference
 publication: '*2024 10th International Conference on Computer and Communications (ICCC)*'
-doi: 10.1109/iccc62609.2024.10942196
+hugoblox:
+  ids:
+    doi: 10.1109/iccc62609.2024.10942196
 ---

@@ -12,5 +12,7 @@ publication_types:
 - paper-conference
 publication: '*2020 IEEE International Conference on Communications Workshops (ICC
   Workshops)*'
-doi: 10.1109/iccworkshops49005.2020.9145084
+hugoblox:
+  ids:
+    doi: 10.1109/iccworkshops49005.2020.9145084
 ---

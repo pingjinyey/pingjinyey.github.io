@@ -10,5 +10,7 @@ publishDate: '2025-11-23T16:16:49.890508Z'
 publication_types:
 - article-journal
 publication: '*IEEE Transactions on Very Large Scale Integration (VLSI) Systems*'
-doi: 10.1109/tvlsi.2013.2271794
+hugoblox:
+  ids:
+    doi: 10.1109/tvlsi.2013.2271794
 ---

@@ -194,15 +194,16 @@ sections:
       #   text: Download CV
       #   url: uploads/resume.pdf
       headings:
-        about: ''
-        education: ''
-        interests: ''
+        about: Biography
+        education: Education
+        interests: Interests
     design:
       # Apply a gradient background
       # css_class: hbx-bg-gradient
+      css_class: "py-8"
       # Avatar customization
       avatar:
-        size: large # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
+        size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: circle # Options: circle (default), square, rounded
   - block: collection
     content:

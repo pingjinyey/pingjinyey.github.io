@@ -13,7 +13,9 @@ publishDate: '2025-11-23T16:16:50.704763Z'
 publication_types:
 - article-journal
 publication: '*IEEE Transactions on Communications*'
-doi: 10.1109/TCOMM.2024.3487310
+hugoblox:
+  ids:
+    doi: 10.1109/TCOMM.2024.3487310
 abstract: Gaining accurate channel state information (CSI) through a low-cost scheme
   has always been difficult in wireless communication systems. One of the current
   research directions is to obtain the CSI from the channel knowledge map (CKM) based

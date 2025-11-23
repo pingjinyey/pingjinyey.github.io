@@ -12,5 +12,7 @@ publishDate: '2025-11-23T16:16:50.876010Z'
 publication_types:
 - article-journal
 publication: '*IEEE Transactions on Green Communications and Networking*'
-doi: 10.1109/tgcn.2019.2904609
+hugoblox:
+  ids:
+    doi: 10.1109/tgcn.2019.2904609
 ---

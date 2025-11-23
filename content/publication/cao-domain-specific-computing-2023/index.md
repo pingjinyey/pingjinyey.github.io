@@ -13,5 +13,7 @@ publication_types:
 - paper-conference
 publication: '*Proceedings of the ACM Turing Award Celebration Conference - China
   2023*'
-doi: 10.1145/3603165.3607377
+hugoblox:
+  ids:
+    doi: 10.1145/3603165.3607377
 ---

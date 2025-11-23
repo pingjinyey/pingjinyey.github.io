@@ -12,5 +12,7 @@ publishDate: '2025-11-23T16:16:49.899772Z'
 publication_types:
 - paper-conference
 publication: '*International Symposium on Quality Electronic Design (ISQED)*'
-doi: 10.1109/isqed.2013.6523599
+hugoblox:
+  ids:
+    doi: 10.1109/isqed.2013.6523599
 ---

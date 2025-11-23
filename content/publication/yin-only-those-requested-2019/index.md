@@ -14,5 +14,7 @@ publishDate: '2025-11-23T16:16:50.836431Z'
 publication_types:
 - paper-conference
 publication: '*IEEE INFOCOM 2019-IEEE Conference on Computer Communications*'
-doi: 10.1109/infocom.2019.8737508
+hugoblox:
+  ids:
+    doi: 10.1109/infocom.2019.8737508
 ---

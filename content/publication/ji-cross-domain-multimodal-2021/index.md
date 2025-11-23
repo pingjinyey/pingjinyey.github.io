@@ -11,5 +11,7 @@ publishDate: '2025-11-23T16:16:50.463045Z'
 publication_types:
 - paper-conference
 publication: '*2020 25th International Conference on Pattern Recognition (ICPR)*'
-doi: 10.1109/icpr48806.2021.9413107
+hugoblox:
+  ids:
+    doi: 10.1109/icpr48806.2021.9413107
 ---

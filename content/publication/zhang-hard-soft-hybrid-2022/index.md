@@ -12,5 +12,7 @@ publishDate: '2025-11-23T16:16:50.902356Z'
 publication_types:
 - paper-conference
 publication: '*2022 IEEE 95th Vehicular Technology Conference:(VTC2022-Spring)*'
-doi: 10.1109/vtc2022-spring54318.2022.9860789
+hugoblox:
+  ids:
+    doi: 10.1109/vtc2022-spring54318.2022.9860789
 ---

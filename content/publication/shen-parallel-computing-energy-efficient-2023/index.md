@@ -12,5 +12,7 @@ publishDate: '2025-11-23T16:16:51.124078Z'
 publication_types:
 - paper-conference
 publication: '*GLOBECOM 2023-2023 IEEE Global Communications Conference*'
-doi: 10.1109/globecom54140.2023.10437977
+hugoblox:
+  ids:
+    doi: 10.1109/globecom54140.2023.10437977
 ---

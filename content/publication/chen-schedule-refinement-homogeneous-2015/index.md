@@ -12,5 +12,7 @@ publishDate: '2025-11-23T16:16:50.021092Z'
 publication_types:
 - article-journal
 publication: '*Frontiers of Information Technology & Electronic Engineering*'
-doi: 10.1631/FITEE.1500035
+hugoblox:
+  ids:
+    doi: 10.1631/FITEE.1500035
 ---

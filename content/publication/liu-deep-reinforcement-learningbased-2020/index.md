@@ -11,5 +11,7 @@ publishDate: '2025-11-23T16:16:50.507855Z'
 publication_types:
 - paper-conference
 publication: '*ICC 2020-2020 IEEE International Conference on Communications (ICC)*'
-doi: 10.1109/icc40277.2020.9148759
+hugoblox:
+  ids:
+    doi: 10.1109/icc40277.2020.9148759
 ---

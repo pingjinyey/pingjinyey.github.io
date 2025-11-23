@@ -9,5 +9,7 @@ publishDate: '2025-11-23T16:16:50.298291Z'
 publication_types:
 - paper-conference
 publication: '*ICC 2019-2019 IEEE International Conference on Communications (ICC)*'
-doi: 10.1109/icc.2019.8761488
+hugoblox:
+  ids:
+    doi: 10.1109/icc.2019.8761488
 ---

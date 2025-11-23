@@ -13,5 +13,7 @@ publishDate: '2025-11-23T16:16:51.097991Z'
 publication_types:
 - paper-conference
 publication: '*2022 IEEE Workshop on Signal Processing Systems (SiPS)*'
-doi: 10.1109/sips55645.2022.9919242
+hugoblox:
+  ids:
+    doi: 10.1109/sips55645.2022.9919242
 ---

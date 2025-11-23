@@ -12,5 +12,7 @@ publishDate: '2025-11-23T16:16:50.803716Z'
 publication_types:
 - paper-conference
 publication: '*2022 IEEE/CIC International Conference on Communications in China (ICCC)*'
-doi: 10.1109/iccc55456.2022.9880799
+hugoblox:
+  ids:
+    doi: 10.1109/iccc55456.2022.9880799
 ---

@@ -16,5 +16,7 @@ publishDate: '2025-11-23T16:16:51.048691Z'
 publication_types:
 - paper-conference
 publication: '*Proceedings of the 30th Asia and South Pacific Design Automation Conference*'
-doi: 10.1145/3658617.3697558
+hugoblox:
+  ids:
+    doi: 10.1145/3658617.3697558
 ---

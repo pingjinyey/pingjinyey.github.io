@@ -9,5 +9,7 @@ publishDate: '2025-11-23T16:16:50.285272Z'
 publication_types:
 - paper-conference
 publication: '*2015 IEEE Wireless Communications and Networking Conference (WCNC)*'
-doi: 10.1109/wcnc.2015.7127503
+hugoblox:
+  ids:
+    doi: 10.1109/wcnc.2015.7127503
 ---

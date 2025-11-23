@@ -13,6 +13,8 @@ publication_types:
 publication: '*Wireless Communications and Mobile Computing*'
 hugoblox:
   ids:
+    hugoblox:
+  ids:
     doi: 10.1155/2022/6214080
 abstract: Nongeostationary orbit (NGSO) satellite-based Internet is an important part
   of the future network. One single NGSO satellite has the characteristics of high-speed

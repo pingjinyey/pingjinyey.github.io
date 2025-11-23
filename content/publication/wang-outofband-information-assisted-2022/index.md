@@ -11,5 +11,7 @@ publishDate: '2025-11-23T16:16:50.758230Z'
 publication_types:
 - paper-conference
 publication: '*2022 IEEE Wireless Communications and Networking Conference (WCNC)*'
-doi: 10.1109/wcnc51071.2022.9771562
+hugoblox:
+  ids:
+    doi: 10.1109/wcnc51071.2022.9771562
 ---

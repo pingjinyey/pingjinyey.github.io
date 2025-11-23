@@ -9,5 +9,7 @@ publication_types:
 - paper-conference
 publication: '*2016 International Conference on Integrated Circuits and Microsystems
   (ICICM)*'
-doi: 10.1109/icam.2016.7813585
+hugoblox:
+  ids:
+    doi: 10.1109/icam.2016.7813585
 ---

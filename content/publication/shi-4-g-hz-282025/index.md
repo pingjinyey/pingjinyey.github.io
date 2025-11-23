@@ -13,5 +13,7 @@ publishDate: '2025-11-23T16:16:50.619020Z'
 publication_types:
 - article-journal
 publication: '*IEEE Antennas and Wireless Propagation Letters*'
-doi: 10.1109/lawp.2025.3563264
+hugoblox:
+  ids:
+    doi: 10.1109/lawp.2025.3563264
 ---

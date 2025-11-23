@@ -11,5 +11,7 @@ publication_types:
 - paper-conference
 publication: '*2021 IEEE 3rd International Conference on Artificial Intelligence Circuits
   and Systems (AICAS)*'
-doi: 10.1109/aicas51828.2021.9458462
+hugoblox:
+  ids:
+    doi: 10.1109/aicas51828.2021.9458462
 ---

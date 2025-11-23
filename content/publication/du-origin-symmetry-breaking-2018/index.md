@@ -14,5 +14,7 @@ publishDate: '2025-11-23T16:16:50.073430Z'
 publication_types:
 - article-journal
 publication: '*Science Bulletin*'
-doi: 10.1016/j.scib.2018.05.035
+hugoblox:
+  ids:
+    doi: 10.1016/j.scib.2018.05.035
 ---

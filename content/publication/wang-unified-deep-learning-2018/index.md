@@ -12,5 +12,7 @@ publication_types:
 - paper-conference
 publication: '*2018 10th International Conference on Wireless Communications and Signal
   Processing (WCSP)*'
-doi: 10.1109/wcsp.2018.8555891
+hugoblox:
+  ids:
+    doi: 10.1109/wcsp.2018.8555891
 ---

@@ -15,5 +15,7 @@ publication_types:
 - article-journal
 publication: '*IEEE Transactions on Computer-Aided Design of Integrated Circuits and
   Systems*'
-doi: 10.1109/tcad.2025.3564561
+hugoblox:
+  ids:
+    doi: 10.1109/tcad.2025.3564561
 ---

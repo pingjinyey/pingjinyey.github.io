@@ -15,5 +15,7 @@ publication_types:
 - paper-conference
 publication: '*Proceedings of the 26th ACM SIGPLAN/SIGBED International Conference
   on Languages, Compilers, and Tools for Embedded Systems*'
-doi: 10.1145/3735452.3735526
+hugoblox:
+  ids:
+    doi: 10.1145/3735452.3735526
 ---

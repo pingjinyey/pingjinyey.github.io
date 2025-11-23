@@ -9,5 +9,7 @@ publishDate: '2025-11-23T16:16:50.157253Z'
 publication_types:
 - article-journal
 publication: '*IEEE Internet of Things Journal*'
-doi: 10.1109/jiot.2025.3541595
+hugoblox:
+  ids:
+    doi: 10.1109/jiot.2025.3541595
 ---

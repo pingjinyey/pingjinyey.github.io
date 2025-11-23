@@ -10,5 +10,7 @@ publication_types:
 - paper-conference
 publication: '*2nd Annual International Conference on Electronics, Electrical Engineering
   and Information Science (EEEIS 2016)*'
-doi: 10.2991/eeeis-16.2017.39
+hugoblox:
+  ids:
+    doi: 10.2991/eeeis-16.2017.39
 ---

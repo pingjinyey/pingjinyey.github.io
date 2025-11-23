@@ -10,5 +10,7 @@ publishDate: '2025-11-23T16:16:49.906415Z'
 publication_types:
 - paper-conference
 publication: '*2011 9th IEEE International Conference on ASIC*'
-doi: 10.1109/asicon.2011.6157301
+hugoblox:
+  ids:
+    doi: 10.1109/asicon.2011.6157301
 ---

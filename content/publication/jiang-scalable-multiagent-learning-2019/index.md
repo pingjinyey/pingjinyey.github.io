@@ -13,5 +13,7 @@ publication_types:
 - paper-conference
 publication: '*2019 IEEE 20th International Workshop on Signal Processing Advances
   in Wireless Communications (SPAWC)*'
-doi: 10.1109/spawc.2019.8815511
+hugoblox:
+  ids:
+    doi: 10.1109/spawc.2019.8815511
 ---

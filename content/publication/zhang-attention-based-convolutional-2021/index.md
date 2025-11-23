@@ -12,5 +12,7 @@ publishDate: '2025-11-23T16:16:50.856191Z'
 publication_types:
 - article-journal
 publication: '*Neurocomputing*'
-doi: 10.1016/j.neucom.2020.08.069
+hugoblox:
+  ids:
+    doi: 10.1016/j.neucom.2020.08.069
 ---

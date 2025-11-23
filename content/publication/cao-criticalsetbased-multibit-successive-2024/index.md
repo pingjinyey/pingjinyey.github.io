@@ -11,5 +11,7 @@ publishDate: '2025-11-23T16:16:51.002142Z'
 publication_types:
 - article-journal
 publication: '*IEEE Transactions on Circuits and Systems I: Regular Papers*'
-doi: 10.1109/tcsi.2024.3485634
+hugoblox:
+  ids:
+    doi: 10.1109/tcsi.2024.3485634
 ---

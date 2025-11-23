@@ -12,5 +12,7 @@ publication_types:
 - paper-conference
 publication: '*2017 IEEE International Conference on Signal Processing, Communications
   and Computing (ICSPCC)*'
-doi: 10.1109/icspcc.2017.8242476
+hugoblox:
+  ids:
+    doi: 10.1109/icspcc.2017.8242476
 ---

@@ -11,7 +11,9 @@ publishDate: '2025-11-23T16:16:50.915556Z'
 publication_types:
 - manuscript
 publication: '*arXiv*'
-doi: 10.48550/arXiv.2007.07241
+hugoblox:
+  ids:
+    doi: 10.48550/arXiv.2007.07241
 abstract: Environmental sound classification (ESC) is a challenging problem due to
   the complexity of sounds. The classification performance is heavily dependent on
   the effectiveness of representative features extracted from the environmental sounds.

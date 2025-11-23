@@ -12,5 +12,7 @@ publishDate: '2025-11-23T16:16:50.211584Z'
 publication_types:
 - article-journal
 publication: '*IEEE Wireless Communications*'
-doi: 10.1109/mwc.001.1900279
+hugoblox:
+  ids:
+    doi: 10.1109/mwc.001.1900279
 ---

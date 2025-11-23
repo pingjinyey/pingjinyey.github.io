@@ -12,5 +12,7 @@ publishDate: '2025-11-23T16:16:50.416672Z'
 publication_types:
 - article-journal
 publication: '*IEEE Transactions on Cognitive Communications and Networking*'
-doi: 10.1109/tccn.2021.3068740
+hugoblox:
+  ids:
+    doi: 10.1109/tccn.2021.3068740
 ---

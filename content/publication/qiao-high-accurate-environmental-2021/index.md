@@ -11,5 +11,7 @@ publishDate: '2025-11-23T16:16:50.592751Z'
 publication_types:
 - article-journal
 publication: '*Sensors*'
-doi: 10.3390/s21165500
+hugoblox:
+  ids:
+    doi: 10.3390/s21165500
 ---

@@ -13,5 +13,7 @@ publishDate: '2025-11-23T16:16:49.972925Z'
 publication_types:
 - article-journal
 publication: '*IEEE Embedded Systems Letters*'
-doi: 10.1109/les.2025.3595586
+hugoblox:
+  ids:
+    doi: 10.1109/les.2025.3595586
 ---

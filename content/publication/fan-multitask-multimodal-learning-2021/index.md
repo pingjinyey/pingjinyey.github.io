@@ -10,5 +10,7 @@ publishDate: '2025-11-23T16:16:50.080015Z'
 publication_types:
 - article-journal
 publication: '*IEEE Sensors Journal*'
-doi: 10.1109/jsen.2021.3123443
+hugoblox:
+  ids:
+    doi: 10.1109/jsen.2021.3123443
 ---
