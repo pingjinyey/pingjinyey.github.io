@@ -1,4 +1,4 @@
-{{/* Hugo Blox: Team Showcase */}}
+{{/* Hugo Blox: Team Showcase - Fixed & Optimized (With Default Avatar) */}}
 
 {{ $page := .wcPage }}
 {{ $block := .wcBlock }}
@@ -12,29 +12,27 @@
 {{ $subtitle := $block.content.subtitle | emojify | $page.RenderString }}
 {{ $text := $block.content.text | emojify | $page.RenderString }}
 
-{{/* 1. 收集每个 user_group 的成员列表并排序 */}}
+{{/* 1. 收集成员并排序 */}}
 {{ $groups := slice }}
 {{ range $block.content.user_groups }}
   {{ $group_name := . }}
   {{ $query := where (where site.Pages "Section" "authors") ".Params.user_groups" "intersect" (slice .) }}
-
   {{ $sort_by := $block.content.sort_by | default "Params.last_name" }}
   {{ $sort_by = partial "functions/get_sort_by_parameter" $sort_by }}
   {{ $sort_ascending := $block.content.sort_ascending | default true }}
   {{ $sort_order := cond $sort_ascending "asc" "desc" }}
   {{ $query = sort $query $sort_by $sort_order }}
-
   {{ $groups = $groups | append (dict "name" $group_name "people" $query) }}
 {{ end }}
 
-{{/* 2. 汇总总人数，用于决定布局 */}}
+{{/* 2. 汇总人数 */}}
 {{ $people := slice }}
 {{ range $g := $groups }}
   {{ $people = $people | append $g.people }}
 {{ end }}
 {{ $n := len $people }}
 
-{{/* 3. 根据人数生成 grid 列数（>=4 人时使用常规 4 列布局） */}}
+{{/* 3. 布局逻辑 */}}
 {{ $gridCols := "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" }}
 {{ if lt $n 4 }}
   {{ if eq $n 1 }}
@@ -46,14 +44,15 @@
   {{ end }}
 {{ end }}
 
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
 
-  {{/* Section Header */}}
-  <div class="flex flex-col items-center text-center mb-12">
+  {{/* Header */}}
+  <div class="flex flex-col items-center text-center mb-16">
     {{ with $title }}
-      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white tracking-tight">
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white tracking-tight uppercase">
         {{ . }}
       </h2>
+      <div class="h-1 w-16 bg-primary-700 mx-auto mt-4 rounded-full"></div>
     {{ end }}
 
     {{ with $subtitle }}
@@ -69,107 +68,120 @@
     {{ end }}
   </div>
 
-  {{/* 4. 渲染成员：1 人用 flex 居中，多人用 grid */}}
+  {{/* 4. 渲染成员列表 */}}
 
   {{ if eq $n 1 }}
-
-    {{/* 只有 1 个人：整块 flex 居中 */}}
+    {{/* 单人布局 */}}
     <div class="flex justify-center">
       {{ range $g := $groups }}
         {{ range $person := $g.people }}
-          {{ $avatar := ($person.Resources.ByType "image").GetMatch "*avatar*" }}
-          {{ $link := "" }}
-          {{ with site.GetPage (printf "/authors/%s" (path.Base $person.File.Dir)) }}
-            {{ $link = .RelPermalink }}
-          {{ end }}
+           
+           {{/* --- 卡片代码开始 --- */}}
+           {{ $avatar := ($person.Resources.ByType "image").GetMatch "*avatar*" }}
+           {{ $link := "" }}
+           {{ with site.GetPage (printf "/authors/%s" (path.Base $person.File.Dir)) }}
+             {{ $link = .RelPermalink }}
+           {{ end }}
 
-          <div class="group relative w-full md:w-auto mx-auto" style="max-width: 300px;">
-            <div class="relative overflow-hidden rounded-2xl bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+           <div class="group relative w-full mx-auto flex flex-col h-full" style="max-width: 340px;">
+             <div class="relative overflow-hidden rounded-2xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col h-full">
 
-              {{ if $avatar }}
-                <a href="{{ $link }}" class="block relative h-64 w-64 mx-auto overflow-hidden rounded-full">
-                  {{ $image := $avatar.Fill "400x400 Center webp" }}
-                  <img src="{{ $image.RelPermalink }}"
-                       alt="{{ $person.Title }}"
-                       width="{{ $image.Width }}"
-                       height="{{ $image.Height }}"
-                       loading="lazy"
-                       class="w-full h-full object-cover rounded-full transition-transform duration-300 group-hover:scale-110">
-                </a>
-              {{ end }}
+               {{/* 头像区域：带默认占位符逻辑 */}}
+               {{ if $avatar }}
+                 <a href="{{ $link }}" class="block relative h-48 w-48 mx-auto mt-8 overflow-hidden rounded-full ring-4 ring-gray-50 dark:ring-gray-700">
+                   {{ $image := $avatar.Fill "400x400 Center webp" }}
+                   <img src="{{ $image.RelPermalink }}"
+                        alt="{{ $person.Title }}"
+                        width="{{ $image.Width }}"
+                        height="{{ $image.Height }}"
+                        loading="lazy"
+                        class="w-full h-full object-cover rounded-full transition-transform duration-500 group-hover:scale-110">
+                 </a>
+               {{ else }}
+                 {{/* 默认头像占位符 */}}
+                 <a href="{{ $link }}" class="block relative h-48 w-48 mx-auto mt-8 overflow-hidden rounded-full ring-4 ring-gray-50 dark:ring-gray-700 bg-gray-100 dark:bg-gray-700 flex items-center justify-center text-gray-400">
+                    <svg class="w-24 h-24 transition-transform duration-500 group-hover:scale-110" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                 </a>
+               {{ end }}
 
-              <div class="p-6">
-                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1">
-                  <a href="{{ $link }}" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
-                    {{ $person.Title }}
-                  </a>
-                </h3>
+               <div class="p-6 flex-grow flex flex-col items-center text-center">
+                 <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                   <a href="{{ $link }}" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                     {{ $person.Title }}
+                   </a>
+                 </h3>
 
-                {{ if $show_role }}
-                  <div class="text-gray-600 dark:text-gray-400 mb-3">
-                    {{ with $person.Params.role }}
-                      <p class="font-medium">{{ . }}</p>
-                    {{ end }}
-                    {{ if and $show_organizations $person.Params.organizations }}
-                      {{ range first 1 $person.Params.organizations }}
-                        <p class="text-sm mt-1">{{ .name }}</p>
-                      {{ end }}
-                    {{ end }}
-                  </div>
-                {{ end }}
+                 {{ if $show_role }}
+                   <div class="text-gray-600 dark:text-gray-300 mb-4 w-full">
+                     {{ with $person.Params.role }}
+                       <p class="font-semibold text-sm uppercase tracking-wide text-primary-700 dark:text-primary-400 mb-2">{{ . }}</p>
+                     {{ end }}
+                     {{ if and $show_organizations $person.Params.organizations }}
+                       {{ range first 1 $person.Params.organizations }}
+                         <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed px-2">{{ .name }}</p>
+                       {{ end }}
+                     {{ end }}
+                   </div>
+                 {{ end }}
 
-                {{ with $person.Params.bio }}
-                  <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">
-                    {{ . }}
-                  </p>
-                {{ end }}
+                 {{ with $person.Params.bio }}
+                   <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">
+                     {{ . }}
+                   </p>
+                 {{ end }}
 
-                {{ if and $show_interests $person.Params.interests }}
-                  <div class="mb-4">
-                    <div class="flex flex-wrap gap-1">
-                      {{ range first 3 $person.Params.interests }}
-                        <span class="inline-block bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
-                          {{ . }}
-                        </span>
-                      {{ end }}
-                    </div>
-                  </div>
-                {{ end }}
+                 {{ if and $show_interests $person.Params.interests }}
+                   <div class="mb-4">
+                     <div class="flex flex-wrap gap-1 justify-center">
+                       {{ range first 3 $person.Params.interests }}
+                         <span class="inline-block bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
+                           {{ . }}
+                         </span>
+                       {{ end }}
+                     </div>
+                   </div>
+                 {{ end }}
 
-                {{ if $show_social }}
-                  <div class="flex gap-3 pt-2 border-t border-gray-200 dark:border-gray-700">
-                    {{ range $person.Params.social }}
-                      {{ $slink := .url | default .link }}
-                      {{ $scheme := (urls.Parse $slink).Scheme }}
-                      {{ $target := "" }}
-                      {{ if not $scheme }}
-                        {{ $slink = (.url | default .link) | relLangURL }}
-                        {{ if eq (path.Ext $slink) ".pdf" }}{{ $target = "target=\"_blank\" rel=\"noopener\"" }}{{ end }}
-                      {{ else if in (slice "http" "https") $scheme }}
-                        {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
-                      {{ end }}
+                 <div class="flex-grow"></div>
 
-                      <a href="{{ $slink | safeURL }}"
-                         {{ $target | safeHTMLAttr }}
-                         aria-label="{{ .icon }}"
-                         {{ with .label }} title="{{ . }}"{{ end }}
-                         class="text-gray-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400 transition-colors">
-                        {{ partial "functions/get_icon" (dict "name" .icon "attributes" "class=\"w-5 h-5\"") }}
-                      </a>
-                    {{ end }}
-                  </div>
-                {{ end }}
-              </div>
-            </div>
-          </div>
+                 {{ if $show_social }}
+                   <div class="w-full flex justify-center gap-4 pt-4 mt-2 border-t border-gray-100 dark:border-gray-700">
+                     {{ range $person.Params.social }}
+                       {{ $slink := .url | default .link }}
+                       {{ $scheme := (urls.Parse $slink).Scheme }}
+                       {{ $target := "" }}
+                       {{ if not $scheme }}
+                         {{ $slink = (.url | default .link) | relLangURL }}
+                         {{ if eq (path.Ext $slink) ".pdf" }}{{ $target = "target=\"_blank\" rel=\"noopener\"" }}{{ end }}
+                       {{ else if in (slice "http" "https") $scheme }}
+                         {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+                       {{ end }}
+
+                       <a href="{{ $slink | safeURL }}"
+                          {{ $target | safeHTMLAttr }}
+                          aria-label="{{ .icon }}"
+                          {{ with .label }} title="{{ . }}"{{ end }}
+                          class="text-gray-400 hover:text-primary-600 dark:text-gray-500 dark:hover:text-primary-400 transition-colors transform hover:scale-110">
+                         {{ partial "functions/get_icon" (dict "name" .icon "attributes" "class=\"w-5 h-5\"") }}
+                       </a>
+                     {{ end }}
+                   </div>
+                 {{ end }}
+               </div>
+             </div>
+           </div>
+           {{/* --- 卡片代码结束 --- */}}
+
         {{ end }}
       {{ end }}
     </div>
 
   {{ else }}
 
-    {{/* 多于 1 人：使用 grid，人数 <4 时列数已经在 $gridCols 中调整为 1/2/3 列并居中 */}}
-    <div class="grid gap-8 {{ $gridCols }}">
+    {{/* 多人布局 */}}
+    <div class="grid gap-10 {{ $gridCols }}">
       {{ range $g := $groups }}
         {{ $group_name := $g.name }}
         {{ $query := $g.people }}
@@ -183,91 +195,105 @@
         {{ end }}
 
         {{ range $person := $query }}
-          {{ $avatar := ($person.Resources.ByType "image").GetMatch "*avatar*" }}
-          {{ $link := "" }}
-          {{ with site.GetPage (printf "/authors/%s" (path.Base $person.File.Dir)) }}
-            {{ $link = .RelPermalink }}
-          {{ end }}
+           
+           {{/* --- 卡片代码开始 (重复以适配 Grid) --- */}}
+           {{ $avatar := ($person.Resources.ByType "image").GetMatch "*avatar*" }}
+           {{ $link := "" }}
+           {{ with site.GetPage (printf "/authors/%s" (path.Base $person.File.Dir)) }}
+             {{ $link = .RelPermalink }}
+           {{ end }}
 
-          <div class="group relative w-full md:w-auto mx-auto" style="max-width: 300px;">
-            <div class="relative overflow-hidden rounded-2xl bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+           <div class="group relative w-full mx-auto flex flex-col h-full" style="max-width: 340px;">
+             <div class="relative overflow-hidden rounded-2xl bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 flex flex-col h-full">
 
-              {{ if $avatar }}
-                <a href="{{ $link }}" class="block relative h-64 w-64 mx-auto overflow-hidden rounded-full">
-                  {{ $image := $avatar.Fill "400x400 Center webp" }}
-                  <img src="{{ $image.RelPermalink }}"
-                       alt="{{ $person.Title }}"
-                       width="{{ $image.Width }}"
-                       height="{{ $image.Height }}"
-                       loading="lazy"
-                       class="w-full h-full object-cover rounded-full transition-transform duration-300 group-hover:scale-110">
-                </a>
-              {{ end }}
+               {{/* 头像区域：带默认占位符逻辑 */}}
+               {{ if $avatar }}
+                 <a href="{{ $link }}" class="block relative h-48 w-48 mx-auto mt-8 overflow-hidden rounded-full ring-4 ring-gray-50 dark:ring-gray-700">
+                   {{ $image := $avatar.Fill "400x400 Center webp" }}
+                   <img src="{{ $image.RelPermalink }}"
+                        alt="{{ $person.Title }}"
+                        width="{{ $image.Width }}"
+                        height="{{ $image.Height }}"
+                        loading="lazy"
+                        class="w-full h-full object-cover rounded-full transition-transform duration-500 group-hover:scale-110">
+                 </a>
+               {{ else }}
+                 {{/* 默认头像占位符 */}}
+                 <a href="{{ $link }}" class="block relative h-48 w-48 mx-auto mt-8 overflow-hidden rounded-full ring-4 ring-gray-50 dark:ring-gray-700 bg-gray-100 dark:bg-gray-700 flex items-center justify-center text-gray-400">
+                    <svg class="w-24 h-24 transition-transform duration-500 group-hover:scale-110" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                 </a>
+               {{ end }}
 
-              <div class="p-6">
-                <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-1 text-center">
-                  <a href="{{ $link }}" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
-                    {{ $person.Title }}
-                  </a>
-                </h3>
+               <div class="p-6 flex-grow flex flex-col items-center text-center">
+                 <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                   <a href="{{ $link }}" class="hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                     {{ $person.Title }}
+                   </a>
+                 </h3>
 
-                {{ if $show_role }}
-                  <div class="text-gray-600 dark:text-gray-400 mb-3 text-center">
-                    {{ with $person.Params.role }}
-                      <p class="font-medium">{{ . }}</p>
-                    {{ end }}
-                    {{ if and $show_organizations $person.Params.organizations }}
-                      {{ range first 1 $person.Params.organizations }}
-                        <p class="text-sm mt-1">{{ .name }}</p>
-                      {{ end }}
-                    {{ end }}
-                  </div>
-                {{ end }}
+                 {{ if $show_role }}
+                   <div class="text-gray-600 dark:text-gray-300 mb-4 w-full">
+                     {{ with $person.Params.role }}
+                       <p class="font-semibold text-sm uppercase tracking-wide text-primary-700 dark:text-primary-400 mb-2">{{ . }}</p>
+                     {{ end }}
+                     {{ if and $show_organizations $person.Params.organizations }}
+                       {{ range first 1 $person.Params.organizations }}
+                         <p class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed px-2">{{ .name }}</p>
+                       {{ end }}
+                     {{ end }}
+                   </div>
+                 {{ end }}
 
-                {{ with $person.Params.bio }}
-                  <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">
-                    {{ . }}
-                  </p>
-                {{ end }}
+                 {{ with $person.Params.bio }}
+                   <p class="text-sm text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">
+                     {{ . }}
+                   </p>
+                 {{ end }}
 
-                {{ if and $show_interests $person.Params.interests }}
-                  <div class="mb-4">
-                    <div class="flex flex-wrap gap-1">
-                      {{ range first 3 $person.Params.interests }}
-                        <span class="inline-block bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
-                          {{ . }}
-                        </span>
-                      {{ end }}
-                    </div>
-                  </div>
-                {{ end }}
+                 {{ if and $show_interests $person.Params.interests }}
+                   <div class="mb-4">
+                     <div class="flex flex-wrap gap-1 justify-center">
+                       {{ range first 3 $person.Params.interests }}
+                         <span class="inline-block bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs px-2 py-1 rounded">
+                           {{ . }}
+                         </span>
+                       {{ end }}
+                     </div>
+                   </div>
+                 {{ end }}
 
-                {{ if $show_social }}
-                  <div class="flex gap-3 pt-2 border-t border-gray-200 dark:border-gray-700">
-                    {{ range $person.Params.social }}
-                      {{ $slink := .url | default .link }}
-                      {{ $scheme := (urls.Parse $slink).Scheme }}
-                      {{ $target := "" }}
-                      {{ if not $scheme }}
-                        {{ $slink = (.url | default .link) | relLangURL }}
-                        {{ if eq (path.Ext $slink) ".pdf" }}{{ $target = "target=\"_blank\" rel=\"noopener\"" }}{{ end }}
-                      {{ else if in (slice "http" "https") $scheme }}
-                        {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
-                      {{ end }}
+                 <div class="flex-grow"></div>
 
-                      <a href="{{ $slink | safeURL }}"
-                         {{ $target | safeHTMLAttr }}
-                         aria-label="{{ .icon }}"
-                         {{ with .label }} title="{{ . }}"{{ end }}
-                         class="text-gray-500 hover:text-primary-600 dark:text-gray-400 dark:hover:text-primary-400 transition-colors">
-                        {{ partial "functions/get_icon" (dict "name" .icon "attributes" "class=\"w-5 h-5\"") }}
-                      </a>
-                    {{ end }}
-                  </div>
-                {{ end }}
-              </div>
-            </div>
-          </div>
+                 {{ if $show_social }}
+                   <div class="w-full flex justify-center gap-4 pt-4 mt-2 border-t border-gray-100 dark:border-gray-700">
+                     {{ range $person.Params.social }}
+                       {{ $slink := .url | default .link }}
+                       {{ $scheme := (urls.Parse $slink).Scheme }}
+                       {{ $target := "" }}
+                       {{ if not $scheme }}
+                         {{ $slink = (.url | default .link) | relLangURL }}
+                         {{ if eq (path.Ext $slink) ".pdf" }}{{ $target = "target=\"_blank\" rel=\"noopener\"" }}{{ end }}
+                       {{ else if in (slice "http" "https") $scheme }}
+                         {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+                       {{ end }}
+
+                       <a href="{{ $slink | safeURL }}"
+                          {{ $target | safeHTMLAttr }}
+                          aria-label="{{ .icon }}"
+                          {{ with .label }} title="{{ . }}"{{ end }}
+                          class="text-gray-400 hover:text-primary-600 dark:text-gray-500 dark:hover:text-primary-400 transition-colors transform hover:scale-110">
+                         {{ partial "functions/get_icon" (dict "name" .icon "attributes" "class=\"w-5 h-5\"") }}
+                       </a>
+                     {{ end }}
+                   </div>
+                 {{ end }}
+               </div>
+             </div>
+           </div>
+           {{/* --- 卡片代码结束 --- */}}
+
         {{ end }}
       {{ end }}
     </div>
@@ -275,8 +301,8 @@
   {{ end }}
 
   {{ with $block.content.cta }}
-    <div class="mt-12 text-center">
-      <a href="{{ .url }}" class="inline-flex items-center px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+    <div class="mt-16 text-center">
+      <a href="{{ .url }}" class="inline-flex items-center px-8 py-3 bg-primary-600 hover:bg-primary-700 text-white font-medium rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
         {{ .text }}
         {{ with .icon }}
           {{ partial "functions/get_icon" (dict "name" . "attributes" "class=\"ml-2 w-5 h-5\"") }}

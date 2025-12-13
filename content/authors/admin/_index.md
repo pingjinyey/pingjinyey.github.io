@@ -193,7 +193,15 @@ sections:
       avatar:
         size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: circle # Options: circle (default), square, rounded
-
+  - block: pub-collection
+    content:
+      title: Publications
+      filters:
+        author: "Zeyu Hu"           # (可选) 填入名字，留空则显示所有
+        show_toolbar: true   # (可选) 是否显示蓝色筛选条，默认为 true
+    design:
+      view: pub-item
+      sort_order: "type_year" # 可选: "year_type" (默认) 或 "type_year"
 ---
 
 Alex Johnson is a Senior AI Research Scientist at Meta AI, where he leads groundbreaking work on large language models and multimodal systems. His research has been published in top conferences like NeurIPS and ICML, with over 10,000 citations. Alex is passionate about pushing the boundaries of AI while ensuring ethical development. Outside of work, he enjoys hiking in the Rockies, building custom PCs, and mentoring the next generation of AI talent.

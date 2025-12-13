@@ -91,3 +91,39 @@ ul.list-disc {
 .prose {
   max-width: none !important;
 }
+
+
+/* =========================================
+   Navbar 最终修正
+   ========================================= */
+
+/* 1. 强制箭头不换行 */
+.navbar-nav .nav-link {
+    display: flex !important;
+    align-items: center !important;
+    white-space: nowrap !important;
+}
+
+/* 2. 颜色一致性强制覆盖 */
+/* 使用 var(--color-primary-700) 确保背景色与 Home 菜单的文字色完全一致 */
+.navbar-nav .group ul li a:hover {
+    background-color: var(--color-primary-700) !important;
+    color: #ffffff !important;
+}
+
+/* 3. 深色模式下的微调 */
+/* 深色模式下，背景仍使用 700 号色，保证白色文字的高对比度 */
+.dark .navbar-nav .group ul li a:hover {
+    background-color: var(--color-primary-700) !important;
+    color: #ffffff !important;
+}
+
+/* 4. 确保下拉菜单背景有毛玻璃效果 */
+.navbar-nav .group ul div {
+    background-color: rgba(255, 255, 255, 0.70) !important; 
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+}
+.dark .navbar-nav .group ul div {
+    background-color: rgba(15, 23, 42, 0.8) !important; 
+}

@@ -1,20 +1,20 @@
 ---
 # Display name
-title: Zeyu Hu
+title: Feng Yuan
 type: landing
 
 # Full name (for SEO)
-first_name: Zeyu
-last_name: Hu
+first_name: Feng
+last_name: Yuan
 
-weight: 3
+weight: 4
 
-graduation_year: 2025
-degree: "Postdoc"
-destination: "Shanghai University"
+graduation_year: 2024
+degree: "Master"
+destination: "SYXY"
 
 user_groups:
-  - Faculties
+  - Undergraduate Students
   - Alumni
 
 # Is this the primary user of the site?
@@ -24,7 +24,7 @@ superuser: false
 highlight_name: true
 
 # Role/position/tagline
-role: Assistant Professor
+role: Wireless communication algorithm engineer
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -34,54 +34,48 @@ organizations:
 # Social network links
 profiles:
   - icon: at-symbol
-    url: 'mailto:huzeyu@shu.edu.cn'
+    url: 'mailto:feng_yuan@shu.edu.cn'
     label: E-mail Me
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=DNgq9FoAAAAJ
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:huzeyu@shu.edu.cn'
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=DNgq9FoAAAAJ
+    link: 'mailto:feng_yuan@shu.edu.cn'
 
 interests:
   - Wireless Communication
   
 education:
-  - area: Postdoc in Information and Communication Engineering
+  - area: M.S. in Information and Communication Engineering
     institution: Shanghai University
     icon: ""
-    date_start: 2023-06-01
-    date_end: ""
+    date_start: 2021-09-01
+    date_end: "2024-06-01"
     summary: |
-  - area: Joint Ph.D in Department of Computer and Network Engineering
-    institution: The University of Electro-Communications
-    icon: ""
-    date_start: 2022-04-01
-    date_end: 2023-04-01
-    summary: |
-  - area: Ph.D. in Information and Communication Engineering
-    institution:  Beijing University of Posts and Telecommunications
+  - area: B.E. in Information and Communication Engineering
+    institution: Shanghai University
     icon: ""
     date_start: 2017-09-01
-    date_end: 2023-06-01
+    date_end: "2021-06-01"
     summary: |
-  - area: B.E. in Automation
-    institution: Beijing Forestry University
-    icon: ""
-    date_start: 2013-09-01
-    date_end: 2017-06-01
+        
+work:
+  - position: Wireless communication algorithm engineer
+    company_name: XYXY
+    company_url: 'https://deeptranscend.com/'
+    icon: ''
+    date_start: 2024-06-15
+    date_end: ''
     summary: |
+
 
 sections:
   - block: resume-biography-3
     content:
-      username: Zeyu Hu
+      username: Feng Yuan
       text: ''
-
       headings:
         about: Biography
+        work: Work Experience
         education: Education
         interests: Interests
     design:
@@ -96,9 +90,11 @@ sections:
     content:
       title: Publications
       filters:
-        author: "Zeyu Hu"           # (可选) 填入名字，留空则显示所有
+        author: "Feng Yuan"           # (可选) 填入名字，留空则显示所有
         show_toolbar: false   # (可选) 是否显示蓝色筛选条，默认为 true
     design:
       view: pub-item
       sort_order: "type_year" # 可选: "year_type" (默认) 或 "type_year"
 ---
+
+Feng Yuan received the M.E. degree from the School of Communication and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2024. His research interests include age of information (AoI), wireless signal processing, channel coding and decoding, and beyond-5G communication.

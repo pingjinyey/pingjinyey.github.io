@@ -1,6 +1,5 @@
 ---
-title: Near-Sensor LiDAR and Visual Feature Extraction and Communication for Low-Latency
-  Roadside Cooperative Perception
+title: Near-Sensor LiDAR and Visual Feature Extraction and Communication for Low-Latency Roadside Cooperative Perception
 authors:
 - Wei Zhang
 - Yuhang Gu

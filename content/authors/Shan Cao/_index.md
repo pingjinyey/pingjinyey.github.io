@@ -12,12 +12,8 @@ last_name: Cao
 
 weight: 2
 
-# Pronouns (optional)
-pronouns: she/her
-
-# Status emoji
-status:
-  icon: 🚀
+user_groups:
+  - Faculties
 
 # Is this the primary user of the site?
 superuser: true
@@ -28,33 +24,26 @@ highlight_name: true
 # Role/position/tagline
 role: Associate Professor
 
-
-
-# bio: Research interests include machine learning and computational biology.
-
 # Organizations/Affiliations to display in Biography blox
 organizations:
   - name: School of Communications and Information Engineering, Shanghai University
     url: https://scie.shu.edu.cn/
 
 # Social network links
-# Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   # - icon: at-symbol
   - icon: envelope
     icon_pack: fas
     url: 'mailto:cshan@shu.edu.cn'
     label: E-mail Me
-  # - icon: brands/x
-  #   url: https://twitter.com/AlexAIResearch
-  # - icon: brands/github
-  #   url: https://github.com/alexjohnsonai
-  # - icon: brands/linkedin
-  #   url: https://www.linkedin.com/in/alexjohnsonai/
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?user=BCHphJQAAAAJ
-  # - icon:  academicons/researchgate
-  #   url: https://www.researchgate.net/profile/Zhiyuan-Jiang-4
+social:
+  - icon: envelope
+    icon_pack: fas
+    url: 'mailto:cshan@shu.edu.cn'
+  - icon: academicons/google-scholar
+    url: https://scholar.google.com/citations?user=BCHphJQAAAAJ
 
 interests:
   - Digital and SoC Design
@@ -81,65 +70,6 @@ education:
     date_start: 2005-09-01
     date_end: 2009-07-01
     summary: |
-        
-
-work:
-  - position: Senior AI Research Scientist
-    company_name: Meta AI
-    company_url: 'https://ai.meta.com/'
-    icon: ''
-    date_start: 2020-01-01
-    date_end: ''
-    summary: |2-
-      Leading research on multimodal AI systems. Contributed to Llama 2 and other open-source models. 50+ citations in 3 years.
-  - position: AI Research Intern
-    company_name: OpenAI
-    company_url: 'https://openai.com/'
-    icon: ''
-    date_start: 2019-06-01
-    date_end: 2019-12-31
-    summary: |
-      Worked on GPT-3 scaling. Co-authored paper on prompt engineering.
-
-# Skills
-# Add your own SVG icons to `assets/media/icons/`
-skills:
-  - name: Technical Skills
-    items:
-      - name: Python & PyTorch
-        description: ''
-        percent: 95
-        icon: code-bracket
-      - name: Machine Learning
-        description: ''
-        percent: 100
-        icon: chart-bar
-      - name: Cloud Computing (AWS/GCP)
-        description: ''
-        percent: 85
-        icon: cloud
-  - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
-    items:
-      - name: Hiking in the Rockies
-        description: ''
-        percent: 80
-        icon: person-simple-walk
-      - name: Building Custom PCs
-        description: ''
-        percent: 90
-        icon: cpu-chip
-      - name: Sci-Fi Reading
-        description: ''
-        percent: 70
-        icon: book-open
-
-languages:
-  - name: English
-    percent: 100
-  - name: Spanish
-    percent: 50
 
 # Awards.
 #   Add/remove as many awards below as you like.
@@ -168,22 +98,6 @@ awards:
     summary: |
       Recognized for contributions to scaling laws in deep learning.
 
-social:
-  - icon: envelope
-    icon_pack: fas
-    url: 'mailto:cshan@shu.edu.cn'
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=BCHphJQAAAAJ
-  # - icon: twitter
-  #   icon_pack: fab
-  #   link: https://twitter.com/janedoe
-  # - icon: github
-  #   icon_pack: fab
-  #   link: https://github.com/janedoe
-user_groups:
-  - Teachers
-
-
 sections:
   - block: resume-biography-3
     content:
@@ -206,18 +120,27 @@ sections:
       avatar:
         size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: circle # Options: circle (default), square, rounded
-  - block: collection
+  # - block: collection
+  #   content:
+  #     count: 10
+  #     title: Publications
+  #     text: ''
+  #     filters:
+  #       folders:
+  #         - publication
+  #       author: Shan Cao
+  #       exclude_featured: false
+  #   design:
+  #     view: citation
+  - block: pub-collection
     content:
-      count: 0
       title: Publications
-      text: ''
       filters:
-        folders:
-          - publication
-        author: Shan Cao
-        exclude_featured: false
+        author: "Shan Cao"           # (可选) 填入名字，留空则显示所有
+        show_toolbar: false   # (可选) 是否显示蓝色筛选条，默认为 true
     design:
-      view: citation
+      view: pub-item
+      sort_order: "type_year" # 可选: "year_type" (默认) 或 "type_year"
 ---
 
 **Shan Cao**, Ph.D., is an **Associate Professor** at the School of Communications and Information Engineering (**SCIE**), Shanghai University. She received her B.E. (2009) and Ph.D. (2015) degrees in Electronic Engineering from **Tsinghua University**, China, and completed her postdoctoral research at the School of Information and Electronics, Beijing Institute of Technology in 2017. She then joined **Shanghai University** as a faculty member in the Department of Communication Engineering, where she is currently an Associate Professor.

@@ -1,7 +1,6 @@
 <header id="site-header" class="header">
   <nav class="navbar px-3 flex justify-start">
     <div class="order-0 h-full">
-      <!-- Brand -->
       <a class="navbar-brand" href="{{ site.Home.RelPermalink }}" title="{{ site.Title }}">
         {{- $logo_filename := site.Params.header.navbar.logo.filename -}}
         {{ with $logo_filename }}
@@ -28,7 +27,6 @@
         {{ with site.Params.header.navbar.logo.text }}{{.}}{{end}}
       </a>
     </div>
-    <!-- Mobile menu -->
     <input id="nav-toggle" type="checkbox" class="hidden" />
     <label
       for="nav-toggle"
@@ -44,9 +42,6 @@
           transform="rotate(45 10 10)"></polygon>
       </svg>
     </label>
-    <!-- /Mobile menu -->
-
-    <!-- Main menu -->
     {{ $align_menu := site.Params.header.navbar.align | default "center" }}
     <ul
       id="nav-menu"
@@ -58,7 +53,7 @@
       {{ $pageURL:= $currentPage.Permalink | absLangURL }}
       {{ $active := eq $menuURL $pageURL }}
 {{ if .HasChildren }}
-  {{/* 计算父级 URL（兼容 #锚点 / 外链 / 常规相对路径） */}}
+  {{/* URL计算逻辑 */}}
   {{ $purl := "" }}
   {{- if findRE `^#` .URL -}}
     {{- if not $.IsHome -}}
@@ -71,69 +66,65 @@
     {{- $purl = .URL | relLangURL -}}
   {{- end -}}
 
-  <li class="nav-item nav-dropdown group relative">
-    <div class="flex items-center gap-1">
-      <!-- 父级：可点击跳转 -->
-      <a href="{{ $purl }}"
-         class="nav-link inline-flex items-center hover:text-primary
-                {{ range .Children }}
-                  {{ $childURL := .URL | absLangURL }}
-                  {{ $pageURL := $.Permalink | absLangURL }}
-                  {{ if eq $childURL $pageURL }}active{{ end }}
-                {{ end }}">
-        {{ .Name }}
-      </a>
+  <li class="nav-item relative group h-full flex items-center">
+    <a href="{{ $purl }}"
+       class="nav-link !flex !items-center !gap-1 whitespace-nowrap px-3 py-2 font-semibold transition-colors duration-200
+              text-black dark:text-white
+              group-hover:text-primary-700 dark:group-hover:text-primary-400">
+      <span>{{ .Name }}</span>
+      <svg class="w-3 h-3 opacity-50 stroke-current flex-shrink-0 group-hover:opacity-100 transition-opacity" fill="none" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+      </svg>
+    </a>
 
-      <!-- caret：只负责展开/收起子菜单 -->
-      <button type="button"
-              class="px-1 py-1 -mr-1 rounded hover:bg-gray-100 dark:hover:bg-gray-800"
-              aria-haspopup="true" aria-expanded="false"
-              data-dropdown-toggle>
-        <svg class="h-4 w-4 fill-current inline-block" viewBox="0 0 20 20" aria-hidden="true">
-          <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/>
-        </svg>
-        <span class="sr-only">Open submenu</span>
-      </button>
-    </div>
+    <ul class="
+        absolute left-1/2 top-full z-50 hidden
+        w-72 -translate-x-1/2
+        pt-3
+        group-hover:block
+        text-left
+    ">
+        <div class="
+            rounded-lg shadow-2xl overflow-hidden
+            bg-white/70 backdrop-blur-md border border-white/20
+            dark:bg-slate-900/80 dark:backdrop-blur-md dark:border-white/10
+        ">
+          {{ range .Children }}
+            {{ $childURL := .URL | absLangURL }}
+            {{ $pageURL := $.Permalink | absLangURL }}
+            {{ $active := eq $childURL $pageURL }}
+            
+            {{ $url := "" }}
+            {{- if findRE `^#` .URL -}}
+              {{- if not $.IsHome -}}
+                {{- $url = site.Home.RelPermalink -}}
+              {{- end }}
+              {{- $url = .URL -}}
+            {{- else -}}
+              {{- $url = .URL | relLangURL -}}
+            {{- end -}}
 
-    <!-- 子菜单：hover 或点击 caret 显示 -->
-    <ul class="nav-dropdown-list lg:group-hover:visible lg:group-hover:opacity-100 hidden"
-        data-dropdown-menu>
-      {{ range .Children }}
-        {{ $childURL := .URL | absLangURL }}
-        {{ $pageURL := $.Permalink | absLangURL }}
-        {{ $active := eq $childURL $pageURL }}
-        {{ $url := "" }}
-        {{- if findRE `^#` .URL -}}
-          {{- if not $.IsHome -}}
-            {{- $url = site.Home.RelPermalink -}}
-          {{- end }}
-          {{- $url = .URL -}}
-        {{- else -}}
-          {{- $url = .URL | relLangURL -}}
-        {{- end -}}
-        <li class="nav-dropdown-item">
-          <a class="nav-dropdown-link {{ if $active }}active{{ end }}"
-             {{ if findRE `^http` .URL }}target="_blank" rel="noopener"{{ end }}
-             href="{{ $url }}">{{ .Name }}</a>
-        </li>
-      {{ end }}
+            <li class="border-b border-black/5 dark:border-white/10 last:border-none">
+              <a
+                href="{{ $url }}"
+                class="
+                  block px-6 py-3
+                  text-sm font-medium 
+                  truncate
+                  transition-all duration-200
+                  text-gray-900 dark:text-gray-100
+                  hover:bg-[var(--color-primary-700)] hover:text-white
+                "
+                {{ if findRE `^http` .URL }}target="_blank" rel="noopener"{{ end }}
+              >
+                {{ .Name }}
+              </a>
+            </li>
+          {{ end }}
+        </div>
     </ul>
   </li>
-
-  {{/* 小脚本：点击 caret 切换子菜单显示（不影响父级链接） */}}
-  <script>
-    document.addEventListener('click', function(e){
-      const btn = e.target.closest('[data-dropdown-toggle]');
-      if (!btn) return;
-      const menu = btn.closest('li')?.querySelector('[data-dropdown-menu]');
-      if (!menu) return;
-      e.preventDefault();
-      menu.classList.toggle('hidden');
-    });
-  </script>
 {{ else }}
-  {{/* 无子项：保持原实现 */}}
   {{ $url := "" }}
   {{- if findRE `^#` .URL -}}
     {{- if not $.IsHome -}}
@@ -210,7 +201,6 @@
       </div>
       {{ end }}
 
-      <!-- CTA button -->
       {{ if site.Params.header.navbar.button.enable }}
       <a
         href="{{ site.Params.header.navbar.button.url | relLangURL }}"

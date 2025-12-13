@@ -31,7 +31,8 @@ abstract: Text detection/localization, as an important task in computer vision, 
   shapes. Experimental results on common datasets demonstrate superior performance
   o
 tags:
-- Computer Science - Computer Vision and Pattern Recognition
+- Computer Science
+- Computer Vision and Pattern Recognition
 links:
 - name: arXiv
   url: https://arxiv.org/abs/2104.00297
