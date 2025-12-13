@@ -57,19 +57,19 @@ education:
     icon: ""
     date_start: 2015-09-01
     date_end: 2017-07-01
-    summary: |
+    summary: 
   - area: Ph.D. in Electronic Science and Technology
     institution:  Tsinghua University
     icon: ""
     date_start: 2009-09-01
     date_end: 2015-07-01
-    summary: |
+    summary: 
   - area: B.E. in Electronic Science and Technology
     institution: Tsinghua University
     icon: ""
     date_start: 2005-09-01
     date_end: 2009-07-01
-    summary: |
+    summary: 
 
 # Awards.
 #   Add/remove as many awards below as you like.
@@ -81,21 +81,21 @@ awards:
     date: '2022-12-01'
     awarder: NeurIPS
     icon: hero/trophy
-    summary: |
+    summary: 
       Awarded for groundbreaking work on efficient training of large models.
   - title: AI Innovation Grant
     url: https://www.nsf.gov/
     date: '2021-06-15'
     awarder: National Science Foundation
     icon: hero/currency-dollar
-    summary: |
+    summary: 
       $500,000 grant for research in ethical AI development.
   - title: Outstanding PhD Thesis
     url: https://www.stanford.edu/
     date: '2019-06-30'
     awarder: Stanford University
     icon: hero/academic-cap
-    summary: |
+    summary: 
       Recognized for contributions to scaling laws in deep learning.
 
 sections:

@@ -50,13 +50,13 @@ education:
     icon: ""
     date_start: 2021-09-01
     date_end: "2024-06-01"
-    summary: |
+    summary: 
   - area: B.E. in Information and Communication Engineering
     institution: Shanghai University
     icon: ""
     date_start: 2017-09-01
     date_end: "2021-06-01"
-    summary: |
+    summary: 
         
 work:
   - position: Wireless communication algorithm engineer
@@ -65,7 +65,7 @@ work:
     icon: ''
     date_start: 2024-06-15
     date_end: ''
-    summary: |
+    summary: 
 
 
 sections:

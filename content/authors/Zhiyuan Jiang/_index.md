@@ -64,13 +64,13 @@ education:
     icon: ""
     date_start: 2010-09-01
     date_end:  2015-07-01
-    summary: |
+    summary: 
   - area: B.E. in Electronic Engineering
     institution: Tsinghua University
     icon: ""
     date_start: 2006-09-01
     date_end: 2010-07-01
-    summary: |
+    summary: 
 
 # Awards.
 #   Add/remove as many awards below as you like.
