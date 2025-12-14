@@ -1,4 +1,4 @@
-{{/* Hugo Blox: Alumni List Block (Visual Enhanced) */}}
+{{/* Hugo Blox: Alumni List Block (Fixed Type Mismatch) */}}
 
 {{ $page := .wcPage }}
 {{ $block := .wcBlock }}
@@ -6,29 +6,24 @@
 {{ $title := $block.content.title | emojify | $page.RenderString }}
 {{ $subtitle := $block.content.subtitle | emojify | $page.RenderString }}
 
-{{/* 1. 获取及排序逻辑 */}}
-{{ $query := where (where site.Pages "Section" "authors") ".Params.user_groups" "intersect" $block.content.user_groups }}
+{{/* ======================================================================= */}}
+{{/* 1. 修复后的查询逻辑 (Manual Filtering)                                   */}}
+{{/* 使用手动循环替代 where "intersect"，解决 []interface{} vs []string 类型不匹配问题 */}}
+{{/* ======================================================================= */}}
+
+{{ $all_authors := where site.Pages "Section" "authors" }}
+{{ $query := slice }}
+
+{{ range $all_authors }}
+  {{/* 只要交集不为空，就说明匹配上了 */}}
+  {{ if intersect .Params.user_groups $block.content.user_groups }}
+    {{ $query = $query | append . }}
+  {{ end }}
+{{ end }}
+
+{{/* ======================================================================= */}}
 
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-
-  {{/* ================= DEBUG START ================= */}}
-<div style="background: #fee; border: 2px solid red; padding: 10px; margin: 20px; color: black;">
-  <p><strong>Debug Info:</strong></p>
-  <p>Target Group (Block Config): {{ $block.content.user_groups }} (Type: {{ printf "%T" $block.content.user_groups }})</p>
-  
-  <p><strong>Scanning Authors:</strong></p>
-  <ul>
-  {{ range first 5 (where site.Pages "Section" "authors") }}
-    <li>
-      Name: {{ .Title }} <br>
-      User Groups: {{ .Params.user_groups }} (Type: {{ printf "%T" .Params.user_groups }}) <br>
-      Match Result: {{ intersect .Params.user_groups $block.content.user_groups }}
-    </li>
-  {{ end }}
-  </ul>
-</div>
-{{/* ================= DEBUG END ================= */}}
-
 
   {{/* Section Header */}}
   <div class="flex flex-col items-center text-center mb-12">
@@ -43,15 +38,10 @@
     {{ end }}
   </div>
 
-  {{/* 列表容器：增加 shadow-md 让整体浮起感更强 */}}
+  {{/* 列表容器 */}}
   <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden">
     
-    {{/* ================= 表头区域 (显著增强) ================= */}}
-    {{/* 1. bg-gray-100: 背景加深
-       2. border-b-2 border-primary-600: 底部增加一条主题色的粗线
-       3. text-gray-800 font-bold: 字体更黑更粗
-       4. py-4: 高度增加
-    */}}
+    {{/* 表头区域 */}}
     <div class="hidden md:flex items-center bg-gray-100 dark:bg-gray-900 border-b-2 border-primary-600 py-4 px-8 text-sm font-bold text-gray-800 dark:text-white uppercase tracking-wider">
       <div class="w-1/6 pl-2">Year</div>
       <div class="w-2/6">Name</div>
@@ -61,8 +51,11 @@
 
     <div class="divide-y divide-gray-100 dark:divide-gray-700">
       
-      {{/* 排序逻辑: 年份倒序 -> 学位等级 */}}
+      {{/* 排序逻辑 */}}
+      {{/* 注意：GroupByParam 可能会受到类型影响，但通常只要 $query 不为空就能工作 */}}
       {{ $yearGroups := $query.GroupByParam "graduation_year" }}
+      
+      {{/* 如果 $query 为空，下面的 range 不会执行，页面就会显示空白 */}}
       {{ range $group := sort $yearGroups "Key" "desc" }}
         
         {{ $postdocs := where $group.Pages "Params.degree" "in" (slice "Postdoc" "Post-doc" "Post Doctor") }}
@@ -85,7 +78,7 @@
           {{ $degree := $person.Params.degree | default "PhD" }}
           {{ $destination := $person.Params.destination | default "Unknown" }}
 
-          {{/* 行样式：py-5 增加垂直间距，px-8 增加水平留白 */}}
+          {{/* 行样式 */}}
           <div class="group flex flex-col md:flex-row md:items-center py-5 px-8 hover:bg-blue-50/50 dark:hover:bg-gray-700/50 transition-colors duration-200">
             
             {{/* Year */}}
