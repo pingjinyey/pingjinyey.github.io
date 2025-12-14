@@ -1,4 +1,37 @@
 ---
+title: "AI Chips & Neural Processors"
+date: 2024-01-01
+type: landing  # 关键：设置为 landing 类型以允许使用 blocks
+sections:
+  - block: research-detail
+    content:
+      # 1. 总体介绍部分
+      title: "Energy-Efficient AI Hardware"
+      image: "featured.png" # 大图
+      text: |
+        Our research focuses on overcoming the "Memory Wall" and "Power Wall" in modern deep learning deployment. 
+        
+        We investigate novel architectures including **Compute-in-Memory (CIM)**, sparsity-aware processing, and hardware-software co-design. Our goal is to enable real-time intelligence on edge devices with milliwatt-level power consumption.
+
+      # 2. 细分方向部分
+      features:
+        - title: "Sparsity-Aware Accelerators"
+          icon: "cpu-chip" # 可以使用 icon
+          description: "Exploiting activation and weight sparsity to reduce computation by 5x-10x without accuracy loss."
+        
+        - title: "Compute-in-Memory"
+          icon: "circle-stack" 
+          description: "Designing mixed-signal circuits to perform MAC operations directly within SRAM/RRAM arrays."
+
+        - title: "Reconfigurable Architectures"
+          image: "featured.png" # 也可以使用具体的小图片
+          description: "FPGA-based dynamic accelerators that adapt to Transformer and CNN workloads in real-time."
+
+    design:
+      css_class: "bg-white dark:bg-gray-900"
+---
+
+<!-- ---
 title: Vehicular and Private Network Baseband
 date: 2023-10-26
 type: landing
@@ -39,4 +72,4 @@ sections:
 #   - Hugo
 categories: ["Wireless-Communication-Systems-and-Dedicated-Baseband-Processors"]
 ---
-Vehicular and Private Network Baseband
+Vehicular and Private Network Baseband -->

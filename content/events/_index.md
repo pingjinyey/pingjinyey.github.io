@@ -1,5 +1,6 @@
 ---
-title: Recent & Upcoming Talks
+title: Recent Events & News
+type: landing
 # cms_exclude: true
 #url: talk
 
@@ -11,11 +12,30 @@ title: Recent & Upcoming Talks
 #   caption: ''
 #   filename: ''
 
-section:
+sections:
   - block: collection
     # id: news
     content:
-      title: Recent News
+      title: Recent Events 
+      subtitle: ''
+      text: ''
+      # Choose how many pages you would like to display (0 = all pages)
+      count: 0
+      # Filter on criteria
+      filters:
+        folders: 
+          - events
+      # Choose how many pages you would like to offset by
+      offset: 0
+      # Page order: descending (desc) or ascending (asc) date.
+      order: desc
+    design:
+      # Choose a layout view
+      view: card
+  - block: collection
+    # id: news
+    content:
+      title: Recent News 
       subtitle: ''
       text: ''
       # Page type to display. E.g. post, talk, publication...
@@ -37,9 +57,5 @@ section:
       order: desc
     design:
       # Choose a layout view
-      view: card
-      # Reduce spacing
-      spacing:
-        padding: [0, 0, 0, 0]
+      view: date-title-summary
 ---
-hhh

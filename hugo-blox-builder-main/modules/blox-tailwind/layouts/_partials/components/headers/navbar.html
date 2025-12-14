@@ -10,7 +10,8 @@
             {{ if eq $logoExt `.svg` }}
               {{- $logo.Content | safeHTML -}}
             {{else}}
-              {{ $logo_img := ($logo.Process "Resize x36 webp") }}
+              {{/* 修改：将 x36 改为 x120，生成更高清的大图 */}}
+              {{ $logo_img := ($logo.Process "Resize x120 webp") }}
               <img
                 fetchpriority="high"
                 decoding="async"

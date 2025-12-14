@@ -18,24 +18,24 @@ sections:
       connect_title: Connect With Us
       address:
         lines:
-          - Smith Laboratory
-          - Department of Computer Science
-          - University of Excellence
-          - 123 Science Drive
-          - Excellence City, EC 12345
-          - United States
+          - 12th Building B309
+          - School of Communications and Information Engineering
+          - Shanghai University
+          - Shanghai
+          - China
+
       office_hours:
         - "Monday - Friday: 9:00 AM - 5:00 PM"
-        - "Lab Meetings: Fridays 2:00 PM"
-      email: lab@example.edu
-      phone: "+1 (555) 123-4567"
+        - "Lab Meetings: Wednesday 3:00 PM"
+      email: zhiyjiang@foxmail.com
+      # phone: "+1 (555) 123-4567"
       social:
-        - icon: brands/x
-          url: https://twitter.com/SmithLabResearch
-        - icon: brands/linkedin
-          url: https://linkedin.com/company/smith-lab
+        # - icon: brands/x
+        #   url: https://twitter.com/SmithLabResearch
+        # - icon: brands/linkedin
+        #   url: https://linkedin.com/company/smith-lab
         - icon: brands/github
-          url: https://github.com/smith-lab
+          url: https://github.com/ACELab-SHU
       prospective:
         title: Prospective Members
         text: Interested in joining our lab? We're looking for motivated researchers.
