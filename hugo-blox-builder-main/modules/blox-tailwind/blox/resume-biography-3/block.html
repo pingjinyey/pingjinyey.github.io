@@ -115,7 +115,7 @@
             {{ $about_heading := $block.content.headings.about | default "Biography" }}
             <h2 class="text-4xl sm:text-3xl lg:text-4xl text-gray-900 dark:text-white tracking-tight">{{ $about_heading }}</h2>
           </div>
-          <div class="prose prose-lg dark:prose-invert text-gray-800 dark:text-gray-200 text-base sm:text-lg leading-relaxed">
+          <div class="prose prose-lg dark:prose-invert text-gray-800 dark:text-gray-200 text-base sm:text-lg leading-relaxed text-justify">
             {{ . }}
           </div>
         </div>

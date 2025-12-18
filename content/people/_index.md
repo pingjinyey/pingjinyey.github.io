@@ -29,78 +29,14 @@ design:
 sections:
   - block: team-showcase
     content:
-      title: Faculties
+      title: Teams
       # subtitle: World-class researchers advancing science
       # text: Our diverse team brings together expertise from multiple disciplines.
       user_groups:
         - Faculties
-      sort_by: 'Params.weight'
-      sort_ascending: true
-    design:
-      show_role: true
-      show_organizations: true
-      show_interests: false
-      show_social: true
-      # Section background color (CSS class)
-      css_class: "bg-gray-50 dark:bg-gray-900"
-  - block: team-showcase
-    content:
-      title: Postdoc Researchers
-      # subtitle: World-class researchers advancing science
-      # text: Our diverse team brings together expertise from multiple disciplines.
-      user_groups:
         - Postdoctoral Researchers
-      sort_by: 'Params.weight'
-      sort_ascending: true
-      # cta:
-      #   text: Join Our Team
-      #   url: /opportunities
-      #   icon: user-plus
-    design:
-      show_role: true
-      show_organizations: true
-      show_interests: false
-      show_social: true
-      # Section background color (CSS class)
-      css_class: "bg-gray-50 dark:bg-gray-900"
-  - block: team-showcase
-    content:
-      title: Ph.D. Students
-      # subtitle: World-class researchers advancing science
-      # text: Our diverse team brings together expertise from multiple disciplines.
-      user_groups:
         - Ph.D. Students
-      sort_by: 'Params.weight'
-      sort_ascending: true
-    design:
-      show_role: true
-      show_organizations: true
-      show_interests: false
-      show_social: true
-      # Section background color (CSS class)
-      css_class: "bg-gray-50 dark:bg-gray-900"
-  - block: team-showcase
-    content:
-      title: Master Students
-      # subtitle: World-class researchers advancing science
-      # text: Our diverse team brings together expertise from multiple disciplines.
-      user_groups:
         - Master Students
-      sort_by: 'Params.weight'
-      sort_ascending: true
-    design:
-      show_role: true
-      show_organizations: true
-      show_interests: false
-      show_social: true
-      # Section background color (CSS class)
-      css_class: "bg-gray-50 dark:bg-gray-900"
-  - block: team-showcase
-    content:
-      title: Undergraduate Students
-      # subtitle: World-class researchers advancing science
-      # text: Our diverse team brings together expertise from multiple disciplines.
-      user_groups:
         - Undergraduate Students
       sort_by: 'Params.weight'
       sort_ascending: true
@@ -115,6 +51,78 @@ sections:
       show_social: true
       # Section background color (CSS class)
       css_class: "bg-gray-50 dark:bg-gray-900"
+  # - block: team-showcase
+  #   content:
+  #     title: Postdoc Researchers
+  #     # subtitle: World-class researchers advancing science
+  #     # text: Our diverse team brings together expertise from multiple disciplines.
+  #     user_groups:
+  #       - Postdoctoral Researchers
+  #     sort_by: 'Params.weight'
+  #     sort_ascending: true
+  #     # cta:
+  #     #   text: Join Our Team
+  #     #   url: /opportunities
+  #     #   icon: user-plus
+  #   design:
+  #     show_role: true
+  #     show_organizations: true
+  #     show_interests: false
+  #     show_social: true
+  #     # Section background color (CSS class)
+  #     css_class: "bg-gray-50 dark:bg-gray-900"
+  # - block: team-showcase
+  #   content:
+  #     title: Ph.D. Students
+  #     # subtitle: World-class researchers advancing science
+  #     # text: Our diverse team brings together expertise from multiple disciplines.
+  #     user_groups:
+  #       - Ph.D. Students
+  #     sort_by: 'Params.weight'
+  #     sort_ascending: true
+  #   design:
+  #     show_role: true
+  #     show_organizations: true
+  #     show_interests: false
+  #     show_social: true
+  #     # Section background color (CSS class)
+  #     css_class: "bg-gray-50 dark:bg-gray-900"
+  # - block: team-showcase
+  #   content:
+  #     title: Master Students
+  #     # subtitle: World-class researchers advancing science
+  #     # text: Our diverse team brings together expertise from multiple disciplines.
+  #     user_groups:
+  #       - Master Students
+  #     sort_by: 'Params.weight'
+  #     sort_ascending: true
+  #   design:
+  #     show_role: true
+  #     show_organizations: true
+  #     show_interests: false
+  #     show_social: true
+  #     # Section background color (CSS class)
+  #     css_class: "bg-gray-50 dark:bg-gray-900"
+  # - block: team-showcase
+  #   content:
+  #     title: Undergraduate Students
+  #     # subtitle: World-class researchers advancing science
+  #     # text: Our diverse team brings together expertise from multiple disciplines.
+  #     user_groups:
+  #       - Undergraduate Students
+  #     sort_by: 'Params.weight'
+  #     sort_ascending: true
+  #     cta:
+  #       text: Join Our Team
+  #       url: /opportunities
+  #       icon: user-plus
+  #   design:
+  #     show_role: true
+  #     show_organizations: true
+  #     show_interests: false
+  #     show_social: true
+  #     # Section background color (CSS class)
+  #     css_class: "bg-gray-50 dark:bg-gray-900"
   # 毕业生列表块，学位包含：Postdoc,PhD,Master,Bachelor
   - block: alumni-list
     content:

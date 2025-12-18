@@ -114,8 +114,6 @@ sections:
           filter: "*"
         - name: Team Building
           filter: "Team Building"
-        - name: 5G
-          filter: "5g"
     design:
       columns: 3 
       fill_image: true

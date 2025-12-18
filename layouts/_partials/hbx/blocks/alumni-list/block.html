@@ -1,4 +1,4 @@
-{{/* Hugo Blox: Alumni List Block (Manual Grouping Fix) */}}
+{{/* Hugo Blox: Alumni List Block with Advanced Sorting */}}
 
 {{ $page := .wcPage }}
 {{ $block := .wcBlock }}
@@ -8,14 +8,13 @@
 {{ $target_groups := $block.content.user_groups }}
 {{ $query := slice }}
 
-{{/* 1. 筛选逻辑 (保持之前的暴力匹配，因为它已经证明有效) */}}
+{{/* 1. 筛选逻辑 (保持不变) */}}
 {{ range where site.Pages "Section" "authors" }}
   {{ $author := . }}
   {{ $is_match := false }}
   {{ if $author.Params.user_groups }}
     {{ range $g := $author.Params.user_groups }}
       {{ range $t := $target_groups }}
-        {{/* 忽略大小写和空格进行比较 */}}
         {{ if eq (lower (trim (printf "%s" $g) " ")) (lower (trim (printf "%s" $t) " ")) }}
           {{ $is_match = true }}
         {{ end }}
@@ -57,41 +56,63 @@
       
       {{ if eq (len $query) 0 }}
          <div class="p-8 text-center text-gray-500">
-           No alumni found. (Debug: Groups matched successfully, but query is empty?)
+           No alumni found.
          </div>
       {{ else }}
 
         {{/* ========================================================== */}}
-        {{/* 2. 手动分组逻辑 (Manual Grouping) - 替代 GroupByParam        */}}
+        {{/* 2. 高级排序逻辑 (Weighted Sorting)                          */}}
         {{/* ========================================================== */}}
         
-        {{/* 第一步：收集所有的年份 */}}
-        {{ $years := slice }}
-        {{ range $query }}
-          {{/* 强制转为字符串以统一类型，避免 Int vs String 问题 */}}
-          {{ $y := printf "%s" (.Params.graduation_year | default "Unknown") }}
-          {{ $years = $years | append $y }}
-        {{ end }}
-        {{ $years = $years | uniq | sort }}
-        
-        {{/* 倒序遍历年份 (最新的年份在最上面) */}}
-        {{ range $y :=  $years }}
-           {{/* 注意：这里需要反向遍历，因为 hugo 的 sort 默认是升序。
-              或者我们可以在下面用 where 过滤出这个年份的人。
-           */}}
+        {{/* 构建一个包含权重的临时列表 */}}
+        {{ $weighted_list := slice }}
+
+        {{ range $person := $query }}
+            {{/* 获取学位并转小写用于比较 */}}
+            {{ $d := lower ($person.Params.degree | default "") }}
+            {{ $weight := 99 }} {{/* 默认为其它 */}}
+
+            {{/* 权重定义 (数字越小排越前):
+               10: 博士后 (Postdoc)
+               20: 博士 (PhD)
+               30: 硕士 (Master)
+               40: 本科 (Bachelor)
+               99: 其他
+            */}}
+
+            {{/* 兼容性匹配：包含特定关键词即命中 */}}
+            {{ if or (in $d "postdoc") (in $d "post-doc") (in $d "博士后") }}
+                {{ $weight = 10 }}
+            {{ else if or (in $d "phd") (in $d "ph.d") (in $d "doctor") (in $d "博士") }}
+                {{ $weight = 20 }}
+            {{ else if or (in $d "master") (in $d "m.sc") (in $d "ma") (in $d "ms") (in $d "meng") (in $d "硕士") }}
+                {{ $weight = 30 }}
+            {{ else if or (in $d "bachelor") (in $d "b.sc") (in $d "ba") (in $d "bs") (in $d "beng") (in $d "本科") (in $d "学士") }}
+                {{ $weight = 40 }}
+            {{ end }}
+
+            {{/* 将 Page 对象和计算出的排序键打包 */}}
+            {{/* 注意：Year 这里我们确保是 String 或 Int 统一，用于排序 */}}
+            {{ $item := dict "Page" $person "Weight" $weight "Name" $person.Title "Year" ($person.Params.graduation_year | default "0") }}
+            {{ $weighted_list = $weighted_list | append $item }}
         {{ end }}
 
-        {{/* 更加简便的方法：直接对 Query 进行排序 (年份倒序)，然后渲染 */}}
-        {{/* 这样虽然失去了严格的 "Group" 对象，但视觉上列表是一样的 */}}
-        
-        {{/* 先按 Degree 权重排序 (可选优化)，再按 Year 倒序 */}}
-        {{ $sorted_query := sort $query "Params.graduation_year" "desc" }}
-        
-        {{ range $person := $sorted_query }}
+        {{/* 执行链式排序 (利用 Stable Sort 特性)：
+           1. 先排最不重要的 -> Name (A-Z)
+           2. 再排次重要的 -> Degree Weight (Asc)
+           3. 最后排最重要的 -> Year (Desc)
+        */}}
+        {{ $sorted := sort $weighted_list "Name" "asc" }}
+        {{ $sorted = sort $sorted "Weight" "asc" }}
+        {{ $sorted = sort $sorted "Year" "desc" }}
+
+        {{/* 3. 渲染循环 */}}
+        {{ range $item := $sorted }}
+            {{ $person := $item.Page }}
             
             {{ $link := $person.RelPermalink }}
             {{ $year := $person.Params.graduation_year | default "N/A" }}
-            {{ $degree := $person.Params.degree | default "PhD" }}
+            {{ $degree := $person.Params.degree | default "" }}
             {{ $destination := $person.Params.destination | default "Unknown" }}
 
             <div class="group flex flex-col md:flex-row md:items-center py-5 px-8 hover:bg-blue-50/50 dark:hover:bg-gray-700/50 transition-colors duration-200">
@@ -103,15 +124,20 @@
                  </span>
               </div>
 
-              {{/* Name */}}
+              {{/* Name & Avatar */}}
               <div class="w-full md:w-2/6 flex items-center gap-4 mb-2 md:mb-0">
                  {{ $avatar := ($person.Resources.ByType "image").GetMatch "*avatar*" }}
+                 
+                 {{/* 头像逻辑：有图显示图，无图显示默认SVG */}}
                  {{ if $avatar }}
                    {{ $avatar_img := $avatar.Fill "100x100 Center webp" }} 
                    <img src="{{ $avatar_img.RelPermalink }}" class="w-12 h-12 rounded-full object-cover border-2 border-white dark:border-gray-600 shadow-sm" loading="lazy">
                  {{ else }}
-                   <div class="w-12 h-12 rounded-full bg-gray-100 dark:bg-gray-700 flex items-center justify-center text-gray-400 border-2 border-white dark:border-gray-600 shadow-sm">
-                     <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
+                   {{/* 默认头像占位符 */}}
+                   <div class="w-12 h-12 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-400 border-2 border-white dark:border-gray-600 shadow-sm overflow-hidden">
+                      <svg class="w-8 h-8 relative top-1" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M24 20.993V24H0v-2.996A14.977 14.977 0 0112.004 15c4.904 0 9.26 2.354 11.996 5.993zM16.002 8.999a4 4 0 11-8 0 4 4 0 018 0z" />
+                      </svg>
                    </div>
                  {{ end }}
 
@@ -122,15 +148,17 @@
 
               {{/* Degree */}}
               <div class="w-full md:w-1/6 md:text-center mb-1 md:mb-0 pl-16 md:pl-0">
-                <span class="text-sm font-semibold text-gray-600 dark:text-gray-300">
+                {{ if $degree }}
+                <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold bg-primary-50 text-primary-800 dark:bg-primary-900 dark:text-primary-200">
                   {{ $degree }}
                 </span>
+                {{ end }}
               </div>
 
               {{/* Destination */}}
               <div class="w-full md:w-2/6 md:text-right pl-16 md:pl-0 pr-2">
-                 <div class="flex items-center md:justify-end gap-2 text-primary-700 dark:text-primary-400 font-bold">
-                   <svg class="w-4 h-4 hidden md:block opacity-70" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                 <div class="flex items-center md:justify-end gap-2 text-gray-700 dark:text-gray-300 font-medium">
+                   <svg class="w-4 h-4 hidden md:block opacity-70 text-primary-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                    </svg>
@@ -139,7 +167,7 @@
               </div>
 
             </div>
-        {{ end }} {{/* End of range sorted_query */}}
+        {{ end }} {{/* End of range sorted */}}
       
       {{ end }} {{/* End of if len query > 0 */}}
 

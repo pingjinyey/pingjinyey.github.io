@@ -12,8 +12,8 @@ address:
   postcode: '202150'
   country: China
 
-summary: An example talk using Hugo Blox Builder's Markdown slides feature.
-abstract: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellusac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam.'
+summary: The 2025 Autumn Tour will take place at Changxing Island Country Park in Chongming, Shanghai. The event combines outdoor activities, nature experiences, and leisure programs to provide participants with an opportunity to relax, engage in team interaction, and enjoy the autumn landscape in a pleasant and informal setting.
+abstract: This autumn tour is designed around the theme of connecting with nature, relieving stress, and strengthening team cohesion. The program features a variety of interactive and recreational activities, including orange picking, a petting zoo experience, water-based activities, outdoor sports, and social relaxation sessions. Through a balanced mix of physical activity and leisure, the event aims to foster communication, collaboration, and a positive team atmosphere beyond daily academic and research routines.
 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
@@ -60,30 +60,44 @@ slides: ""
 projects: []
 ---
 
-### About the Talk
+## About the Event
 
-Prof. Jane Smith will deliver the opening keynote at the prestigious International AI in Science Symposium, highlighting our lab’s pioneering work in computational biology and drug discovery.
+### Overview
 
-#### Key Topics
+The 2025 Autumn Tour will be held at Changxing Island Country Park, a scenic destination known for its natural environment and diverse outdoor facilities. The event is organized as a full-day group activity, encouraging broad participation and providing a refreshing break from academic and research work.
 
-**AI-Powered Drug Discovery**
+### Activities
 
-- Machine learning platforms for molecular design
-- Accelerating clinical translation from years to months
-- Real-world case studies and clinical outcomes
+#### 🍊 Orange Picking
 
-**Protein Structure Prediction**
+- Hands-on experience in seasonal orange orchards
 
-- DeepFold architecture and breakthrough results
-- Comparison with AlphaFold and novel improvements
-- Applications in understanding disease mechanisms
+- Enjoy the pleasure of harvesting fresh fruit in a rural setting
 
-**Future of AI in Science**
+#### 🐾 Petting Zoo
 
-- Emerging opportunities in materials science and climate research
-- Challenges in model interpretability and validation
-- Building interdisciplinary research partnerships
+- Close interaction with a variety of friendly animals
 
-#### Expected Impact
+- A relaxing and enjoyable experience suitable for all participants
 
-This keynote will position our lab as a thought leader in AI-driven scientific research and attract potential collaborators from leading institutions worldwide.
+#### 🚣 Water-Based Activities
+
+- Bamboo Rafting: a gentle ride offering views of the surrounding landscape
+
+- Kayaking: an active experience promoting coordination and teamwork
+
+#### 🏹 Outdoor Sports
+
+- Archery: improving focus and engagement through target practice
+
+- Tandem Bicycling: emphasizing cooperation and mutual coordination
+
+#### 🍵 Tea by the Fireplace
+
+- Casual tea gathering in a cozy outdoor setting
+
+- Open discussions and informal conversations among team members
+
+### Purpose and Impact
+
+This autumn tour aims to enhance communication and camaraderie among team members, promote a healthy balance between work and leisure, and strengthen the sense of belonging within the team. By creating shared experiences outside the usual working environment, the event contributes to long-term collaboration and team vitality.

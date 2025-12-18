@@ -7,11 +7,11 @@ type: landing
 first_name: Feng
 last_name: Yuan
 
-weight: 4
+weight: 99
 
 graduation_year: 2024
 degree: "Master"
-destination: "SYXY"
+destination: "DEEPTRANSCEND"
 
 user_groups:
   - Undergraduate Students

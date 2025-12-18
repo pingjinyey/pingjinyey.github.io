@@ -11,7 +11,7 @@ weight: 3
 
 graduation_year: 2025
 degree: "Postdoc"
-destination: "Shanghai University"
+destination: "SHU"
 
 user_groups:
   - Faculties
