@@ -10,7 +10,7 @@ last_name: Yuan
 weight: 99
 
 graduation_year: 2024
-degree: "Master"
+degree: "M.S."
 destination: "DEEPTRANSCEND"
 
 user_groups:

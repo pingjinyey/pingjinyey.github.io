@@ -53,7 +53,7 @@ sections:
       css_class: "bg-gray-50 dark:bg-gray-900"
   # - block: team-showcase
   #   content:
-  #     title: Postdoc Researchers
+  #     title: PostDoc Researchers
   #     # subtitle: World-class researchers advancing science
   #     # text: Our diverse team brings together expertise from multiple disciplines.
   #     user_groups:
@@ -123,7 +123,7 @@ sections:
   #     show_social: true
   #     # Section background color (CSS class)
   #     css_class: "bg-gray-50 dark:bg-gray-900"
-  # 毕业生列表块，学位包含：Postdoc,PhD,Master,Bachelor
+  # 毕业生列表块，学位包含：PostDoc,Ph.D,M.S.,B.S.
   - block: alumni-list
     content:
       title: Alumni

@@ -10,7 +10,7 @@ last_name: Sun
 weight: 99
 
 graduation_year: 2023
-degree: "Master"
+degree: "M.S."
 destination: ""
 
 user_groups:

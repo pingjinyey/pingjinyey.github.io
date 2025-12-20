@@ -10,7 +10,7 @@ last_name: Peng
 weight: 99
 
 graduation_year: 2024
-degree: "PhD"
+degree: "Ph.D"
 destination: "TCL"
 
 user_groups:
@@ -74,4 +74,4 @@ sections:
       sort_order: "type_year"
 ---
 
-Fei Peng received the PhD degree from the School of Communications and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2024. He now works at TCL, Shanghai, China.
+Fei Peng received the Ph.D degree from the School of Communications and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2024. He now works at TCL, Shanghai, China.

@@ -5,7 +5,7 @@ Display your team members with a beautiful, responsive grid layout featuring ric
 ## Features
 
 - **Responsive Grid Layout**: Automatically adjusts from 1-4 columns based on screen size
-- **User Groups**: Organize team members by role (e.g., Principal Investigators, PhD Students)
+- **User Groups**: Organize team members by role (e.g., Principal Investigators, Ph.D Students)
 - **Rich Profiles**: Display avatar, name, role, bio, interests, and social links
 - **Customizable Display**: Toggle visibility of role, organization, interests, and social links
 - **Sorting**: Sort team members by last name or custom field

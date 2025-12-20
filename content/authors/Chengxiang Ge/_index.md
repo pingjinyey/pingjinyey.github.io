@@ -10,7 +10,7 @@ last_name: Ge
 weight: 99
 
 graduation_year: 2023
-degree: "Master"
+degree: "M.S."
 destination: " GigaDevice Semiconductor (HeFei)"
 
 user_groups:

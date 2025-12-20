@@ -10,7 +10,7 @@ last_name: Huang
 weight: 99
 
 graduation_year: 2023
-degree: "Master"
+degree: "M.S."
 destination: "浙江省余姚市文化和广电旅游体育局"
 
 user_groups:

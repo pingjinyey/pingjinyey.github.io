@@ -10,7 +10,7 @@ last_name: Zhang
 weight: 99
 
 graduation_year: 2022
-degree: "Master"
+degree: "M.S."
 destination: "China Telecom (Guizhou)"
 
 user_groups:

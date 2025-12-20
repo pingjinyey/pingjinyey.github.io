@@ -10,7 +10,7 @@ last_name: Zuo
 weight: 99
 
 graduation_year: 2025
-degree: "Master"
+degree: "M.S."
 destination: "SiCARRIER"
 
 user_groups:

@@ -10,7 +10,7 @@ last_name: Hui
 weight: 99
 
 graduation_year: 2022
-degree: "Master"
+degree: "M.S."
 destination: "NVIDIA"
 
 user_groups:

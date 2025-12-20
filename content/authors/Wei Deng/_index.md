@@ -10,7 +10,7 @@ last_name: Deng
 weight: 99
 
 graduation_year: 2022
-degree: "Master"
+degree: "M.S."
 destination: "Qualcomm"
 
 user_groups:

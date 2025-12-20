@@ -10,7 +10,7 @@ last_name: Wu
 weight: 99
 
 graduation_year: 2020
-degree: "Master"
+degree: "M.S."
 destination: "UNISOC"
 
 user_groups:

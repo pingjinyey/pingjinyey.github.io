@@ -10,7 +10,7 @@ last_name: Hu
 weight: 3
 
 graduation_year: 2025
-degree: "Postdoc"
+degree: "PostDoc"
 destination: "SHU"
 
 user_groups:
@@ -49,7 +49,7 @@ interests:
   - Wireless Communication
   
 education:
-  - area: Postdoc in Information and Communication Engineering
+  - area: PostDoc in Information and Communication Engineering
     institution: Shanghai University
     icon: ""
     date_start: 2023-06-01

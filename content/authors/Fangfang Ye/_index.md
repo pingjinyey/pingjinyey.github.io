@@ -10,7 +10,7 @@ last_name: Ye
 weight: 99
 
 graduation_year: 2025
-degree: "Master"
+degree: "M.S."
 destination: "Xiaomi"
 
 user_groups:

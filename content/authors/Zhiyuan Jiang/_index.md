@@ -3,6 +3,8 @@
 title: Zhiyuan Jiang
 type: landing
 
+external_url: "https://zhiyuan-jiang.github.io"
+
 # Name pronunciation (optional)
 name_pronunciation: ''
 
@@ -91,7 +93,7 @@ awards:
     icon: hero/currency-dollar
     summary: |
       $500,000 grant for research in ethical AI development.
-  - title: Outstanding PhD Thesis
+  - title: Outstanding Ph.D Thesis
     url: https://www.stanford.edu/
     date: '2019-06-30'
     awarder: Stanford University

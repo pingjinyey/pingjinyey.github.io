@@ -10,7 +10,7 @@ last_name: Shi
 weight: 99
 
 graduation_year: 2025
-degree: "PhD"
+degree: "Ph.D"
 destination: "THU"
 
 user_groups:
@@ -81,4 +81,4 @@ sections:
       sort_order: "type_year"
 ---
 
-Yi Shi received the PhD degree from the School of Communications and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2025. He is currently a postdoctoral fellow at Tsinghua University, Beijing, China.
+Yi Shi received the Ph.D degree from the School of Communications and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2025. He is currently a postdoctoral fellow at Tsinghua University, Beijing, China.

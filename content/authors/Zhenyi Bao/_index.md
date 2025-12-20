@@ -10,7 +10,7 @@ last_name: Bao
 weight: 99
 
 graduation_year: 2020
-degree: "Master"
+degree: "M.S."
 destination: ""
 
 user_groups:

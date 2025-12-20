@@ -10,7 +10,7 @@ last_name: Cui
 weight: 99
 
 graduation_year: 2020
-degree: "Master"
+degree: "M.S."
 destination: "MediaTek"
 
 user_groups:

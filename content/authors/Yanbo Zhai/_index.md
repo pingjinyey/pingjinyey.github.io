@@ -10,7 +10,7 @@ last_name: Zhai
 weight: 99
 
 graduation_year: 2025
-degree: "Master"
+degree: "M.S."
 destination: "HUAWEI"
 
 user_groups:

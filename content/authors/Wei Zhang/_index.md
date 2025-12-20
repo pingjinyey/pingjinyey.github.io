@@ -10,7 +10,7 @@ last_name: Zhang
 weight: 99
 
 graduation_year: 2025
-degree: "PhD"
+degree: "Ph.D"
 destination: "HONOR"
 
 user_groups:
@@ -74,4 +74,4 @@ sections:
       sort_order: "type_year"
 ---
 
-Wei Zhang received the PhD degree from the School of Communications and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2025. She now works at HONOR, Nanjing, China.
+Wei Zhang received the Ph.D degree from the School of Communications and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2025. She now works at HONOR, Nanjing, China.

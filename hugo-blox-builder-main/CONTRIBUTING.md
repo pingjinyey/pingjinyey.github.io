@@ -1,6 +1,6 @@
 # Contributing to Hugo Blox 🚀
 
-> **Welcome, researchers and academics!** Whether you're a professor sharing your publications, a PhD student building your first portfolio, or an AI researcher showcasing your work — this guide will help you contribute to the tool that powers 100,000s of researcher and lab websites worldwide.
+> **Welcome, researchers and academics!** Whether you're a professor sharing your publications, a Ph.D student building your first portfolio, or an AI researcher showcasing your work — this guide will help you contribute to the tool that powers 100,000s of researcher and lab websites worldwide.
 
 [![All Access](https://img.shields.io/badge/Support-All%20Access-2ea44f?logo=heart)](https://hugoblox.com/all-access)
 [![GitHub Sponsors](https://img.shields.io/badge/Sponsor-GitHub%20Sponsors-ea4aaa?logo=github)](https://github.com/sponsors/gcushen)

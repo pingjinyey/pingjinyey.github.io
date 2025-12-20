@@ -10,8 +10,8 @@ last_name: Mao
 weight: 99
 
 graduation_year: 2025
-degree: "Master"
-destination: ""
+degree: "M.S."
+destination: "COMAC Shanghai Aircraft Design & Research Institute"
 
 user_groups:
   - Undergraduate Students
@@ -39,7 +39,14 @@ education:
     date_end: "2025-06-01"
     summary: "Advisor: Shan Cao"
 
-
+work:
+  - position: ""
+    company_name: "COMAC Shanghai Aircraft Design & Research Institute"
+    company_url: ""
+    icon: ''
+    date_start: 2025-07-01
+    date_end: ''
+    summary: ""
 
 sections:
   - block: resume-biography-3
@@ -67,4 +74,4 @@ sections:
       sort_order: "type_year"
 ---
 
-Shaoqi Mao received the Master degree from the School of Communications and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2025.
+Shaoqi Mao received the Master degree from the School of Communications and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2025. He now works at COMAC Shanghai Aircraft Design & Research Institute, Shanghai, China.

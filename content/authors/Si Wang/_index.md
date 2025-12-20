@@ -10,7 +10,7 @@ last_name: Wang
 weight: 99
 
 graduation_year: 2024
-degree: "Master"
+degree: "M.S."
 destination: "GALAXYSPACE"
 
 user_groups:
