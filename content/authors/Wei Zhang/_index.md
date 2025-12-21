@@ -39,7 +39,7 @@ interests:
   - Wireless Communication
 
 education:
-  - area: Ph.D. in Information and Communication Engineering
+  - area: Ph.D in Information and Communication Engineering
     institution: Shanghai University
     icon: ""
     date_start: 2020-09-01

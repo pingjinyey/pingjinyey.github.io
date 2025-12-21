@@ -60,7 +60,7 @@ education:
     date_start: 2015-09-01
     date_end: 2017-07-01
     summary: 
-  - area: Ph.D. in Electronic Science and Technology
+  - area: Ph.D in Electronic Science and Technology
     institution:  Tsinghua University
     icon: ""
     date_start: 2009-09-01
@@ -145,7 +145,7 @@ sections:
       sort_order: "type_year" # 可选: "year_type" (默认) 或 "type_year"
 ---
 
-**Shan Cao**, Ph.D., is an **Associate Professor** at the School of Communications and Information Engineering (**SCIE**), Shanghai University. She received her B.E. (2009) and Ph.D. (2015) degrees in Electronic Engineering from **Tsinghua University**, China, and completed her postdoctoral research at the School of Information and Electronics, Beijing Institute of Technology in 2017. She then joined **Shanghai University** as a faculty member in the Department of Communication Engineering, where she is currently an Associate Professor.
+**Shan Cao**, Ph.D, is an **Associate Professor** at the School of Communications and Information Engineering (**SCIE**), Shanghai University. She received her B.E. (2009) and Ph.D (2015) degrees in Electronic Engineering from **Tsinghua University**, China, and completed her postdoctoral research at the School of Information and Electronics, Beijing Institute of Technology in 2017. She then joined **Shanghai University** as a faculty member in the Department of Communication Engineering, where she is currently an Associate Professor.
 
 She was selected for the **Shanghai Overseas High-Level Talent Program (2017)** and received the **Shanghai University Outstanding Young Faculty Award (2020)**. She serves as a member of the **IEEE Circuits and Systems Society COMCAS Technical Committee**, the **IEEE ISCAS Review Committee**, and has chaired special sessions for **ICTC 2022** and **IEEE SiPS 2019**.
 

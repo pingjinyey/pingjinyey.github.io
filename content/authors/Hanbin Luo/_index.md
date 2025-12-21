@@ -1,64 +1,58 @@
 ---
 # Display name
-title: Yi Shi
+title: Hanbin Luo
 type: landing
 
 # Full name (for SEO)
-first_name: Yi
-last_name: Shi
+first_name: Hanbin
+last_name: Luo
 
 weight: 99
 
-graduation_year: 2025
-degree: "Ph.D"
-destination: "THU"
-
 user_groups:
-  - Undergraduate Students
-  - Alumni
+  - Master Students
 
 superuser: false
 highlight_name: true
 
-role: Alumni
+role: M.S.
 
 organizations:
   - name: School of Communications and Information Engineering, Shanghai University
     url: https://scie.shu.edu.cn/
 
+# Social network links
 profiles:
   - icon: at-symbol
-    url: 'mailto:shiyi1996@shu.edu.cn'
+    url: 'mailto:luohanbin@shu.edu.cn'
     label: E-mail Me
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:shiyi1996@shu.edu.cn'
+    link: 'mailto:luohanbin@shu.edu.cn'
 
 interests:
-  - Wireless Communication
+  - Embedded Systems
+  - Computer Architecture
 
 education:
-  - area: Ph.D in Information and Communication Engineering
+  - area: M.S. in Information and Communication Engineering
     institution: Shanghai University
     icon: ""
-    date_start: 2021-09-01
-    date_end: "2025-06-01"
-    summary: "Advisor: Zhiyuan Jiang"
-
-work:
-  - position: "Postdoctoral"
-    company_name: "Tsinghua University"
-    company_url: ""
-    icon: ''
-    date_start: 2025-07-01
-    date_end: ''
+    date_start: "2025-09-01"
+    date_end: ""
     summary: ""
+  # - area: B.S. in Information and Communication Engineering
+  #   institution: Shanghai University
+  #   icon: ""
+  #   date_start: "2021-09-01"
+  #   date_end: "2025-06-01"
+  #   summary: ""
 
 sections:
   - block: resume-biography-3
     content:
-      username: Yi Shi
+      username: Hanbin Luo
       text: ''
       headings:
         about: Biography
@@ -74,11 +68,11 @@ sections:
     content:
       title: Publications
       filters:
-        author: "Yi Shi"
+        author: "Hanbin Luo"
         show_toolbar: false
     design:
       view: pub-item
       sort_order: "type_year"
 ---
 
-Yi Shi received the Ph.D degree from the School of Communications and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2025. He is currently a postdoctoral fellow at Tsinghua University, Beijing, China.
+Graduate student (Class of 2025) in Signal and Information Processing.
