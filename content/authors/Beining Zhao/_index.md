@@ -1,11 +1,11 @@
 ---
 # Display name
-title: Hanbin Luo
+title: Beining Zhao
 type: landing
 
 # Full name (for SEO)
-first_name: Hanbin
-last_name: Luo
+first_name: Beining 
+last_name: Zhao
 
 weight: 99
 
@@ -24,7 +24,7 @@ organizations:
 # Social network links
 profiles:
   - icon: at-symbol
-    url: 'mailto:luohanbin@shu.edu.cn'
+    url: 'mailto:zbn@shu.edu.cn'
     label: E-mail Me
 # social:
 #   - icon: envelope
@@ -32,8 +32,8 @@ profiles:
 #     link: 'mailto:luohanbin@shu.edu.cn'
 
 interests:
-  - Embedded Systems
-  - Computer Architecture
+  - AI Chips and Systems
+  # - Computer Architecture
 
 # education:
 #   - area: M.S. in Information and Communication Engineering
@@ -52,7 +52,7 @@ interests:
 sections:
   - block: resume-biography-3
     content:
-      username: Hanbin Luo
+      username: Beining Zhao
       text: ''
       headings:
         about: Biography
@@ -68,11 +68,11 @@ sections:
     content:
       title: Publications
       filters:
-        author: "Hanbin Luo"
+        author: "Beining Zhao"
         show_toolbar: false
     design:
       view: pub-item
       sort_order: "type_year"
 ---
 
-Graduate student (Class of 2025) in Signal and Information Processing.
+Professional Master’s student in Electronic Information, enrolled in 2023.
