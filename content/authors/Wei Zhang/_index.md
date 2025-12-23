@@ -10,7 +10,7 @@ last_name: Zhang
 weight: 99
 
 graduation_year: 2025
-degree: "Ph.D"
+degree: "Ph.D."
 destination: "HONOR"
 
 user_groups:
@@ -23,7 +23,7 @@ highlight_name: true
 role: Alumni
 
 organizations:
-  - name: School of Communications and Information Engineering, Shanghai University
+  - name: School of Communication and Information Engineering, Shanghai University
     url: https://scie.shu.edu.cn/
 
 profiles:
@@ -39,7 +39,7 @@ interests:
   - Wireless Communication
 
 education:
-  - area: Ph.D in Information and Communication Engineering
+  - area: Ph.D. in Information and Communication Engineering
     institution: Shanghai University
     icon: ""
     date_start: 2020-09-01
@@ -74,4 +74,4 @@ sections:
       sort_order: "type_year"
 ---
 
-Wei Zhang received the Ph.D degree from the School of Communications and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2025. She now works at HONOR, Nanjing, China.
+Wei Zhang received the Ph.D. degree from the School of Communication and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2025. She now works at HONOR, Nanjing, China.

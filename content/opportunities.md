@@ -19,7 +19,7 @@ sections:
       address:
         lines:
           - 12th Building B309
-          - School of Communications and Information Engineering
+          - School of Communication and Information Engineering
           - Shanghai University
           - Shanghai
           - China

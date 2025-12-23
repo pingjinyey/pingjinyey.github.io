@@ -18,7 +18,7 @@ highlight_name: true
 role: M.S.
 
 organizations:
-  - name: School of Communications and Information Engineering, Shanghai University
+  - name: School of Communication and Information Engineering, Shanghai University
     url: https://scie.shu.edu.cn/
 
 # Social network links

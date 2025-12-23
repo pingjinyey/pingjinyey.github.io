@@ -10,15 +10,15 @@ last_name: Shen
 weight: 99
 
 user_groups:
-  - Ph.D Students
+  - Ph.D. Students
 
 superuser: false
 highlight_name: true
 
-role: Ph.D
+role: Ph.D.
 
 organizations:
-  - name: School of Communications and Information Engineering, Shanghai University
+  - name: School of Communication and Information Engineering, Shanghai University
     url: https://scie.shu.edu.cn/
 
 # Social network links
@@ -41,7 +41,7 @@ interests:
   - Domain-Specific Architecture (DSA) Co-Design of Hardware–Software and Compilation
 
 # education:
-  # - area: Ph.D in Information and Communication Engineering
+  # - area: Ph.D. in Information and Communication Engineering
   #   institution: Shanghai University
   #   icon: ""
   #   date_start: 2024-09-01
@@ -86,5 +86,5 @@ sections:
       sort_order: "type_year"
 ---
 
-I have been pursuing a Ph.D. in Information and Communication Engineering since 2024. My research focuses on hardware–software co-design for 6G AI-RAN. I am currently developing a full-stack, open-source platform for the convergence of communications and AI (https://acelab-shu.github.io/ACE-Echo
+I have been pursuing a Ph.D in Information and Communication Engineering since 2024. My research focuses on hardware–software co-design for 6G AI-RAN. I am currently developing a full-stack, open-source platform for the convergence of communications and AI (https://acelab-shu.github.io/ACE-Echo
 ).

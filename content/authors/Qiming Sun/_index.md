@@ -23,7 +23,7 @@ highlight_name: true
 role: Alumni
 
 organizations:
-  - name: School of Communications and Information Engineering, Shanghai University
+  - name: School of Communication and Information Engineering, Shanghai University
     url: https://scie.shu.edu.cn/
 
 
@@ -67,4 +67,4 @@ sections:
       sort_order: "type_year"
 ---
 
-Qiming Sun received the Master degree from the School of Communications and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2023.
+Qiming Sun received the Master degree from the School of Communication and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2023.

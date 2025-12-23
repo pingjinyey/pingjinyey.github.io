@@ -1,4 +1,4 @@
-{{/* Hugo Blox: Biography 3 (With Visible Blue Tint & Dynamic Particles) */}}
+{{/* Hugo Blox: Biography 3 (With Wide Blurred Tech Grid) */}}
 {{/* Documentation: https://hugoblox.com/blocks/ */}}
 
 {{/* Initialise */}}
@@ -14,8 +14,9 @@
 {{ $avatar := ($person_page.Resources.ByType "image").GetMatch "*avatar*" }}
 
 {{/* --- 样式判断 --- */}}
+{{/* 读取 design.bg_style 参数 */}}
 {{ $bg_style := $block.design.bg_style | default "default" }}
-{{ $is_particles := eq $bg_style "tech-particles" }}
+{{ $is_grid := eq $bg_style "tech-grid" }}
 
 {{/* Avatar settings */}}
 {{ $avatar_size := $block.design.avatar.size | default "large" }}
@@ -27,77 +28,29 @@
 {{ $shape_classes := dict "circle" "rounded-full" "square" "rounded-none" "rounded" "rounded-lg" }}
 {{ $shape_class := index $shape_classes $avatar_shape | default "rounded-full" }}
 
-{{/* 核心修改：加深背景色
-  - 旧代码: from-blue-50 via-blue-50/30 (太淡)
-  - 新代码: from-blue-100 via-blue-50/80 (更明显)
-    from-blue-100: 起始处为淡蓝色 (#dbeafe)，肉眼清晰可见。
-    via-blue-50/80: 中间过渡色也不透明度更高，保持蓝色的延续性。
-*/}}
-<div class="resume-biography py-8 px-4 relative overflow-hidden 
-     {{ if $is_particles }}bg-gradient-to-b from-blue-100 via-blue-50/80 to-transparent dark:bg-none{{ end }}">
+<div class="resume-biography py-8 px-4 relative overflow-hidden">
   
-  {{/* --- 蓝色科技动态粒子 --- */}}
-  {{ if $is_particles }}
-  <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden">
-    
-    {{/* 遮罩：保持中心聚焦 */}}
-    <div class="absolute inset-0 [mask-image:radial-gradient(ellipse_at_center,black_60%,transparent_100%)]">
+  {{/* --- 核心修改：蓝色科技网格背景 (更大模糊范围) --- */}}
+  {{ if $is_grid }}
+  <div class="absolute inset-0 pointer-events-none z-0">
+    <div class="absolute inset-0 [mask-image:radial-gradient(ellipse_at_center,black_10%,transparent_80%)]">
       
-      {{/* Layer 1: 背景微粒子 (慢速) */}}
-      <div class="particle-layer absolute inset-0 w-full h-full opacity-40 dark:opacity-20"
-           style="background-image: radial-gradient(#2563eb 1px, transparent 1px), radial-gradient(#2563eb 1px, transparent 1px);
-                  background-size: 60px 60px;
-                  background-position: 0 0, 30px 30px;
-                  animation: moveUp 20s linear infinite;">
+      {{/* 小网格 (24px) - 保持蓝色系 */}}
+      <div class="absolute inset-0 h-full w-full 
+          bg-[linear-gradient(to_right,#3b82f626_1px,transparent_1px),linear-gradient(to_bottom,#3b82f626_1px,transparent_1px)] 
+          dark:bg-[linear-gradient(to_right,#22d3ee1a_1px,transparent_1px),linear-gradient(to_bottom,#22d3ee1a_1px,transparent_1px)] 
+          bg-[size:24px_24px]">
       </div>
 
-      {{/* Layer 2: 中景活跃粒子 (中速 + 呼吸) */}}
-      <div class="particle-layer absolute inset-0 w-full h-full opacity-60 dark:opacity-30"
-           style="background-image: radial-gradient(var(--particle-color) 2px, transparent 2px); 
-                  background-size: 110px 110px; 
-                  background-position: 20px 50px;
-                  animation: moveUp 15s linear infinite, pulseOpacity 4s ease-in-out infinite;">
+      {{/* 大网格 (96px) - 保持蓝色系 */}}
+      <div class="absolute inset-0 h-full w-full 
+          bg-[linear-gradient(to_right,#3b82f64d_1px,transparent_1px),linear-gradient(to_bottom,#3b82f64d_1px,transparent_1px)] 
+          dark:bg-[linear-gradient(to_right,#22d3ee33_1px,transparent_1px),linear-gradient(to_bottom,#22d3ee33_1px,transparent_1px)] 
+          bg-[size:96px_96px]">
       </div>
-
-      {{/* Layer 3: 前景大能量点 (快速 + 强闪烁) */}}
-      <div class="particle-layer absolute inset-0 w-full h-full opacity-80 dark:opacity-40"
-           style="background-image: radial-gradient(var(--particle-color-bright) 3px, transparent 3px); 
-                  background-size: 190px 190px; 
-                  background-position: -40px -20px;
-                  animation: moveUp 10s linear infinite, pulseOpacity 2s ease-in-out infinite;">
-      </div>
-
     </div>
   </div>
-
-  {{/* CSS 变量与动画定义 */}}
-  <style>
-    .particle-layer {
-      --particle-color: #1d4ed8;       /* Light Mode: Blue-700 */
-      --particle-color-bright: #2563eb; /* Light Mode: Blue-600 */
-    }
-    @media (prefers-color-scheme: dark) {
-      .particle-layer {
-        --particle-color: #22d3ee;       /* Dark Mode: Cyan-400 */
-        --particle-color-bright: #67e8f9; /* Dark Mode: Cyan-300 */
-      }
-    }
-    .dark .particle-layer {
-      --particle-color: #22d3ee;
-      --particle-color-bright: #67e8f9;
-    }
-
-    @keyframes moveUp {
-      0% { transform: translateY(0); }
-      100% { transform: translateY(-60px); }
-    }
-    @keyframes pulseOpacity {
-      0%, 100% { opacity: 0.5; transform: scale(1); }
-      50% { opacity: 1; transform: scale(1.1); }
-    }
-  </style>
   {{ end }}
-
 
   {{/* 内容层 */}}
   <div class="max-w-6xl mx-auto relative z-10">

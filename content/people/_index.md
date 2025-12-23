@@ -35,7 +35,7 @@ sections:
       user_groups:
         - Faculties
         - Postdoctoral Researchers
-        - Ph.D Students
+        - Ph.D. Students
         - Master Students
         - Undergraduate Students
       sort_by: 'Params.weight'
@@ -73,11 +73,11 @@ sections:
   #     css_class: "bg-gray-50 dark:bg-gray-900"
   # - block: team-showcase
   #   content:
-  #     title: Ph.D Students
+  #     title: Ph.D. Students
   #     # subtitle: World-class researchers advancing science
   #     # text: Our diverse team brings together expertise from multiple disciplines.
   #     user_groups:
-  #       - Ph.D Students
+  #       - Ph.D. Students
   #     sort_by: 'Params.weight'
   #     sort_ascending: true
   #   design:
@@ -123,7 +123,7 @@ sections:
   #     show_social: true
   #     # Section background color (CSS class)
   #     css_class: "bg-gray-50 dark:bg-gray-900"
-  # 毕业生列表块，学位包含：PostDoc,Ph.D,M.S.,B.S.
+  # 毕业生列表块，学位包含：PostDoc,Ph.D.,M.S.,B.S.
   - block: alumni-list
     content:
       title: Alumni

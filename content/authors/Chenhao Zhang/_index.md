@@ -23,7 +23,7 @@ highlight_name: true
 role: Alumni
 
 organizations:
-  - name: School of Communications and Information Engineering, Shanghai University
+  - name: School of Communication and Information Engineering, Shanghai University
     url: https://scie.shu.edu.cn/
 
 profiles:
@@ -81,4 +81,4 @@ sections:
       sort_order: "type_year"
 ---
 
-Chenhao Zhang received the Master degree from the School of Communications and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2022. He now works at China Telecom (Guizhou), 贵州, China.
+Chenhao Zhang received the Master degree from the School of Communication and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2022. He now works at China Telecom (Guizhou), 贵州, China.

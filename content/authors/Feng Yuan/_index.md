@@ -24,12 +24,12 @@ superuser: false
 highlight_name: true
 
 # Role/position/tagline
-role: Wireless communication algorithm engineer
+role: M.S.
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: School of Communications and Information Engineering, Shanghai University
-    url: https://scie.shu.edu.cn/
+  - name: DEEPTRANSCEND
+    url: https://deeptranscend.com/
 
 # Social network links
 profiles:
@@ -60,7 +60,7 @@ education:
         
 work:
   - position: Wireless communication algorithm engineer
-    company_name: XYXY
+    company_name: DEEPTRANSCEND
     company_url: 'https://deeptranscend.com/'
     icon: ''
     date_start: 2024-06-15

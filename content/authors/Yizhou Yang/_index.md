@@ -11,15 +11,15 @@ last_name: Yang
 weight: 99
 
 user_groups:
-  - Ph.D Students
+  - Ph.D. Students
 
 superuser: false
 highlight_name: true
 
-role: Ph.D
+role: Ph.D.
 
 organizations:
-  - name: School of Communications and Information Engineering, Shanghai University
+  - name: School of Communication and Information Engineering, Shanghai University
     url: https://scie.shu.edu.cn/
 
 # Social network links
@@ -42,7 +42,7 @@ interests:
   # - Domain-Specific Architecture (DSA) Co-Design of Hardware–Software and Compilation
 
 # education:
-#   - area: Ph.D in Information and Communication Engineering
+#   - area: Ph.D. in Information and Communication Engineering
 #     institution: Shanghai University
 #     icon: ""
 #     date_start: 2024-09-01
@@ -87,4 +87,4 @@ sections:
       sort_order: "type_year"
 ---
 
-Ph.D. student in Electronic Information, enrolled in 2025.
+Ph.D student in Electronic Information, enrolled in 2025.

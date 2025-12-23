@@ -28,7 +28,7 @@ role: Assistant Professor
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: School of Communications and Information Engineering, Shanghai University
+  - name: School of Communication and Information Engineering, Shanghai University
     url: https://scie.shu.edu.cn/
 
 # Social network links
@@ -55,13 +55,13 @@ education:
     date_start: 2023-06-01
     date_end: "2025-06-01"
     summary: 
-  - area: Joint Ph.D in Department of Computer and Network Engineering
+  - area: Joint Ph.D. in Department of Computer and Network Engineering
     institution: The University of Electro-Communications
     icon: ""
     date_start: 2022-04-01
     date_end: 2023-04-01
     summary: 
-  - area: Ph.D in Information and Communication Engineering
+  - area: Ph.D. in Information and Communication Engineering
     institution:  Beijing University of Posts and Telecommunications
     icon: ""
     date_start: 2017-09-01
@@ -102,6 +102,6 @@ sections:
       view: pub-item
       sort_order: "type_year" # 可选: "year_type" (默认) 或 "type_year"
 ---
-**Zeyu Hu** is a Postdoctoral Researcher in Information and Communication Engineering at **Shanghai University**, affiliated with the **ACE-Lab, Key Laboratory of Specialty Fiber and Optical Access Networks**. He received his Ph.D degree in Information and Communication Engineering from **Beijing University of Posts and Telecommunications (BUPT)**, and was a joint Ph.D student at **The University of Electro-Communications (UEC), Japan**.
+**Zeyu Hu** is a Postdoctoral Researcher in Information and Communication Engineering at **Shanghai University**, affiliated with the **ACE-Lab, Key Laboratory of Specialty Fiber and Optical Access Networks**. He received his Ph.D. degree in Information and Communication Engineering from **Beijing University of Posts and Telecommunications (BUPT)**, and was a joint Ph.D. student at **The University of Electro-Communications (UEC), Japan**.
 
 His research interests include **ubiquitous wireless access, edge caching and data dissemination, non-terrestrial networks (NGSO satellites), satellite IoT, and Age of Information (AoI) optimization**. His recent work focuses on **fresh data collection and scheduling in large-scale satellite IoT systems**, as well as **energy–delay tradeoff optimization in space–air–ground integrated networks**. He has published multiple papers in leading IEEE journals, including IEEE Transactions on Vehicular Technology, IEEE Internet of Things Journal, and IEEE Transactions on Communications.

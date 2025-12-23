@@ -19,6 +19,9 @@
   {{ $group_name := . }}
   {{ $query := where (where site.Pages "Section" "authors") ".Params.user_groups" "intersect" (slice .) }}
   
+  {{/* --- 预先按名字(Title)升序排列 --- */}}
+  {{ $query = sort $query "Title" "asc" }}
+
   {{ $sort_by := $block.content.sort_by | default "Params.last_name" }}
   {{ $sort_by = partial "functions/get_sort_by_parameter" $sort_by }}
   {{ $sort_ascending := $block.content.sort_ascending | default true }}
@@ -30,10 +33,10 @@
   {{ end }}
 {{ end }}
 
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
   {{/* 2. 主标题区域 */}}
-  <div class="flex flex-col items-center text-center mb-20">
+  <div class="flex flex-col items-center text-center mb-8">
     {{ with $title }}
       <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white tracking-tight uppercase">
         {{ . }}
@@ -62,7 +65,7 @@
 
     <div class="mb-24 last:mb-0">
       <div class="flex items-center gap-3 mb-10 border-b border-gray-200 dark:border-gray-700 pb-3">
-        <h3 class="text-2xl font-bold text-gray-900 dark:text-white uppercase tracking-wide">
+        <h3 class="text-2xl font-bold text-gray-900 dark:text-white tracking-wide">
           {{ $group_name | markdownify }}
         </h3>
         <span class="px-2.5 py-0.5 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-bold rounded-full">
@@ -121,7 +124,7 @@
                  {{ if $show_role }}
                    <div class="text-gray-600 dark:text-gray-300 mb-4 w-full">
                      {{ with $person.Params.role }}
-                       <p class="font-semibold text-sm uppercase tracking-wide text-primary-700 dark:text-primary-400 mb-2">{{ . }}</p>
+                       <p class="font-semibold text-sm tracking-wide text-primary-700 dark:text-primary-400 mb-2">{{ . }}</p>
                      {{ end }}
                      {{ if and $show_organizations $person.Params.organizations }}
                        {{ range first 1 $person.Params.organizations }}

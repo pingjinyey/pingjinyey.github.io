@@ -10,7 +10,7 @@ last_name: Shi
 weight: 99
 
 graduation_year: 2025
-degree: "Ph.D"
+degree: "Ph.D."
 destination: "THU"
 
 user_groups:
@@ -23,7 +23,7 @@ highlight_name: true
 role: Alumni
 
 organizations:
-  - name: School of Communications and Information Engineering, Shanghai University
+  - name: School of Communication and Information Engineering, Shanghai University
     url: https://scie.shu.edu.cn/
 
 profiles:
@@ -39,7 +39,7 @@ interests:
   - Wireless Communication
 
 education:
-  - area: Ph.D in Information and Communication Engineering
+  - area: Ph.D. in Information and Communication Engineering
     institution: Shanghai University
     icon: ""
     date_start: 2021-09-01
@@ -81,4 +81,4 @@ sections:
       sort_order: "type_year"
 ---
 
-Yi Shi received the Ph.D degree from the School of Communications and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2025. He is currently a postdoctoral fellow at Tsinghua University, Beijing, China.
+Yi Shi received the Ph.D. degree from the School of Communication and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2025. He is currently a postdoctoral fellow at Tsinghua University, Beijing, China.

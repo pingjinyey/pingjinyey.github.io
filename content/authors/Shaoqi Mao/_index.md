@@ -23,7 +23,7 @@ highlight_name: true
 role: Alumni
 
 organizations:
-  - name: School of Communications and Information Engineering, Shanghai University
+  - name: School of Communication and Information Engineering, Shanghai University
     url: https://scie.shu.edu.cn/
 
 
@@ -74,4 +74,4 @@ sections:
       sort_order: "type_year"
 ---
 
-Shaoqi Mao received the Master degree from the School of Communications and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2025. He now works at COMAC Shanghai Aircraft Design & Research Institute, Shanghai, China.
+Shaoqi Mao received the Master degree from the School of Communication and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2025. He now works at COMAC Shanghai Aircraft Design & Research Institute, Shanghai, China.
