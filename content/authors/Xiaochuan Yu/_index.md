@@ -5,7 +5,7 @@ type: landing
 
 # Full name (for SEO)
 first_name: Xiaochuan
-last_name: Luo
+last_name: Yu
 
 weight: 99
 
@@ -21,26 +21,26 @@ organizations:
   - name: School of Communication and Information Engineering, Shanghai University
     url: https://scie.shu.edu.cn/
 
-# Social network links
-profiles:
-  - icon: at-symbol
-    url: 'mailto:yxc@shu.edu.cn'
-    label: E-mail Me
-social:
-  - icon: envelope
-    icon_pack: fas
-    link: 'mailto:yxc@shu.edu.cn'
+# # Social network links
+# profiles:
+#   - icon: at-symbol
+#     url: 'mailto:yxc@shu.edu.cn'
+#     label: E-mail Me
+# social:
+#   - icon: envelope
+#     icon_pack: fas
+#     link: 'mailto:yxc@shu.edu.cn'
 
 interests:
   - Communication Algorithms and AI Technologies
 
-education:
-  - area: M.S. in Information and Communication Engineering
-    institution: Shanghai University
-    icon: ""
-    date_start: "2025-09-01"
-    date_end: ""
-    summary: ""
+# education:
+#   - area: M.S. in Information and Communication Engineering
+#     institution: Shanghai University
+#     icon: ""
+#     date_start: "2025-09-01"
+#     date_end: ""
+#     summary: ""
   # - area: B.S. in Information and Communication Engineering
   #   institution: Shanghai University
   #   icon: ""
@@ -74,4 +74,4 @@ sections:
       sort_order: "type_year"
 ---
 
-Graduate student (Class of 2025) in Communication and Information Systems.
+Master’s student in Communication and Information Systems, enrolled in 2025.

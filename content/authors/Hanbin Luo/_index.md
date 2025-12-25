@@ -32,8 +32,8 @@ profiles:
 #     link: 'mailto:luohanbin@shu.edu.cn'
 
 interests:
-  - Embedded Systems
-  - Computer Architecture
+  - Embedded Systems and  Architecture
+  # - Computer Architecture
 
 # education:
 #   - area: M.S. in Information and Communication Engineering
@@ -75,4 +75,4 @@ sections:
       sort_order: "type_year"
 ---
 
-Graduate student (Class of 2025) in Signal and Information Processing.
+Master’s student in Signal and Information Processing, enrolled in 2025.
