@@ -11,8 +11,7 @@ weight: 99
 
 graduation_year: 2025
 degree: "M.S."
-destination: "SiCARRIER"
-
+destination: "SICARRIER"
 user_groups:
   - Undergraduate Students
   - Alumni
@@ -20,14 +19,13 @@ user_groups:
 superuser: false
 highlight_name: true
 
-role: Alumni
+role: M.S.
 
 organizations:
-  - name: School of Communication and Information Engineering, Shanghai University
-    url: https://scie.shu.edu.cn/
-
+  - name: SICARRIER
+    url: https://www.sicarrier.com/
 profiles:
-  - icon: at-symbol
+  - icon: envelope
     url: 'mailto:724128728@qq.com'
     label: E-mail Me
 social:
@@ -36,24 +34,25 @@ social:
     link: 'mailto:724128728@qq.com'
 
 interests:
-  - Wireless Communication
+  - Neural Network Model Compression (Pruning and Quantization)
 
-education:
-  - area: M.E. in Information and Communication Engineering
-    institution: Shanghai University
-    icon: ""
-    date_start: 2022-09-01
-    date_end: "2025-06-01"
-    summary: "Advisor: Zhiyuan Jiang"
 
-work:
-  - position: ""
-    company_name: "SiCARRIER"
-    company_url: ""
-    icon: ''
-    date_start: 2025-07-01
-    date_end: ''
-    summary: ""
+# education:
+#   - area: Ph.D. in Information and Communication Engineering
+#     institution: Shanghai University
+#     icon: ""
+#     date_start: 2021-09-01
+#     date_end: "2025-06-01"
+#     summary: "Advisor: Zhiyuan Jiang"
+
+# work:
+#   - position: "Postdoctoral"
+#     company_name: "Tsinghua University"
+#     company_url: ""
+#     icon: ''
+#     date_start: 2025-07-01
+#     date_end: ''
+#     summary: ""
 
 sections:
   - block: resume-biography-3
@@ -81,4 +80,6 @@ sections:
       sort_order: "type_year"
 ---
 
-Jiahao Zuo received the Master degree from the School of Communication and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2025. He now works at SiCARRIER, Shenzhen, China.
+My research focuses on model compression algorithms for neural network accelerators.
+
+

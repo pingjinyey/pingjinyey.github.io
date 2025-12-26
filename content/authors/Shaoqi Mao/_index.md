@@ -20,33 +20,33 @@ user_groups:
 superuser: false
 highlight_name: true
 
-role: Alumni
+role: M.S.
 
 organizations:
-  - name: School of Communication and Information Engineering, Shanghai University
-    url: https://scie.shu.edu.cn/
+  - name: COMAC Shanghai Aircraft Design & Research Institute
+    url: http://sadri.comac.cc/
 
 
 
 interests:
-  - Wireless Communication
+  - Video and Image Processing
 
-education:
-  - area: M.E. in Information and Communication Engineering
-    institution: Shanghai University
-    icon: ""
-    date_start: 2022-09-01
-    date_end: "2025-06-01"
-    summary: "Advisor: Shan Cao"
+# education:
+#   - area: M.E. in Information and Communication Engineering
+#     institution: Shanghai University
+#     icon: ""
+#     date_start: 2022-09-01
+#     date_end: "2025-06-01"
+#     summary: "Advisor: Shan Cao"
 
-work:
-  - position: ""
-    company_name: "COMAC Shanghai Aircraft Design & Research Institute"
-    company_url: ""
-    icon: ''
-    date_start: 2025-07-01
-    date_end: ''
-    summary: ""
+# work:
+#   - position: ""
+#     company_name: "COMAC Shanghai Aircraft Design & Research Institute"
+#     company_url: ""
+#     icon: ''
+#     date_start: 2025-07-01
+#     date_end: ''
+#     summary: ""
 
 sections:
   - block: resume-biography-3
@@ -74,4 +74,3 @@ sections:
       sort_order: "type_year"
 ---
 
-Shaoqi Mao received the Master degree from the School of Communication and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2025. He now works at COMAC Shanghai Aircraft Design & Research Institute, Shanghai, China.

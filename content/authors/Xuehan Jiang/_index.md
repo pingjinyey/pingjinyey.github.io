@@ -23,7 +23,7 @@ organizations:
 
 # Social network links
 profiles:
-  - icon: at-symbol
+  - icon: envelope
     url: 'mailto:j_snowcold@shu.edu.cn'
     label: E-mail Me
 # social:

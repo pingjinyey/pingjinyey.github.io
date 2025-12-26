@@ -23,7 +23,7 @@ organizations:
 
 # Social network links
 profiles:
-  - icon: at-symbol
+  - icon: envelope
     url: 'mailto:toney2@163.com'
     label: E-mail Me
 # social:

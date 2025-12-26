@@ -20,14 +20,14 @@ user_groups:
 superuser: false
 highlight_name: true
 
-role: Alumni
+role: M.S.
 
 organizations:
-  - name: School of Communication and Information Engineering, Shanghai University
-    url: https://scie.shu.edu.cn/
+  - name: ASR
+    url: https://www.asrmicro.com/
 
 profiles:
-  - icon: at-symbol
+  - icon: envelope
     url: 'mailto:Yimilier@126.com'
     label: E-mail Me
 social:
@@ -36,24 +36,25 @@ social:
     link: 'mailto:Yimilier@126.com'
 
 interests:
-  - Wireless Communication
+  - AI Compilers
 
-education:
-  - area: M.E. in Information and Communication Engineering
-    institution: Shanghai University
-    icon: ""
-    date_start: 2022-09-01
-    date_end: "2025-06-01"
-    summary: "Advisor: Shan Cao"
 
-work:
-  - position: ""
-    company_name: "ASR"
-    company_url: ""
-    icon: ''
-    date_start: 2025-07-01
-    date_end: ''
-    summary: ""
+# education:
+#   - area: M.E. in Information and Communication Engineering
+#     institution: Shanghai University
+#     icon: ""
+#     date_start: 2022-09-01
+#     date_end: "2025-06-01"
+#     summary: "Advisor: Shan Cao"
+
+# work:
+#   - position: ""
+#     company_name: "ASR"
+#     company_url: ""
+#     icon: ''
+#     date_start: 2025-07-01
+#     date_end: ''
+#     summary: ""
 
 sections:
   - block: resume-biography-3
@@ -81,4 +82,4 @@ sections:
       sort_order: "type_year"
 ---
 
-Meiling Yang received the Master degree from the School of Communication and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2025. She now works at ASR, Shanghai, China.
+My graduate research focused on AI compilers.

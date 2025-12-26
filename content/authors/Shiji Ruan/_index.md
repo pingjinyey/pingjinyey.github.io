@@ -23,7 +23,7 @@ organizations:
 
 # Social network links
 profiles:
-  - icon: at-symbol
+  - icon: envelope
     url: 'mailto:13127537420@163.com'
     label: E-mail Me
 # social:

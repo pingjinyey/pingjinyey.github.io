@@ -11,8 +11,7 @@ weight: 99
 
 graduation_year: 2024
 degree: "M.S."
-destination: "CETC (50th Research Institute)"
-
+destination: "DEEPTRANSCEND"
 user_groups:
   - Undergraduate Students
   - Alumni
@@ -20,14 +19,14 @@ user_groups:
 superuser: false
 highlight_name: true
 
-role: Alumni
+role: M.S.
 
 organizations:
-  - name: School of Communication and Information Engineering, Shanghai University
-    url: https://scie.shu.edu.cn/
+  - name: DEEPTRANSCEND
+    url: https://deeptranscend.com/  
 
 profiles:
-  - icon: at-symbol
+  - icon: envelope
     url: 'mailto:947989376@qq.com'
     label: E-mail Me
 social:
@@ -36,24 +35,25 @@ social:
     link: 'mailto:947989376@qq.com'
 
 interests:
-  - Wireless Communication
+  - Domain-Specific Processor Design
 
-education:
-  - area: M.E. in Information and Communication Engineering
-    institution: Shanghai University
-    icon: ""
-    date_start: 2021-09-01
-    date_end: "2024-06-01"
-    summary: "Advisor: Shan Cao"
 
-work:
-  - position: ""
-    company_name: "CETC (50th Research Institute)"
-    company_url: ""
-    icon: ''
-    date_start: 2024-07-01
-    date_end: ''
-    summary: ""
+# education:
+#   - area: Ph.D. in Information and Communication Engineering
+#     institution: Shanghai University
+#     icon: ""
+#     date_start: 2021-09-01
+#     date_end: "2025-06-01"
+#     summary: "Advisor: Zhiyuan Jiang"
+
+# work:
+#   - position: "Postdoctoral"
+#     company_name: "Tsinghua University"
+#     company_url: ""
+#     icon: ''
+#     date_start: 2025-07-01
+#     date_end: ''
+#     summary: ""
 
 sections:
   - block: resume-biography-3
@@ -81,4 +81,6 @@ sections:
       sort_order: "type_year"
 ---
 
-Haiqin Hu received the Master degree from the School of Communication and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2024. He now works at CETC (50th Research Institute), Shanghai, China.
+Haiqin Hu received the M.S. degree from the School of Communication and Information Engineering, Shanghai University, Shanghai, China, in 2024. His research interests include V2X communication, open radio access network, domain-specific architecture and vector processing units.
+
+

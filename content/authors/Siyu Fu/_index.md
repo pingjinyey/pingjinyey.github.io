@@ -11,7 +11,7 @@ weight: 99
 
 graduation_year: 2022
 degree: "M.S."
-destination: "NIO"
+destination: "Shanghai DiDi Woya Technology Co., Ltd."
 
 user_groups:
   - Undergraduate Students
@@ -20,40 +20,39 @@ user_groups:
 superuser: false
 highlight_name: true
 
-role: Alumni
+role: M.S.
 
 organizations:
-  - name: School of Communication and Information Engineering, Shanghai University
-    url: https://scie.shu.edu.cn/
+  - name: Shanghai DiDi Woya Technology Co., Ltd.
+    url: https://www.didiglobal.com/science/intelligent-driving
 
 profiles:
-  - icon: at-symbol
-    url: 'mailto:gumstar@i.shu.edu.cn'
+  - icon: envelope
+    url: 'mailto:fu_siyu@163.com'
     label: E-mail Me
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:gumstar@i.shu.edu.cn'
+    link: 'mailto:fu_siyu@163.com'
 
 interests:
-  - Wireless Communication
+  - Internet of Vehicles
+# education:
+#   - area: M.E. in Information and Communication Engineering
+#     institution: Shanghai University
+#     icon: ""
+#     date_start: 2019-09-01
+#     date_end: "2022-06-01"
+#     summary: "Advisor: Zhiyuan Jiang"
 
-education:
-  - area: M.E. in Information and Communication Engineering
-    institution: Shanghai University
-    icon: ""
-    date_start: 2019-09-01
-    date_end: "2022-06-01"
-    summary: "Advisor: Zhiyuan Jiang"
-
-work:
-  - position: ""
-    company_name: "NIO"
-    company_url: ""
-    icon: ''
-    date_start: 2022-07-01
-    date_end: ''
-    summary: ""
+# work:
+#   - position: ""
+#     company_name: "NIO"
+#     company_url: ""
+#     icon: ''
+#     date_start: 2022-07-01
+#     date_end: ''
+#     summary: ""
 
 sections:
   - block: resume-biography-3
@@ -81,4 +80,4 @@ sections:
       sort_order: "type_year"
 ---
 
-Siyu Fu received the Master degree from the School of Communication and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2022. She now works at NIO, Shanghai, China.
+Under the supervision of Prof. Zhiyuan Jiang, my graduate research focused on the Internet of Vehicles (IoV). I have published 3 SCI papers (including 2 in Q1 journals), 1 EI paper, and 1 patent. After graduating in 2022, I have been working in the autonomous driving industry.

@@ -27,7 +27,7 @@ organizations:
     url: https://scie.shu.edu.cn/
 
 profiles:
-  - icon: at-symbol
+  - icon: envelope
     url: 'mailto:twigher@shu.edu.cn'
     label: E-mail Me
 social:

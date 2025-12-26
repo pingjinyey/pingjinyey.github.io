@@ -16,7 +16,7 @@ links:
   - id: email
     url: 'mailto:?subject={title}&body={url}'
     title: Email
-    icon: hero/at-symbol
+    icon: hero/envelope
     enable: true
   - id: linkedin
     url: 'https://www.linkedin.com/shareArticle?url={url}&title={title}'

@@ -24,7 +24,7 @@ organizations:
 
 # Social network links
 profiles:
-  - icon: at-symbol
+  - icon: envelope
     url: 'mailto:carrot29@shu.edu.cn'
     label: E-mail Me
 #   - icon: academicons/google-scholar

@@ -11,7 +11,7 @@ weight: 99
 
 graduation_year: 2021
 degree: "M.S."
-destination: "GigaDevice"
+destination: "Qualcomm"
 
 user_groups:
   - Undergraduate Students
@@ -20,40 +20,39 @@ user_groups:
 superuser: false
 highlight_name: true
 
-role: Alumni
+role: M.S.
 
 organizations:
-  - name: School of Communication and Information Engineering, Shanghai University
-    url: https://scie.shu.edu.cn/
-
+  - name: Qualcomm
+    url: https://www.qualcomm.cn/
 profiles:
-  - icon: at-symbol
-    url: 'mailto:zjzslt@shu.edu.cn'
+  - icon: envelope
+    url: 'mailto:457136138@qq.com'
     label: E-mail Me
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:zjzslt@shu.edu.cn'
+    link: 'mailto:457136138@qq.com'
 
 interests:
-  - Wireless Communication
+  - LDPC and Polar Code Decoding Algorithms and FPGA Implementation
 
-education:
-  - area: M.E. in Information and Communication Engineering
-    institution: Shanghai University
-    icon: ""
-    date_start: 2018-09-01
-    date_end: "2021-06-01"
-    summary: "Advisor: Shan Cao"
+# education:
+#   - area: M.E. in Information and Communication Engineering
+#     institution: Shanghai University
+#     icon: ""
+#     date_start: 2018-09-01
+#     date_end: "2021-06-01"
+#     summary: "Advisor: Shan Cao"
 
-work:
-  - position: ""
-    company_name: "GigaDevice"
-    company_url: ""
-    icon: ''
-    date_start: 2021-07-01
-    date_end: ''
-    summary: ""
+# work:
+#   - position: ""
+#     company_name: "GigaDevice"
+#     company_url: ""
+#     icon: ''
+#     date_start: 2021-07-01
+#     date_end: ''
+#     summary: ""
 
 sections:
   - block: resume-biography-3
@@ -81,4 +80,5 @@ sections:
       sort_order: "type_year"
 ---
 
-Ting Lin received the Master degree from the School of Communication and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2021. She now works at GigaDevice, Shanghai, China.
+My graduate research focused on LDPC and polar code decoding algorithms and FPGA implementation.
+

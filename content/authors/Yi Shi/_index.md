@@ -20,14 +20,14 @@ user_groups:
 superuser: false
 highlight_name: true
 
-role: Alumni
+role: Ph.D.
 
 organizations:
-  - name: School of Communication and Information Engineering, Shanghai University
-    url: https://scie.shu.edu.cn/
+  - name: THU
+    url: https://www.tsinghua.edu.cn/en/
 
 profiles:
-  - icon: at-symbol
+  - icon: envelope
     url: 'mailto:shiyi1996@shu.edu.cn'
     label: E-mail Me
 social:
@@ -37,23 +37,24 @@ social:
 
 interests:
   - Wireless Communication
+  - Domain-Specific Processor Design
 
-education:
-  - area: Ph.D. in Information and Communication Engineering
-    institution: Shanghai University
-    icon: ""
-    date_start: 2021-09-01
-    date_end: "2025-06-01"
-    summary: "Advisor: Zhiyuan Jiang"
+# education:
+#   - area: Ph.D. in Information and Communication Engineering
+#     institution: Shanghai University
+#     icon: ""
+#     date_start: 2021-09-01
+#     date_end: "2025-06-01"
+#     summary: "Advisor: Zhiyuan Jiang"
 
-work:
-  - position: "Postdoctoral"
-    company_name: "Tsinghua University"
-    company_url: ""
-    icon: ''
-    date_start: 2025-07-01
-    date_end: ''
-    summary: ""
+# work:
+#   - position: "Postdoctoral"
+#     company_name: "Tsinghua University"
+#     company_url: ""
+#     icon: ''
+#     date_start: 2025-07-01
+#     date_end: ''
+#     summary: ""
 
 sections:
   - block: resume-biography-3
@@ -81,4 +82,4 @@ sections:
       sort_order: "type_year"
 ---
 
-Yi Shi received the Ph.D. degree from the School of Communication and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2025. He is currently a postdoctoral fellow at Tsinghua University, Beijing, China.
+I received my B.E. and Ph.D. degrees from Shanghai University in 2019 and 2025, respectively, under the supervision of Prof. Zhiyuan Jiang. I am currently a postdoctoral researcher at Tsinghua University, working with Prof. Sheng Zhou. My research interests include wireless communications and domain-specific processor design. I have published more than ten papers in journals such as IEEE Transactions on Wireless Communications (TWC), IEEE Wireless Communications Magazine (WCM), and IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD).

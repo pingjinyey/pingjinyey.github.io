@@ -11,7 +11,7 @@ weight: 99
 
 graduation_year: 2024
 degree: "M.S."
-destination: "HUAWEI (HiSilicon)"
+destination: "HUAWEI"
 
 user_groups:
   - Undergraduate Students
@@ -20,14 +20,14 @@ user_groups:
 superuser: false
 highlight_name: true
 
-role: Alumni
+role: M.S.
 
 organizations:
-  - name: School of Communication and Information Engineering, Shanghai University
-    url: https://scie.shu.edu.cn/
+  - name: HUAWEI
+    url: https://www.huawei.com/cn/
 
 profiles:
-  - icon: at-symbol
+  - icon: envelope
     url: 'mailto:13330670878@163.com'
     label: E-mail Me
 social:
@@ -38,22 +38,22 @@ social:
 interests:
   - Wireless Communication
 
-education:
-  - area: M.E. in Information and Communication Engineering
-    institution: Shanghai University
-    icon: ""
-    date_start: 2021-09-01
-    date_end: "2024-06-01"
-    summary: "Advisor: Shan Cao"
+# education:
+#   - area: M.E. in Information and Communication Engineering
+#     institution: Shanghai University
+#     icon: ""
+#     date_start: 2021-09-01
+#     date_end: "2024-06-01"
+#     summary: "Advisor: Shan Cao"
 
-work:
-  - position: ""
-    company_name: "HUAWEI (HiSilicon)"
-    company_url: ""
-    icon: ''
-    date_start: 2024-07-01
-    date_end: ''
-    summary: ""
+# work:
+#   - position: ""
+#     company_name: "HUAWEI (HiSilicon)"
+#     company_url: ""
+#     icon: ''
+#     date_start: 2024-07-01
+#     date_end: ''
+#     summary: ""
 
 sections:
   - block: resume-biography-3
@@ -81,4 +81,4 @@ sections:
       sort_order: "type_year"
 ---
 
-Shan Chen received the Master degree from the School of Communication and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2024. She now works at HUAWEI (HiSilicon), Shanghai, China.
+

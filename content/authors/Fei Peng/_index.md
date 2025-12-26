@@ -20,33 +20,36 @@ user_groups:
 superuser: false
 highlight_name: true
 
-role: Alumni
+role: Ph.D.
 
 organizations:
-  - name: School of Communication and Information Engineering, Shanghai University
-    url: https://scie.shu.edu.cn/
+  - name: TCL
+    url: https://www.tcltech.com/
 
 
 
 interests:
-  - Wireless Communication
+  - Channel Prediction
+  - Resource Allocation
+  - Baseband Design
 
-education:
-  - area: Ph.D. in Information and Communication Engineering
-    institution: Shanghai University
-    icon: ""
-    date_start: 2018-09-01
-    date_end: "2024-06-01"
-    summary: "Advisor: Shunqing Zhang & Zhiyuan Jiang"
 
-work:
-  - position: ""
-    company_name: "TCL"
-    company_url: ""
-    icon: ''
-    date_start: 2024-07-01
-    date_end: ''
-    summary: ""
+# education:
+#   - area: Ph.D. in Information and Communication Engineering
+#     institution: Shanghai University
+#     icon: ""
+#     date_start: 2018-09-01
+#     date_end: "2024-06-01"
+#     summary: "Advisor: Shunqing Zhang & Zhiyuan Jiang"
+
+# work:
+#   - position: ""
+#     company_name: "TCL"
+#     company_url: ""
+#     icon: ''
+#     date_start: 2024-07-01
+#     date_end: ''
+#     summary: ""
 
 sections:
   - block: resume-biography-3
@@ -74,4 +77,4 @@ sections:
       sort_order: "type_year"
 ---
 
-Fei Peng received the Ph.D. degree from the School of Communication and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2024. He now works at TCL, Shanghai, China.
+I received my Ph.D. degree in June 2024 and am currently working at TCL on pre-research for 6G technology standards.

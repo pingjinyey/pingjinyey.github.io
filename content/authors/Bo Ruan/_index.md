@@ -5,14 +5,13 @@ type: landing
 
 # Full name (for SEO)
 first_name: Bo
-last_name: Ruan
+last_name:  Ruan
 
 weight: 99
 
 graduation_year: 2024
 degree: "M.S."
 destination: "DEEPTRANSCEND"
-
 user_groups:
   - Undergraduate Students
   - Alumni
@@ -20,33 +19,41 @@ user_groups:
 superuser: false
 highlight_name: true
 
-role: Alumni
+role: M.S.
 
 organizations:
-  - name: School of Communication and Information Engineering, Shanghai University
-    url: https://scie.shu.edu.cn/
+  - name: DEEPTRANSCEND
+    url: https://deeptranscend.com/  
 
-
+profiles:
+  - icon: envelope
+    url: 'mailto:ruanbo20212@shu.edu.cn'
+    label: E-mail Me
+social:
+  - icon: envelope
+    icon_pack: fas
+    link: 'mailto:ruanbo20212@shu.edu.cn'
 
 interests:
-  - Wireless Communication
+  - Digital IC Design
 
-education:
-  - area: M.E. in Information and Communication Engineering
-    institution: Shanghai University
-    icon: ""
-    date_start: 2021-09-01
-    date_end: "2024-06-01"
-    summary: "Advisor: Shan Cao"
 
-work:
-  - position: ""
-    company_name: "DEEPTRANSCEND"
-    company_url: ""
-    icon: ''
-    date_start: 2024-07-01
-    date_end: ''
-    summary: ""
+# education:
+#   - area: Ph.D. in Information and Communication Engineering
+#     institution: Shanghai University
+#     icon: ""
+#     date_start: 2021-09-01
+#     date_end: "2025-06-01"
+#     summary: "Advisor: Zhiyuan Jiang"
+
+# work:
+#   - position: "Postdoctoral"
+#     company_name: "Tsinghua University"
+#     company_url: ""
+#     icon: ''
+#     date_start: 2025-07-01
+#     date_end: ''
+#     summary: ""
 
 sections:
   - block: resume-biography-3
@@ -74,4 +81,6 @@ sections:
       sort_order: "type_year"
 ---
 
-Bo Ruan received the Master degree from the School of Communication and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2024. He now works at DEEPTRANSCEND, Shanghai, China.
+From March 2024 to February 2025, I worked at Shenyi (Zhejiang) Technology Co., Ltd. Since March 2025, I have been with Shanghai Shenyuan Xinyi Technology Co., Ltd.
+
+

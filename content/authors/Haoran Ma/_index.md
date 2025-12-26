@@ -20,40 +20,39 @@ user_groups:
 superuser: false
 highlight_name: true
 
-role: Alumni
+role: M.S.
 
 organizations:
-  - name: School of Communication and Information Engineering, Shanghai University
-    url: https://scie.shu.edu.cn/
-
+  - name: MediaTek
+    url: https://corp.mediatek.cn/index.php
 profiles:
-  - icon: at-symbol
-    url: 'mailto:haoranMa@shu.edu.cn'
+  - icon: envelope
+    url: 'mailto:mhaoran120@163.com'
     label: E-mail Me
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:haoranMa@shu.edu.cn'
+    link: 'mailto:mhaoran120@163.com'
 
 interests:
-  - Wireless Communication
+  - Wireless L3 Protocol Support
 
-education:
-  - area: M.E. in Information and Communication Engineering
-    institution: Shanghai University
-    icon: ""
-    date_start: 2019-09-01
-    date_end: "2022-06-01"
-    summary: "Advisor: Zhiyuan Jiang"
+# education:
+#   - area: M.E. in Information and Communication Engineering
+#     institution: Shanghai University
+#     icon: ""
+#     date_start: 2019-09-01
+#     date_end: "2022-06-01"
+#     summary: "Advisor: Zhiyuan Jiang"
 
-work:
-  - position: ""
-    company_name: "MediaTek"
-    company_url: ""
-    icon: ''
-    date_start: 2022-07-01
-    date_end: ''
-    summary: ""
+# work:
+#   - position: ""
+#     company_name: "MediaTek"
+#     company_url: ""
+#     icon: ''
+#     date_start: 2022-07-01
+#     date_end: ''
+#     summary: ""
 
 sections:
   - block: resume-biography-3
@@ -81,4 +80,5 @@ sections:
       sort_order: "type_year"
 ---
 
-Haoran Ma received the Master degree from the School of Communication and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2022. He now works at MediaTek, Shanghai, China.
+During my master’s studies, my primary research focused on waveform design and transceiver simulations for URLLC scenarios.
+

@@ -20,14 +20,14 @@ user_groups:
 superuser: false
 highlight_name: true
 
-role: Alumni
+role: M.S.
 
 organizations:
-  - name: School of Communication and Information Engineering, Shanghai University
-    url: https://scie.shu.edu.cn/
+  - name: HUAWEI
+    url: https://www.huawei.com/cn/
 
 profiles:
-  - icon: at-symbol
+  - icon: envelope
     url: 'mailto:lan_zhai@foxmail.com'
     label: E-mail Me
 social:
@@ -38,22 +38,22 @@ social:
 interests:
   - Wireless Communication
 
-education:
-  - area: M.E. in Information and Communication Engineering
-    institution: Shanghai University
-    icon: ""
-    date_start: 2022-09-01
-    date_end: "2025-06-01"
-    summary: "Advisor: Shan Cao"
+# education:
+#   - area: M.E. in Information and Communication Engineering
+#     institution: Shanghai University
+#     icon: ""
+#     date_start: 2022-09-01
+#     date_end: "2025-06-01"
+#     summary: "Advisor: Shan Cao"
 
-work:
-  - position: ""
-    company_name: "HUAWEI"
-    company_url: ""
-    icon: ''
-    date_start: 2025-07-01
-    date_end: ''
-    summary: ""
+# work:
+#   - position: ""
+#     company_name: "HUAWEI"
+#     company_url: ""
+#     icon: ''
+#     date_start: 2025-07-01
+#     date_end: ''
+#     summary: ""
 
 sections:
   - block: resume-biography-3
@@ -81,4 +81,4 @@ sections:
       sort_order: "type_year"
 ---
 
-Yanbo Zhai received the Master degree from the School of Communication and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2025. He now works at HUAWEI, Shanghai, China.
+I enrolled in 2022 under the supervision of Associate Professor Shan Cao. During my graduate studies, my primary research focused on channel studies in wireless communications, and I am currently working on FDD base station–related projects.

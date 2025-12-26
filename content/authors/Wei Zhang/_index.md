@@ -20,31 +20,31 @@ user_groups:
 superuser: false
 highlight_name: true
 
-role: Alumni
+role: Ph.D.
 
 organizations:
-  - name: School of Communication and Information Engineering, Shanghai University
-    url: https://scie.shu.edu.cn/
+  - name: Honor
+    url: https://www.honor.com/cn/ 
 
 profiles:
-  - icon: at-symbol
-    url: 'mailto:wei_zh@shu.edu.cn'
+  - icon: envelope
+    url: 'mailto:3478629045@qq.com'
     label: E-mail Me
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:wei_zh@shu.edu.cn'
+    link: 'mailto:3478629045@qq.com'
 
 interests:
-  - Wireless Communication
-
-education:
-  - area: Ph.D. in Information and Communication Engineering
-    institution: Shanghai University
-    icon: ""
-    date_start: 2020-09-01
-    date_end: "2025-06-01"
-    summary: "Advisor: Zhiyuan Jiang"
+  - Internet of Vehicles
+  - Embedded Systems
+# education:
+#   - area: Ph.D. in Information and Communication Engineering
+#     institution: Shanghai University
+#     icon: ""
+#     date_start: 2020-09-01
+#     date_end: "2025-06-01"
+#     summary: "Advisor: Zhiyuan Jiang"
 
 
 
@@ -74,4 +74,5 @@ sections:
       sort_order: "type_year"
 ---
 
-Wei Zhang received the Ph.D. degree from the School of Communication and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2025. She now works at HONOR, Nanjing, China.
+I received my B.E. and Ph.D. degrees from Shanghai University in 2020 and 2025, respectively, under the supervision of Prof. Zhiyuan Jiang. My research focuses on vehicle–road collaborative sensing systems, neural network accelerators, and SoC design. I have published multiple papers in venues such as the IEEE Internet of Things Journal, IEEE Transactions on Wireless Communications, and conferences including IEEE SPAWC and INFOCOM Workshops. During my Ph.D. studies, I served as Secretary of the Ph.D. Party Branch, demonstrating strong teamwork, leadership, and organizational skills.
+

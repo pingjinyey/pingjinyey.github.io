@@ -33,7 +33,7 @@ organizations:
 
 # Social network links
 profiles:
-  # - icon: at-symbol
+  # - icon: envelope
   - icon: envelope
     icon_pack: fas
     url: 'mailto:cshan@shu.edu.cn'

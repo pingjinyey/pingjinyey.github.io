@@ -20,40 +20,40 @@ user_groups:
 superuser: false
 highlight_name: true
 
-role: Alumni
+role: M.S.
 
 organizations:
-  - name: School of Communication and Information Engineering, Shanghai University
-    url: https://scie.shu.edu.cn/
+  - name: GigaDevice
+    url: https://www.gigadevice.com.cn/
 
 profiles:
-  - icon: at-symbol
-    url: 'mailto:wanha@shu.edu.cn'
+  - icon: envelope
+    url: 'mailto:whao_shu@163.com'
     label: E-mail Me
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:wanha@shu.edu.cn'
+    link: 'mailto:whao_shu@163.com'
 
 interests:
-  - Wireless Communication
+  - FPGA-Based Face Recognition Accelerator
 
-education:
-  - area: M.E. in Information and Communication Engineering
-    institution: Shanghai University
-    icon: ""
-    date_start: 2018-09-01
-    date_end: "2021-06-01"
-    summary: "Advisor: Shan Cao"
+# education:
+#   - area: M.E. in Information and Communication Engineering
+#     institution: Shanghai University
+#     icon: ""
+#     date_start: 2018-09-01
+#     date_end: "2021-06-01"
+#     summary: "Advisor: Shan Cao"
 
-work:
-  - position: ""
-    company_name: "GigaDevice"
-    company_url: ""
-    icon: ''
-    date_start: 2021-07-01
-    date_end: ''
-    summary: ""
+# work:
+#   - position: ""
+#     company_name: "GigaDevice"
+#     company_url: ""
+#     icon: ''
+#     date_start: 2021-07-01
+#     date_end: ''
+#     summary: ""
 
 sections:
   - block: resume-biography-3
@@ -81,4 +81,5 @@ sections:
       sort_order: "type_year"
 ---
 
-Hao Wang received the Master degree from the School of Communication and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2021. He now works at GigaDevice, Shanghai, China.
+During my graduate studies, I mainly worked on convolutional neural network accelerators. I am currently engaged in digital front-end design.
+

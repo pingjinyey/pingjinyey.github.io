@@ -20,40 +20,39 @@ user_groups:
 superuser: false
 highlight_name: true
 
-role: Alumni
+role: M.S.
 
 organizations:
-  - name: School of Communication and Information Engineering, Shanghai University
-    url: https://scie.shu.edu.cn/
+  - name: Qualcomm
+    url: https://www.qualcomm.cn/
 
 profiles:
-  - icon: at-symbol
-    url: 'mailto:dw807417563@shu.edu.cn'
+  - icon: envelope
+    url: 'mailto:weideng_shu@foxmail.com'
     label: E-mail Me
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:dw807417563@shu.edu.cn'
+    link: 'mailto:weideng_shu@foxmail.com'
 
 interests:
-  - Wireless Communication
+  - Neural Network Accelerator Simulator Design and FPGA Implementation
+# education:
+#   - area: M.E. in Information and Communication Engineering
+#     institution: Shanghai University
+#     icon: ""
+#     date_start: 2019-09-01
+#     date_end: "2022-06-01"
+#     summary: "Advisor: Shan Cao"
 
-education:
-  - area: M.E. in Information and Communication Engineering
-    institution: Shanghai University
-    icon: ""
-    date_start: 2019-09-01
-    date_end: "2022-06-01"
-    summary: "Advisor: Shan Cao"
-
-work:
-  - position: ""
-    company_name: "Qualcomm"
-    company_url: ""
-    icon: ''
-    date_start: 2022-07-01
-    date_end: ''
-    summary: ""
+# work:
+#   - position: ""
+#     company_name: "Qualcomm"
+#     company_url: ""
+#     icon: ''
+#     date_start: 2022-07-01
+#     date_end: ''
+#     summary: ""
 
 sections:
   - block: resume-biography-3
@@ -81,4 +80,5 @@ sections:
       sort_order: "type_year"
 ---
 
-Wei Deng received the Master degree from the School of Communication and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2022. He now works at Qualcomm, Shanghai, China.
+From 2015 to 2019, I pursued my B.E. at the School of Communication and Information Engineering, Shanghai University, with an average GPA of 3.82. From 2019 to 2022, I continued my master’s studies at the same school under the supervision of Associate Professor Shan Cao, focusing on neural network accelerator simulator design and FPGA implementation, and published one SCI journal paper. From 2022 to 2025, I worked at QUALCOMM (Shanghai) Co., Ltd. as a Senior Engineer, responsible for ASIC design verification.
+

@@ -2,6 +2,7 @@
 # Display name
 title: Zeyu Hu
 type: landing
+external_url: "https://scie-ce.shu.edu.cn/info/1092/1232.htm"
 
 # Full name (for SEO)
 first_name: Zeyu
@@ -15,7 +16,6 @@ destination: "SHU"
 
 user_groups:
   - Faculties
-  - Alumni
 
 # Is this the primary user of the site?
 superuser: false
@@ -33,20 +33,25 @@ organizations:
 
 # Social network links
 profiles:
-  - icon: at-symbol
+  - icon: envelope
     url: 'mailto:huzeyu@shu.edu.cn'
     label: E-mail Me
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?user=DNgq9FoAAAAJ
+  - icon:  academicons/researchgate
+    url: https://www.researchgate.net/profile/Zeyu-Hu-7
 social:
   - icon: envelope
     icon_pack: fas
     link: 'mailto:huzeyu@shu.edu.cn'
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?user=DNgq9FoAAAAJ
+  - icon:  academicons/researchgate
+    url: https://www.researchgate.net/profile/Zeyu-Hu-7
 
 interests:
   - Wireless Communication
+  - Satellite Communication
   
 education:
   - area: PostDoc in Information and Communication Engineering
@@ -102,6 +107,6 @@ sections:
       view: pub-item
       sort_order: "type_year" # 可选: "year_type" (默认) 或 "type_year"
 ---
-**Zeyu Hu** is a Postdoctoral Researcher in Information and Communication Engineering at **Shanghai University**, affiliated with the **ACE-Lab, Key Laboratory of Specialty Fiber and Optical Access Networks**. He received his Ph.D. degree in Information and Communication Engineering from **Beijing University of Posts and Telecommunications (BUPT)**, and was a joint Ph.D. student at **The University of Electro-Communications (UEC), Japan**.
+**Zeyu Hu** is an assistant professor in Information and Communication Engineering at Shanghai University, affiliated with the ACE-Lab, Key Laboratory of Specialty Fiber and Optical Access Networks. He received his Ph.D. degree in Information and Communication Engineering from Beijing University of Posts and Telecommunications (BUPT), and was a joint Ph.D. student at The University of Electro-Communications (UEC), Japan.
 
-His research interests include **ubiquitous wireless access, edge caching and data dissemination, non-terrestrial networks (NGSO satellites), satellite IoT, and Age of Information (AoI) optimization**. His recent work focuses on **fresh data collection and scheduling in large-scale satellite IoT systems**, as well as **energy–delay tradeoff optimization in space–air–ground integrated networks**. He has published multiple papers in leading IEEE journals, including IEEE Transactions on Vehicular Technology, IEEE Internet of Things Journal, and IEEE Transactions on Communications.
+His research interests include Non-Geostationary Satellite Orbit (NGSO) Communication, Artificial Intelligence - Radio Access Network (AI-RAN) and Age of Information (Aol) optimization. His recent work focuses on fresh data collection and scheduling in large-scale satellite IoT systems, as well as energy–delay tradeoff optimization in space–air–ground integrated networks. He has published multiple papers in leading IEEE journals, including IEEE Transactions on Vehicular Technology, IEEE Internet of Things Journal, and IEEE Transactions on Communications.

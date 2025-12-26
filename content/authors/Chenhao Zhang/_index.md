@@ -11,7 +11,7 @@ weight: 99
 
 graduation_year: 2022
 degree: "M.S."
-destination: "China Telecom (Guizhou)"
+destination: "China Telecom "
 
 user_groups:
   - Undergraduate Students
@@ -20,40 +20,41 @@ user_groups:
 superuser: false
 highlight_name: true
 
-role: Alumni
+role: M.S.
 
 organizations:
-  - name: School of Communication and Information Engineering, Shanghai University
-    url: https://scie.shu.edu.cn/
+  - name: China Telecom
+    url: https://www.chinatelecom.com.cn/
 
 profiles:
-  - icon: at-symbol
-    url: 'mailto:Ch_Zhang@shu.edu.cn'
+  - icon: envelope
+    url: 'mailto:zhangch11@chinatelecom.cn'
     label: E-mail Me
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:Ch_Zhang@shu.edu.cn'
+    link: 'mailto:zhangch11@chinatelecom.cn'
 
 interests:
-  - Wireless Communication
+  - LTE Communications & FPGA Design
 
-education:
-  - area: M.E. in Information and Communication Engineering
-    institution: Shanghai University
-    icon: ""
-    date_start: 2019-09-01
-    date_end: "2022-06-01"
-    summary: "Advisor: Shan Cao"
 
-work:
-  - position: ""
-    company_name: "China Telecom (Guizhou)"
-    company_url: ""
-    icon: ''
-    date_start: 2022-07-01
-    date_end: ''
-    summary: ""
+# education:
+#   - area: M.E. in Information and Communication Engineering
+#     institution: Shanghai University
+#     icon: ""
+#     date_start: 2019-09-01
+#     date_end: "2022-06-01"
+#     summary: "Advisor: Shan Cao"
+
+# work:
+#   - position: ""
+#     company_name: "China Telecom (Guizhou)"
+#     company_url: ""
+#     icon: ''
+#     date_start: 2022-07-01
+#     date_end: ''
+#     summary: ""
 
 sections:
   - block: resume-biography-3
@@ -81,4 +82,3 @@ sections:
       sort_order: "type_year"
 ---
 
-Chenhao Zhang received the Master degree from the School of Communication and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2022. He now works at China Telecom (Guizhou), 贵州, China.

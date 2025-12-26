@@ -23,7 +23,7 @@ organizations:
 
 # Social network links
 profiles:
-  - icon: at-symbol
+  - icon: envelope
     url: 'mailto:guyuhang@shu.edu.cn'
     label: E-mail Me
 #   - icon: academicons/google-scholar

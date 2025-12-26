@@ -27,7 +27,7 @@ organizations:
     url: https://scie.shu.edu.cn/
 
 profiles:
-  - icon: at-symbol
+  - icon: envelope
     url: 'mailto:15755325815@163.com'
     label: E-mail Me
 social:
