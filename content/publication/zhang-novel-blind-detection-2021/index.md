@@ -14,7 +14,7 @@ publication: '*2021 IEEE Workshop on Signal Processing Systems (SiPS)*'
 hugoblox:
   ids:
     doi: 10.1109/SiPS52927.2021.00010
-abstract: A novel physical sidelink control channel (PSCCH) blind detection method
+abstract: 'A novel physical sidelink control channel (PSCCH) blind detection method
   based on demodulation reference signal (DMRS) detection is proposed for sidelink
   communications in cellular vehicular-to-everything (C-V2X). In the proposed method,
   the user equipment (UE) first performs coherent energy detection on the DMRS positions.
@@ -23,18 +23,7 @@ abstract: A novel physical sidelink control channel (PSCCH) blind detection meth
   Based on the proposed algorithm and the channel estimation method, a VLSI architecture
   of joint energy detection and channel estimation (JEC) is proposed. Reference implementation
   results for a Xilinx Virtex-7 FPGA show that our design can reduce hardware complexity
-  and energy consumption.
+  and energy consumption.'
 tags:
-- Channel estimation
-- DMRS
-- Energy consumption
-- energy efficiency
-- Energy efficiency
-- Hardware
 - LTE-V
-- PSCCH
-- Signal processing
-- Signal processing algorithms
-- Very large scale integration
-- VLSI
 ---

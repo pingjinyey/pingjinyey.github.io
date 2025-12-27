@@ -1,6 +1,5 @@
 ---
-title: Compiler-Assisted Leakage Energy Optimization of Media Applications on Stream
-  Architectures
+title: Compiler-Assisted Leakage Energy Optimization of Media Applications on Stream Architectures
 authors:
 - Shan Cao
 - Zhaolin Li

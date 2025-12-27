@@ -36,9 +36,6 @@ abstract: Wireless baseband processing (WBP) serves as an ideal scenario for uti
   vector architectures. Our synthesized RTL for a 16-lane configuration using SMIC
   40nm technology spans 0.94 mm$textasciicircum 2$ and achieves an area efficiency
   of 21.2 GOPS/mm$textasciicircum 2$.
-tags:
-- Computer Science
-- Hardware Architecture
 links:
 - name: arXiv
   url: https://arxiv.org/abs/2504.10832

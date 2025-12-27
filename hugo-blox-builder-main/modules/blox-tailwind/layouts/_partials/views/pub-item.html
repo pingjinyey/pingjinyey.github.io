@@ -4,13 +4,35 @@
 
 <div class="pub-list-item view-pub-item mb-4 pl-2" style="font-family: sans-serif;">
   
-  {{ if $item.Params.publication_short }}
+
+  {{ $venue_raw := $item.Params.publication }}
+
+  {{ $venue_clean := "" }}
+  {{ if $venue_raw }}
+    {{ $venue_clean = $venue_raw | markdownify | plainify }}
+  {{ end }}
+
+  {{ $venue_abbrev := "" }}
+
+  {{ if and site.Data.venues $venue_clean }}
+    {{ range $keyword, $abbr := site.Data.venues }}
+      {{ if in $venue_clean $keyword }}
+        {{ $venue_abbrev = $abbr }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{ $display_text := $venue_clean }}
+  
+  {{ if $venue_abbrev }}
+    {{ $display_text = $venue_abbrev }}
+  {{ else if $item.Params.publication_short }}
+    {{ $display_text = $item.Params.publication_short | markdownify | plainify }}
+  {{ end }}
+
+  {{ if $display_text }}
     <span class="font-bold italic text-black dark:text-white mr-1">
-      [{{ $item.Params.publication_short | markdownify | plainify }}]
-    </span>
-  {{ else if $item.Params.publication }}
-    <span class="font-bold italic text-black dark:text-white mr-1">
-      [{{ $item.Params.publication | markdownify | plainify }}]
+      [{{ $display_text | markdownify | plainify }}]
     </span>
   {{ end }}
 

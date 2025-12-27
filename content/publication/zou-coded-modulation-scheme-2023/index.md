@@ -7,7 +7,7 @@ authors:
 date: '2023-01-01'
 publishDate: '2025-11-23T16:16:50.989103Z'
 publication_types:
-- chapter
+- paper-conference
 publication: '*IoT as a Service*'
 hugoblox:
   ids:

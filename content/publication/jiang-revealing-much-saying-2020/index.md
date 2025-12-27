@@ -34,12 +34,4 @@ abstract: 'Wireless communications for status update are becoming increasingly i
   comparison with the AoI-optimized status-unaware and communication latency-optimized
   schemes-this demonstrates the usefulness of our proposed status update schemes in
   a real-world application.'
-tags:
-- Ad hoc networks
-- Adaptation models
-- Field programmable gate arrays
-- Predictive models
-- Sensors
-- Wireless communication
-- Wireless sensor networks
 ---

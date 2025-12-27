@@ -6,5 +6,6 @@ authors:
 date: 2022-09-14
 publishDate: '2025-11-23T16:16:50.163784Z'
 publication_types:
-- article-journal
+- paper-conference
+publication: '*34th International Teletraffic Congress (ITC 34)*'
 ---

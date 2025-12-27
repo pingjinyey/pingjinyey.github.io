@@ -12,7 +12,7 @@ date: '2019-01-01'
 publishDate: '2025-11-23T16:16:50.006001Z'
 publication_types:
 - paper-conference
-publication: '*2019 15th International Wireless Communications & Mobile Computing
+publication: '*2019 15th International Wireless Communications and Mobile Computing
   Conference (IWCMC)*'
 hugoblox:
   ids:

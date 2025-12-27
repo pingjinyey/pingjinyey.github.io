@@ -30,11 +30,6 @@ abstract: Environmental sound classification (ESC) is a challenging problem due 
   accuracy with lower computational complexity. We also visualized our attention results
   and observed that the proposed attention mechanism was able to lead the network
   tofocus on the semantically relevant parts of environmental sounds.
-tags:
-- Computer Science 
-- Sound
-- Electrical Engineering and Systems Science
-- Audio and Speech Processing
 links:
 - name: arXiv
   url: https://arxiv.org/abs/2007.07241

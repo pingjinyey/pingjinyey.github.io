@@ -33,19 +33,5 @@ abstract: Gaining accurate channel state information (CSI) through a low-cost sc
   indicate a significant improvement in predicting channel cosine similarity compared
   to directly using the CSI from CKM and existing schemes.
 tags:
-- Accuracy
-- Array signal processing
-- Channel estimation
 - Channel knowledge map
-- channel prediction
-- channel sounding campaign
-- Clustering algorithms
-- joint-orthogonal matching pursuit
-- Matching pursuit algorithms
-- MIMO
-- Prediction algorithms
-- Predictive models
-- Time-frequency analysis
-- Vectors
-- Wireless communication
 ---
