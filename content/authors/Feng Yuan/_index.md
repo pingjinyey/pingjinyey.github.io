@@ -42,7 +42,10 @@ social:
     link: 'mailto:feng_yuan@shu.edu.cn'
 
 interests:
-  - Wireless Communication
+  - Wireless Communication Algorithms
+  - Channel Coding / Decoding
+  - High-Performance/Parallel Computing
+  - Embedded System Design
   
 education:
   - area: M.S. in Information and Communication Engineering
@@ -97,4 +100,4 @@ sections:
       sort_order: "type_year" # 可选: "year_type" (默认) 或 "type_year"
 ---
 
-Feng Yuan received the M.E. degree from the School of Communication and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2024. His research interests include age of information (AoI), wireless signal processing, channel coding and decoding, and beyond-5G communication.
+Feng Yuan received the M.E. degree from the School of Communication and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2024. His research interests include wireless communication algorithms, Channel Coding / Decoding, High-Performance/Parallel Computing and Embedded System Design.
