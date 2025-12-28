@@ -82,3 +82,21 @@ sections:
 ---
 
 I enrolled in 2022 under the supervision of Associate Professor Shan Cao. During my graduate studies, my primary research focused on channel studies in wireless communications, and I am currently working on FDD base station–related projects.
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>

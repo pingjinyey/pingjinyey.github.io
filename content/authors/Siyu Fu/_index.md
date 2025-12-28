@@ -81,3 +81,21 @@ sections:
 ---
 
 Under the supervision of Prof. Zhiyuan Jiang, my graduate research focused on the Internet of Vehicles (IoV). I have published 3 SCI papers (including 2 in Q1 journals), 1 EI paper, and 1 patent. After graduating in 2022, I have been working in the autonomous driving industry.
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>

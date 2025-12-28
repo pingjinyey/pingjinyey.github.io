@@ -84,3 +84,21 @@ sections:
 From March 2024 to February 2025, I worked at Shenyi (Zhejiang) Technology Co., Ltd. Since March 2025, I have been with Shanghai Shenyuan Xinyi Technology Co., Ltd.
 
 
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>

@@ -86,5 +86,23 @@ sections:
       sort_order: "type_year"
 ---
 
-I have been pursuing a Ph.D in Information and Communication Engineering since 2024. My research focuses on hardware–software co-design for 6G AI-RAN. I am currently developing a full-stack, open-source platform for the convergence of communications and AI (https://acelab-shu.github.io/ACE-Echo
+I have been pursuing a Ph.D in Information and Communication Engineering since 2024. My research focuses on hardware–software co-design for 6G AI-RAN. I am currently developing a full-stack, open-source platform for the convergence of communications and AI -- [ACE-Echo](https://acelab-shu.github.io/ACE-Echo
 ).
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>

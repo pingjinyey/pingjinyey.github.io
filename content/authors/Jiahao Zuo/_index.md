@@ -83,3 +83,21 @@ sections:
 My research focuses on model compression algorithms for neural network accelerators.
 
 
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>

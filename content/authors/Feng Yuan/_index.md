@@ -47,28 +47,28 @@ interests:
   - High-Performance/Parallel Computing
   - Embedded System Design
   
-education:
-  - area: M.S. in Information and Communication Engineering
-    institution: Shanghai University
-    icon: ""
-    date_start: 2021-09-01
-    date_end: "2024-06-01"
-    summary: 
-  - area: B.E. in Information and Communication Engineering
-    institution: Shanghai University
-    icon: ""
-    date_start: 2017-09-01
-    date_end: "2021-06-01"
-    summary: 
+# education:
+#   - area: M.S. in Information and Communication Engineering
+#     institution: Shanghai University
+#     icon: ""
+#     date_start: 2021-09-01
+#     date_end: "2024-06-01"
+#     summary: 
+#   - area: B.E. in Information and Communication Engineering
+#     institution: Shanghai University
+#     icon: ""
+#     date_start: 2017-09-01
+#     date_end: "2021-06-01"
+#     summary: 
         
-work:
-  - position: Wireless communication algorithm engineer
-    company_name: DEEPTRANSCEND
-    company_url: 'https://deeptranscend.com/'
-    icon: ''
-    date_start: 2024-06-15
-    date_end: ''
-    summary: 
+# work:
+#   - position: Wireless communication algorithm engineer
+#     company_name: DEEPTRANSCEND
+#     company_url: 'https://deeptranscend.com/'
+#     icon: ''
+#     date_start: 2024-06-15
+#     date_end: ''
+#     summary: 
 
 
 sections:
@@ -101,3 +101,21 @@ sections:
 ---
 
 Feng Yuan received the M.E. degree from the School of Communication and Information Engineering, Shanghai University (SHU), Shanghai, China, in 2024. His research interests include wireless communication algorithms, Channel Coding / Decoding, High-Performance/Parallel Computing and Embedded System Design.
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>

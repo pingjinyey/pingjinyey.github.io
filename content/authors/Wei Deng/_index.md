@@ -82,3 +82,21 @@ sections:
 
 From 2015 to 2019, I pursued my B.E. at the School of Communication and Information Engineering, Shanghai University, with an average GPA of 3.82. From 2019 to 2022, I continued my master’s studies at the same school under the supervision of Associate Professor Shan Cao, focusing on neural network accelerator simulator design and FPGA implementation, and published one SCI journal paper. From 2022 to 2025, I worked at QUALCOMM (Shanghai) Co., Ltd. as a Senior Engineer, responsible for ASIC design verification.
 
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>

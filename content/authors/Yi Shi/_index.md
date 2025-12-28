@@ -83,3 +83,21 @@ sections:
 ---
 
 I received my B.E. and Ph.D. degrees from Shanghai University in 2019 and 2025, respectively, under the supervision of Prof. Zhiyuan Jiang. I am currently a postdoctoral researcher at Tsinghua University, working with Prof. Sheng Zhou. My research interests include wireless communications and domain-specific processor design. I have published more than ten papers in journals such as IEEE Transactions on Wireless Communications (TWC), IEEE Wireless Communications Magazine (WCM), and IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems (TCAD).
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>

@@ -76,3 +76,20 @@ sections:
 ---
 
 Master’s student in Signal and Information Processing, enrolled in 2025.
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>

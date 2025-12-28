@@ -83,3 +83,21 @@ sections:
 
 My graduate research focused on neural network accelerators. I am currently working on SoC design, primarily responsible for top-level design and implementation.
 
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>

@@ -82,3 +82,21 @@ sections:
 
 During my master’s studies, my primary research focused on waveform design and transceiver simulations for URLLC scenarios.
 
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>

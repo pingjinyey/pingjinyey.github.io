@@ -84,3 +84,21 @@ sections:
 Haiqin Hu received the M.S. degree from the School of Communication and Information Engineering, Shanghai University, Shanghai, China, in 2024. His research interests include V2X communication, open radio access network, domain-specific architecture and vector processing units.
 
 
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>

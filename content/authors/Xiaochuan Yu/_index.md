@@ -75,3 +75,21 @@ sections:
 ---
 
 Master’s student in Communication and Information Systems, enrolled in 2025.
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>

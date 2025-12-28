@@ -76,3 +76,21 @@ sections:
 
 I received my B.E. and Ph.D. degrees from Shanghai University in 2020 and 2025, respectively, under the supervision of Prof. Zhiyuan Jiang. My research focuses on vehicle–road collaborative sensing systems, neural network accelerators, and SoC design. I have published multiple papers in venues such as the IEEE Internet of Things Journal, IEEE Transactions on Wireless Communications, and conferences including IEEE SPAWC and INFOCOM Workshops. During my Ph.D. studies, I served as Secretary of the Ph.D. Party Branch, demonstrating strong teamwork, leadership, and organizational skills.
 
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>

@@ -83,3 +83,21 @@ sections:
 
 During my graduate studies, I mainly worked on convolutional neural network accelerators. I am currently engaged in digital front-end design.
 
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>

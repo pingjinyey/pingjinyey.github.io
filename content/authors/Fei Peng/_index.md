@@ -78,3 +78,21 @@ sections:
 ---
 
 I received my Ph.D. degree in June 2024 and am currently working at TCL on pre-research for 6G technology standards.
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>

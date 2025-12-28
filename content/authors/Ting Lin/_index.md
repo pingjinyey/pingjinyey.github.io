@@ -82,3 +82,21 @@ sections:
 
 My graduate research focused on LDPC and polar code decoding algorithms and FPGA implementation.
 
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>

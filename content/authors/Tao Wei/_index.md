@@ -76,3 +76,21 @@ sections:
 
 Academic Master’s student in Communication and Information Systems, enrolled in 2024.
 
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>

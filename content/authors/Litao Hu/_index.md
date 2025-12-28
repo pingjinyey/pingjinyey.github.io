@@ -77,3 +77,20 @@ sections:
 ---
 
 Master’s student in Electronic Information, enrolled in 2025.
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>

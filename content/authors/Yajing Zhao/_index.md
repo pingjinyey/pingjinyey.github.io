@@ -75,3 +75,20 @@ sections:
 ---
 
 Professional Master’s student in Electronic Information, enrolled in 2024.
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
+
+<br/>
