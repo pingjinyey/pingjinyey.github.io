@@ -1,5 +1,5 @@
 ---
-title: "AI Chips & Neural Network Processors"
+title: "AI Chips and Neural Network Processors"
 date: 2024-01-01
 type: landing
 featured: true
@@ -7,7 +7,7 @@ sections:
   - block: research-detail
     content:
       # 1. 总体介绍
-      title: "Energy-Efficient Domain-Specific Architectures"
+      title: "AI Chips and Neural Network Processors"
       image: "featured_ai_chip.png"
       text: |
         We focus on the design of **Domain-Specific Architectures (DSA)** for edge intelligence. By leveraging heterogeneous computing (RISC-V + NPU) and hardware-software co-design, we address the bottlenecks of power consumption and latency in modern deep learning deployment.

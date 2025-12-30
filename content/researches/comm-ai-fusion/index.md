@@ -1,12 +1,12 @@
 ---
-title: "Comm-AI Fusion & Integrated Sensing"
+title: "Communication-AI Fusion and ISAC"
 date: 2024-01-01
 type: landing
 featured: true
 sections:
   - block: research-detail
     content:
-      title: "6G Native AI & ISAC Architecture"
+      title: "Communication-AI Fusion and ISAC"
       image: "featured_fusion.png"
       text: |
         Towards the 6G era, we are pioneering the **Communication-AI Fusion (Comm-AI)** architecture. This involves embedding AI capabilities natively into communication protocols and hardware.

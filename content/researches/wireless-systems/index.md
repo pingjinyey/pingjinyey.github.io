@@ -5,7 +5,7 @@ type: landing
 sections:
   - block: research-detail
     content:
-      title: "Next-Gen Wireless & Vehicular Networks"
+      title: "Wireless Communication Systems"
       image: "featured_wireless.png"
       text: |
         Our research spans from baseband algorithm optimization to system-on-chip (SoC) implementation for **5G/B5G and V2X (Vehicle-to-Everything)** communications.
