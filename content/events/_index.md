@@ -1,5 +1,5 @@
 ---
-title: Recent Events & News
+title: Recent Events 
 type: landing
 # cms_exclude: true
 #url: talk

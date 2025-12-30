@@ -103,7 +103,7 @@ sections:
     content:
       offset: 0
       count: 0
-      title: Events & News
+      title: Events
       filters:
         folders:
           - events
