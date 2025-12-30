@@ -50,7 +50,7 @@ sections:
       
       items:
         # 方向一：AI 芯片
-        - title: "AI Chips & Neural Processors"
+        - title: "AI Chips and Neural Network Processors"
           text: "Energy-efficient Domain-Specific Architectures (DSA) featuring heterogeneous RISC-V + NPU designs and full-stack compilation support for edge intelligence."
           # 请确保图片放在 assets/media/research/ 下，或者根据实际路径修改
           image: "featured_ai_chip.png" 
@@ -64,7 +64,7 @@ sections:
           link: "/researches/wireless-systems/"
 
         # 方向三：通信-AI 融合
-        - title: "Comm-AI Fusion & ISAC"
+        - title: "Communication-AI Fusion and ISAC "
           text: "Architecting 6G native AI systems with Integrated Sensing and Communication (ISAC) and semantic transmission capabilities for autonomous agents."
           image: "featured_fusion.png"
           link: "/researches/comm-ai-fusion/"
