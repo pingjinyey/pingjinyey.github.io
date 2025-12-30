@@ -37,7 +37,7 @@ sections:
         - Postdoctoral Researchers
         - Ph.D. Students
         - Master Students
-        - Undergraduate Students
+        - Alumni
       sort_by: 'Params.weight'
       sort_ascending: true
       cta:
