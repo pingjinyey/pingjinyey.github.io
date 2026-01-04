@@ -37,7 +37,7 @@ profiles:
   # - icon: envelope
   - icon: envelope
     icon_pack: fas
-    url: 'mailto:zhiyjiang@foxmail.com'
+    url: 'mailto:jiangzhiyuan@shu.edu.cn'
     label: E-mail Me
   # - icon: brands/github
   #   url: https://github.com/alexjohnsonai
@@ -48,7 +48,7 @@ profiles:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'mailto:zhiyjiang@foxmail.com'
+    link: 'mailto:jiangzhiyuan@shu.edu.cn'
   - icon: academicons/google-scholar
     url: https://scholar.google.com/citations?user=DH4HG-4AAAAJ&hl=en
   - icon:  academicons/researchgate

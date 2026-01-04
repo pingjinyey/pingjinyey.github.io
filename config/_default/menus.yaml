@@ -12,18 +12,18 @@ main:
     url: /#researches
     identifier: research
     weight: 11
-  - name: Wireless Communication Systems and Dedicated Baseband Processors
-    url: /researches/wireless-systems/
+  - name: Neuro Baseband
+    url: /researches/NeuroBaseband/
     parent: research
     weight: 1
-  - name: AI Chips and Neural Network Processors
-    url: /researches/ai-chips/
+  - name: Edge AI Inference Engine
+    url: /researches/Edge_AI/
     parent: research
     weight: 2
-  - name: Communication-AI Fusion and Integrated Compute-Communication Architectures for 6G
-    url: /researches/comm-ai-fusion/
-    parent: research
-    weight: 3
+  # - name: Communication-AI Fusion and Integrated Compute-Communication Architectures for 6G
+  #   url: /researches/comm-ai-fusion/
+  #   parent: research
+  #   weight: 3
   # - name: Project
   #   url: /projects/
   #   weight: 12

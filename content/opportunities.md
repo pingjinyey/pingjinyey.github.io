@@ -27,7 +27,7 @@ sections:
       office_hours:
         - "Monday - Friday: 9:00 AM - 5:00 PM"
         - "Lab Meetings: Wednesday 3:00 PM"
-      email: zhiyjiang@foxmail.com
+      email: jiangzhiyuan@shu.edu.cn
       # phone: "+1 (555) 123-4567"
       social:
         # - icon: brands/x

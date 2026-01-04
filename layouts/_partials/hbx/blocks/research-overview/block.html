@@ -61,15 +61,32 @@
             <a href="{{ $link }}" {{ $target | safeHTMLAttr }} class="group/card flex flex-col h-full bg-white dark:bg-gray-800 rounded-2xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden border border-gray-100 dark:border-gray-700">
               
               {{/* Image Area */}}
-              <div class="relative h-56 overflow-hidden">
+              <div class="relative h-56 overflow-hidden bg-gray-100 dark:bg-gray-700"> {{/* --- 读取配置参数 --- */}}
+                {{ $fit_image := $block.design.fit_image | default false }}
+
                 {{ if $img }}
-                  {{ $img_resize := $img.Fill "600x400 Center webp" }}
-                  <img src="{{ $img_resize.RelPermalink }}" alt="{{ .title }}" class="w-full h-full object-cover transition-transform duration-500 group-hover/card:scale-110">
+                  {{/* --- 根据配置选择裁剪方式 --- */}}
+                  {{ $img_resize := "" }}
+                  {{ if $fit_image }}
+                    {{/* Fit: 保持原图比例，限制最大尺寸，不裁剪 */}}
+                    {{ $img_resize = $img.Fit "600x600 webp" }}
+                  {{ else }}
+                    {{/* Fill: (默认) 强制裁剪填充，保证统一大小 */}}
+                    {{ $img_resize = $img.Fill "600x400 Center webp" }}
+                  {{ end }}
+
+                  <img src="{{ $img_resize.RelPermalink }}" 
+                       alt="{{ .title }}" 
+                       class="w-full h-full transition-transform duration-500 group-hover/card:scale-110 {{ if $fit_image }}object-contain p-2{{ else }}object-cover{{ end }}">
+                       {{/* 上一行：如果是 fit 模式，用 object-contain 并加一点内边距(p-2) */}}
+
                 {{ else }}
-                  <div class="w-full h-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-gray-400">
+                  <div class="w-full h-full flex items-center justify-center text-gray-400">
                     <span class="text-sm">Image not found</span>
                   </div>
                 {{ end }}
+                
+                {{/* 遮罩层逻辑保持不变 */}}
                 <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60 group-hover/card:opacity-80 transition-opacity"></div>
                 <div class="absolute bottom-4 left-4 right-4">
                    <h3 class="text-xl font-bold text-white group-hover/card:text-primary-200 transition-colors shadow-sm">
@@ -137,10 +154,18 @@
   document.addEventListener('DOMContentLoaded', function () {
     // 读取 YAML 中配置的 columns 参数
     const columns = {{ $block.design.columns | default 3 }};
+    
+    // 获取实际卡片数量 (Hugo 模板语法)
+    const slideCount = {{ len $block.content.items }};
+
+    // 逻辑判断：只有当卡片数量超过显示的列数时，才开启循环 (loop)
+    // 这样当卡片较少时，Swiper 不会生成重复的填充块，从而允许居中生效
+    const enableLoop = slideCount > columns;
 
     new Swiper('.swiper-{{ $block.id }}', {
       // 核心功能
-      loop: true,                // 开启循环
+      loop: enableLoop,          // 动态开关循环
+      centerInsufficientSlides: true, // 当 slide 数量少于 slidesPerView 时，自动居中
       spaceBetween: 24,          // 卡片间距
       grabCursor: true,          // 鼠标抓手图标
       
@@ -164,7 +189,7 @@
 
       // 响应式断点
       breakpoints: {
-        // 手机: 显示 1 个，部分露出下一个
+        // 手机: 显示 1 个，部分露出下一个 (保持原有逻辑)
         320: {
           slidesPerView: 1.2,
           centeredSlides: true,
@@ -172,7 +197,7 @@
         // 平板: 显示 2 个
         640: {
           slidesPerView: 2,
-          centeredSlides: false,
+          centeredSlides: false, // 此时如果不满2个，centerInsufficientSlides 会接管
         },
         // 小桌面: 显示 columns - 1 个
         1024: {

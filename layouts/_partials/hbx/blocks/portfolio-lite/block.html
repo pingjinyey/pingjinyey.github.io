@@ -144,8 +144,19 @@
       </div>
     {{ end }}
 
-    {{/* Content Grid */}}
-    <div class="grid gap-8 {{ $grid_classes }}">
+{{/* Content Grid */}}
+    {{ $count := len $query }}
+    {{/* 判断：如果实际卡片数量少于配置的列数，且大于0，则启用居中模式 */}}
+    {{ $use_centering := and (lt $count $columns) (gt $count 0) }}
+
+    {{/* 根据模式选择容器的 Class */}}
+    {{ $container_class := printf "grid gap-8 %s" $grid_classes }}
+    {{ if $use_centering }}
+      {{/* 居中模式：使用 Flexbox + 居中 + 换行 */}}
+      {{ $container_class = "flex flex-wrap justify-center gap-8" }}
+    {{ end }}
+
+    <div class="{{ $container_class }}">
       {{ range $index, $item := $query }}
 
         {{/* Tags Logic */}}
@@ -165,8 +176,35 @@
         {{ end }}
         {{ $tagsStr := delimit $tags "," }}
 
+        {{/* --- 居中模式下的卡片宽度计算 --- */}}
+        {{/* Grid模式下宽度由父级 grid-cols 控制，Flex模式下需要手动指定宽度以保持一致 */}}
+        {{ $item_width_class := "" }}
+        {{ if $use_centering }}
+           {{/* 基础宽度 (手机) */}}
+           {{ $item_width_class = "w-full" }}
+           
+           {{/* 平板 (2列) */}}
+           {{ if ge $columns 2 }}
+             {{/* calc(50% - 1rem) 是为了减去 gap-8 (2rem) 的一半，确保一行能放俩 */}}
+             {{ $item_width_class = printf "%s sm:w-[calc(50%%-1rem)]" $item_width_class }}
+           {{ end }}
+
+           {{/* 桌面 (3列及以上) */}}
+           {{ if ge $columns 3 }}
+             {{ $item_width_class = printf "%s lg:w-[calc(33.333%%-1.35rem)]" $item_width_class }}
+           {{ end }}
+           
+           {{/* 如果是4列 */}}
+           {{ if ge $columns 4 }}
+             {{ $item_width_class = printf "%s lg:w-[calc(25%%-1.5rem)]" $item_width_class }}
+           {{ end }}
+        {{ end }}
+
         {{/* Item Wrapper */}}
-        <div data-collection-item data-tags="{{ $tagsStr }}" class="transition-all duration-500 ease-in-out">
+        <div data-collection-item 
+             data-tags="{{ $tagsStr }}" 
+             class="transition-all duration-500 ease-in-out {{ $item_width_class }}">
+             
           {{ partial "functions/render_view" (dict
               "page"  $block
               "item"  $item
