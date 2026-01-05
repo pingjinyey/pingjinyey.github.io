@@ -7,7 +7,7 @@ featured: true
 sections:
   - block: research_slide_stack  # 调用刚才写的通用block
     content:
-      tag: "6G Architecture"
+      tag: "AI-Native Baseband"
       title: "NeuroBaseband"
       
       # 摘要
