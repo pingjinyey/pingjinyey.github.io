@@ -7,13 +7,13 @@ featured: true
 sections:
   - block: research_slide_stack  # 调用刚才写的通用block
     content:
-      # tag: "6G Architecture"
+      tag: "6G Architecture"
       title: "NeuroBaseband"
       
       # 摘要
-      # text: >
-      #   NeuroBaseband presents a fundamental re-imagination of baseband processors using a dataflow-driven RISC-V architecture.
-      #   Scroll down to view the full technical report.
+      text: >
+        NeuroBaseband presents a fundamental re-imagination of baseband processors using a dataflow-driven RISC-V architecture.
+        Scroll down to view the full technical report.
 
       # 相关链接 (GitHub / PDF下载)
       links:
