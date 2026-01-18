@@ -1,7 +1,6 @@
 name: Deploy website to GitHub Pages
 
 env:
-  WC_HUGO_VERSION: '0.152.1'
   NODE_VERSION: '20'
 
 on:
@@ -42,18 +41,24 @@ jobs:
       if: hashFiles('package.json') != ''
       uses: pnpm/action-setup@v4
 
+    - name: Get Hugo Version
+      id: hugo-version
+      run: |
+        VERSION=$(grep "hugo_version" hugoblox.yaml | awk '{print $2}' | tr -d "'\"")
+        echo "HUGO_VERSION=$VERSION" >> $GITHUB_ENV
+
     - name: Install dependencies
       run: |
         # Install Tailwind CLI if package.json exists
         if [ -f "package.json" ]; then
           echo "Installing Tailwind dependencies..."
-          pnpm install || npm install
+          pnpm install --no-frozen-lockfile || npm install
         fi
 
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v3
       with:
-        hugo-version: ${{ env.WC_HUGO_VERSION }}
+        hugo-version: ${{ env.HUGO_VERSION }}
         extended: true
 
       # Cache dependencies (Go modules, node_modules) - stable, rarely changes
@@ -84,6 +89,7 @@ jobs:
     - name: Build with Hugo
       env:
         HUGO_ENVIRONMENT: production
+        HUGO_BLOX_LICENSE: ${{ secrets.HUGO_BLOX_LICENSE }}
       run: |
         echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
         hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
@@ -92,7 +98,7 @@ jobs:
       run: |
         # Check if site uses Pagefind search
         if [ -f "package.json" ] && grep -q "pagefind" package.json; then
-          pnpm dlx pagefind --source "public" || npx pagefind --source "public"
+          pnpm run pagefind || npx pagefind --site "public"
         fi
 
     - name: Upload artifact
