@@ -15,7 +15,9 @@ publication_types:
 - article-journal
 publication: '*IEEE Transactions on Computer-Aided Design of Integrated Circuits and
   Systems*'
-doi: 10.1109/TCAD.2025.3649448
+hugoblox:
+  ids:
+    doi: 10.1109/TCAD.2025.3649448
 abstract: Vector instruction set architectures (ISAs) play a critical role in accelerating
   data-parallel computation, yet mainstream designs—such as the RISC-V “V” Vector
   Extension (RVV) – still rely on rigid, power-of-two register grouping strategies.
@@ -38,8 +40,4 @@ abstract: Vector instruction set architectures (ISAs) play a critical role in ac
   confirming its feasibility for real-world deployment. Together, these results demonstrate
   Zoozve’s potential as a scalable and efficient vector processing solution for high-performance
   computing, machine learning, and signal processing.
-tags:
-- Vectors;Registers;Hardware;Codes;Optimization;Assembly;Software;Programming;Single
-  instruction multiple data;Resource management;Compiler;LLVM;RISC-V;vector processing;hardware
-  implementation
 ---
