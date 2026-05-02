@@ -10,14 +10,12 @@ authors:
 - Shan Cao
 - Zhiyuan Jiang
 date: '2025-01-01'
-publishDate: '2026-01-18T07:38:07.330005Z'
+publishDate: '2026-01-18T08:13:44.229419Z'
 publication_types:
 - article-journal
 publication: '*IEEE Transactions on Computer-Aided Design of Integrated Circuits and
   Systems*'
-hugoblox:
-  ids:
-    doi: 10.1109/TCAD.2025.3649448
+doi: 10.1109/TCAD.2025.3649448
 abstract: Vector instruction set architectures (ISAs) play a critical role in accelerating
   data-parallel computation, yet mainstream designs—such as the RISC-V “V” Vector
   Extension (RVV) – still rely on rigid, power-of-two register grouping strategies.

@@ -7,13 +7,11 @@ authors:
 - Shan Cao
 - Zhiyuan Jiang
 date: '2025-01-01'
-publishDate: '2026-01-18T07:38:07.322696Z'
+publishDate: '2026-01-18T08:13:44.215185Z'
 publication_types:
 - article-journal
 publication: '*IEEE Embedded Systems Letters*'
-hugoblox:
-  ids:
-    doi: 10.1109/LES.2025.3635097
+doi: 10.1109/LES.2025.3635097
 abstract: As heterogeneous many-core systems gain prominence in embedded domains,
   efficient scheduling mechanisms become increasingly vital. Existing solutions often
   suffer from trade-offs between real-time responsiveness, parallelism, and programmability.
