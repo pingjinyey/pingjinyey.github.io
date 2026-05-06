@@ -18,7 +18,7 @@
 */}}
 <section id="{{ $hash }}" class="relative w-full group/hero">
 
-  <div class="swiper hero-swiper w-full h-[55vh] sm:h-[65vh] md:h-[75vh] lg:h-[85vh] min-h-[500px] z-0">
+  <div class="swiper hero-swiper w-full h-[55vh] sm:h-[65vh] md:h-[75vh] lg:h-[85vh] min-h-[500px] z-0 bg-gray-900">
     <div class="swiper-wrapper">
       {{- range $idx, $item := $slides -}}
         {{- $bg := $item.background -}}
@@ -53,7 +53,7 @@
     {{ end }}
   </div>
 
-  <div class="relative w-full z-30">
+  <div class="relative w-full z-20">
     {{ with $block.blocks }}
       {{ range . }}
         {{ partial (printf "blocks/%s/%s" .block .block) (dict "wcPage" $page "wcBlock" .) }}
@@ -66,6 +66,13 @@
 {{/* Swiper 样式微调 */}}
 <style>
   /* 也就是 custom.css 里的样式，直接写在这里防止加载顺序问题 */
+  .hero-swiper .swiper-slide {
+    transition: opacity 0.8s ease-in-out !important;
+  }
+  .hero-swiper .swiper-slide-active,
+  .hero-swiper .swiper-slide-duplicate-active {
+    z-index: 2 !important;
+  }
   .hero-pagination .swiper-pagination-bullet {
     width: 10px;
     height: 10px;
@@ -88,16 +95,15 @@
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     new Swiper('.hero-swiper', {
-      // 效果：使用 Fade (渐隐渐现) 更有高级感，适合 Hero
       effect: 'fade',
       fadeEffect: {
         crossFade: true
       },
-      
-      // 循环
+      speed: 800,
+
       loop: true,
-      
-      // 自动播放
+      loopAdditionalSlides: 1,
+
       autoplay: {{ if $autoPlay }}{
         delay: {{ $interval }},
         disableOnInteraction: false,

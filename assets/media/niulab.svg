@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" fill="none">
+  <defs>
+    <linearGradient id="badge-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="5" width="40" height="40" rx="10" fill="url(#badge-grad)"/>
+  <text x="20" y="33" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="20" font-weight="bold">N</text>
+  <text x="52" y="33" fill="#1f2937" font-family="Arial, sans-serif" font-size="24" font-weight="bold">NIULAB</text>
+</svg>

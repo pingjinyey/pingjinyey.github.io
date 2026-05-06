@@ -1,0 +1,135 @@
+{{/* Team Compact Block - Compact people display for homepage */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+
+{{ $title := $block.content.title | emojify | $page.RenderString }}
+{{ $subtitle := $block.content.subtitle | emojify | $page.RenderString }}
+{{ $show_social := $block.design.show_social | default false }}
+
+{{/* Collect people by group */}}
+{{ $groups := slice }}
+{{ range $block.content.user_groups }}
+  {{ $group_name := . }}
+  {{ $query := where (where site.Pages "Section" "authors") ".Params.user_groups" "intersect" (slice .) }}
+  {{ $sort_by := $block.content.sort_by | default "Params.weight" }}
+  {{ $sort_by = partial "functions/get_sort_by_parameter" $sort_by }}
+  {{ $sort_ascending := $block.content.sort_ascending | default true }}
+  {{ $sort_order := cond $sort_ascending "asc" "desc" }}
+  {{ $query = sort $query $sort_by $sort_order }}
+  {{ if gt (len $query) 0 }}
+    {{ $groups = $groups | append (dict "name" $group_name "people" $query) }}
+  {{ end }}
+{{ end }}
+
+<section class="w-full max-w-[1200px] mx-auto px-4 py-10">
+  {{/* Section header */}}
+  <div class="flex flex-col mb-8">
+    {{ with $title }}
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white tracking-tight uppercase">
+        {{ . }}
+      </h2>
+      <div class="h-1 w-16 bg-primary-700 mt-3 rounded-full"></div>
+    {{ end }}
+    {{ with $subtitle }}
+      <p class="mt-3 text-lg text-gray-500 dark:text-gray-400 max-w-2xl">{{ . }}</p>
+    {{ end }}
+  </div>
+
+  {{ range $g := $groups }}
+    {{ $group_name := $g.name }}
+    {{ $people := $g.people }}
+    {{ $isFaculty := eq $group_name "Faculties" }}
+
+    <div class="mb-10 last:mb-0">
+      {{/* Group label */}}
+      <div class="flex items-center gap-3 mb-5">
+        <h3 class="text-lg font-bold text-gray-800 dark:text-gray-200 uppercase tracking-wide">{{ $group_name }}</h3>
+        <span class="px-2 py-0.5 bg-primary-50 dark:bg-primary-900/30 text-primary-700 dark:text-primary-400 text-xs font-bold rounded-full">{{ len $people }}</span>
+      </div>
+
+      {{ if $isFaculty }}
+        {{/* Faculty: wider cards with details */}}
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          {{ range $person := $people }}
+            {{ $link := "" }}
+            {{ with site.GetPage (printf "/authors/%s" (path.Base $person.File.Dir)) }}
+              {{ $link = .RelPermalink }}
+            {{ end }}
+
+            <a href="{{ $link | safeURL }}" class="block bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-2xl p-6 hover:shadow-lg hover:border-primary-200 dark:hover:border-primary-700 transition-all duration-200 group">
+              <div class="flex items-start gap-4">
+                {{/* Avatar */}}
+                {{ $avatar := ($person.Resources.ByType "image").GetMatch "*avatar*" }}
+                <div class="flex-shrink-0 w-16 h-16 rounded-xl overflow-hidden ring-2 ring-gray-100 dark:ring-gray-700 group-hover:ring-primary-200 dark:group-hover:ring-primary-700 transition-all">
+                  {{ if $avatar }}
+                    {{ $image := $avatar.Fill "128x128 Top webp" }}
+                    <img src="{{ $image.RelPermalink }}" alt="{{ $person.Title }}" loading="lazy" class="w-full h-full object-cover">
+                  {{ else }}
+                    <div class="w-full h-full bg-primary-50 dark:bg-gray-700 flex items-center justify-center text-primary-400 text-xl font-bold">
+                      {{ substr $person.Params.first_name 0 1 }}{{ substr $person.Params.last_name 0 1 }}
+                    </div>
+                  {{ end }}
+                </div>
+
+                {{/* Info */}}
+                <div class="flex-1 min-w-0">
+                  <h4 class="text-lg font-bold text-gray-900 dark:text-white group-hover:text-primary-700 dark:group-hover:text-primary-400 transition-colors">
+                    {{ $person.Title }}
+                  </h4>
+                  {{ with $person.Params.role }}
+                    <p class="text-sm font-semibold text-primary-600 dark:text-primary-400 mt-0.5">{{ . }}</p>
+                  {{ end }}
+                  {{ with $person.Params.interests }}
+                    <div class="flex flex-wrap gap-1.5 mt-2.5">
+                      {{ range . }}
+                        <span class="inline-block bg-gray-50 dark:bg-gray-700/60 text-gray-600 dark:text-gray-300 text-sm px-2 py-0.5 rounded-md">{{ . }}</span>
+                      {{ end }}
+                    </div>
+                  {{ end }}
+                </div>
+              </div>
+            </a>
+          {{ end }}
+        </div>
+      {{ else }}
+        {{/* Students: compact grid */}}
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+          {{ range $person := $people }}
+            {{ $link := "" }}
+            {{ with site.GetPage (printf "/authors/%s" (path.Base $person.File.Dir)) }}
+              {{ $link = .RelPermalink }}
+            {{ end }}
+
+            <a href="{{ $link | safeURL }}" class="block bg-white dark:bg-gray-800 border border-gray-100 dark:border-gray-700 rounded-xl p-5 hover:shadow-md hover:border-primary-200 dark:hover:border-primary-700 transition-all duration-200 group">
+              {{/* Avatar + Name */}}
+              <div class="flex items-center gap-3 mb-2">
+                {{ $avatar := ($person.Resources.ByType "image").GetMatch "*avatar*" }}
+                <div class="flex-shrink-0 w-12 h-12 rounded-lg overflow-hidden ring-1 ring-gray-100 dark:ring-gray-600">
+                  {{ if $avatar }}
+                    {{ $image := $avatar.Fill "128x128 Top webp" }}
+                    <img src="{{ $image.RelPermalink }}" alt="{{ $person.Title }}" loading="lazy" class="w-full h-full object-cover">
+                  {{ else }}
+                    <div class="w-full h-full bg-primary-50 dark:bg-gray-700 flex items-center justify-center text-primary-500 text-sm font-bold">
+                      {{ substr $person.Params.first_name 0 1 }}{{ substr $person.Params.last_name 0 1 }}
+                    </div>
+                  {{ end }}
+                </div>
+                <h4 class="text-base font-semibold text-gray-900 dark:text-white group-hover:text-primary-700 dark:group-hover:text-primary-400 transition-colors truncate">
+                  {{ $person.Title }}
+                </h4>
+              </div>
+              {{/* Research interests as one-line tags */}}
+              {{ with $person.Params.interests }}
+                <div class="flex flex-wrap gap-1">
+                  {{ range first 2 . }}
+                    <span class="text-sm text-gray-500 dark:text-gray-400 truncate max-w-full">{{ . }}</span>
+                  {{ end }}
+                </div>
+              {{ end }}
+            </a>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+  {{ end }}
+</section>
