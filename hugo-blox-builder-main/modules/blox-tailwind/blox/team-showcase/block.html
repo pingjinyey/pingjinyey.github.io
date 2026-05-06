@@ -99,7 +99,7 @@
                {{/* 头像区域 */}}
                {{ if $avatar }}
                  <a href="{{ $link | safeURL }}" {{ if $is_external }} target="_blank" rel="noopener" {{ end }} class="block relative h-48 w-48 mx-auto mt-8 overflow-hidden rounded-full ring-4 ring-gray-50 dark:ring-gray-700">
-                   {{ $image := $avatar.Fill "400x400 Center webp" }}
+                   {{ $image := $avatar.Fill "400x400 Top webp" }}
                    <img src="{{ $image.RelPermalink }}"
                         alt="{{ $person.Title }}"
                         loading="lazy"
