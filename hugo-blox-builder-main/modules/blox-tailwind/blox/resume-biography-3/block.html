@@ -177,15 +177,29 @@
       {{/* Right Column */}}
       <div class="md:col-span-8">
         
+        {{/* Split body content: bio text before first ### heading, remaining sections after */}}
+        {{ $bio_text := "" }}
+        {{ $rest_content := "" }}
+        {{ $content_parts := split $person_page.Content "<h3" }}
+        {{ if $block.content.text }}
+          {{ $bio_text = $block.content.text | emojify | $page.RenderString }}
+        {{ else }}
+          {{ $bio_text = index $content_parts 0 }}
+        {{ end }}
+        {{ if gt (len $content_parts) 1 }}
+          {{ $rest_parts := after 1 $content_parts }}
+          {{ $rest_content = printf "<h3%s" (delimit $rest_parts "<h3") }}
+        {{ end }}
+
         {{/* Bio Section */}}
-        {{ with ($block.content.text | emojify | $page.RenderString) | default $person_page.Content }}
+        {{ with $bio_text }}
         <div class="mb-12">
           <div class="flex items-center gap-4 mb-4">
             {{ $about_heading := $block.content.headings.about | default "Biography" }}
             <h2 class="text-4xl sm:text-3xl lg:text-4xl text-gray-900 dark:text-white tracking-tight">{{ $about_heading }}</h2>
           </div>
           <div class="prose prose-lg dark:prose-invert text-gray-800 dark:text-gray-200 text-base sm:text-lg leading-relaxed text-justify">
-            {{ . }}
+            {{ . | safeHTML }}
           </div>
         </div>
         {{ end }}
@@ -288,6 +302,13 @@
             <li>{{ . | markdownify | emojify }}</li>
             {{ end }}
           </ul>
+        </div>
+        {{ end }}
+
+        {{/* Remaining body content (### sections after biography) */}}
+        {{ with $rest_content }}
+        <div class="mt-12 prose prose-lg dark:prose-invert max-w-none text-gray-800 dark:text-gray-200 text-base sm:text-lg leading-relaxed text-justify">
+          {{ . | safeHTML }}
         </div>
         {{ end }}
 
