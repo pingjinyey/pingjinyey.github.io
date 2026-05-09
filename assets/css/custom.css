@@ -129,6 +129,11 @@ body.page-type-home main {
   vertical-align: middle;
 }
 
+/* Fix logo text visibility in dark mode */
+.dark .navbar-brand svg text {
+  fill: white !important;
+}
+
 .navbar-brand img {
   height: 2.2rem !important;
   width: auto !important;
