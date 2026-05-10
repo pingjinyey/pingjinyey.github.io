@@ -42,8 +42,8 @@
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
-  color: #172033 !important;
-  background: rgba(79, 70, 229, 0.06) !important;
+  color: #7C3AED !important;
+  background: rgba(124, 58, 237, 0.06) !important;
 }
 
 .dark .navbar-nav .nav-link {
@@ -52,8 +52,8 @@
 
 .dark .navbar-nav .nav-link:hover,
 .dark .navbar-nav .nav-link.active {
-  color: #e2e8f0 !important;
-  background: rgba(129, 140, 248, 0.1) !important;
+  color: #A78BFA !important;
+  background: rgba(167, 139, 250, 0.1) !important;
 }
 
 /* 有下拉菜单的导航项箭头颜色 */
