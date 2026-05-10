@@ -98,6 +98,21 @@
   </style>
   {{ end }}
 
+  <style>
+    .biography-content a {
+      color: #4F46E5;
+      text-decoration: none;
+    }
+    .dark .biography-content a {
+      color: #818CF8;
+    }
+    .biography-content a:hover {
+      color: #4338CA;
+    }
+    .dark .biography-content a:hover {
+      color: #A5B4FC;
+    }
+  </style>
 
   {{/* 内容层 */}}
   <div class="max-w-6xl mx-auto relative z-10">
@@ -145,7 +160,7 @@
 
         {{/* Name and Role */}}
         <div class="space-y-3">
-          <h1 class="text-4xl lg:text-4xl text-gray-900 dark:text-white leading-tight">
+          <h1 class="text-4xl lg:text-4xl font-bold text-gray-900 dark:text-white leading-tight">
             {{ $person_page.Title }}
           </h1>
           {{ with $person.role }}
@@ -270,7 +285,7 @@
             {{ with .date_end }}{{ $endYear = (time .).Format "2006" }}{{ end }}
             {{ $dateStr := "" }}
             {{ if and $startYear $endYear }}{{ $dateStr = printf "%s–%s" $startYear $endYear }}
-            {{ else if $startYear }}{{ $dateStr = printf "%s–Present" $startYear }}{{ else if .year }}{{ $dateStr = .year }}{{ end }}
+            {{ else if $startYear }}{{ $dateStr = printf "%s–Present" $startYear }}{{ else if $endYear }}{{ $dateStr = $endYear }}{{ else if .year }}{{ $dateStr = .year }}{{ end }}
 
             <div class="flex items-start gap-3">
               <div class="flex-shrink-0 mt-1">
@@ -307,7 +322,7 @@
 
         {{/* Remaining body content (### sections after biography) */}}
         {{ with $rest_content }}
-        <div class="mt-12 prose prose-lg dark:prose-invert max-w-none text-gray-800 dark:text-gray-200 text-base sm:text-lg leading-relaxed text-justify">
+        <div class="mt-12 prose prose-lg dark:prose-invert max-w-none text-gray-800 dark:text-gray-200 text-base sm:text-lg leading-relaxed text-justify biography-content">
           {{ . | safeHTML }}
         </div>
         {{ end }}
