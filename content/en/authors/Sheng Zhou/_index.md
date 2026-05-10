@@ -162,17 +162,17 @@ He served or is serving as an editor for IEEE Trans. Wireless Commun., IEEE Wire
 
 ### Books
 
-- [《通信网理论基础》](https://www.ee.tsinghua.edu.cn/info/1076/3984.htm), Tsinghua University Press (牛志升，**周盛**)
-- [*Learning-based VANET Communication and Security Techniques*](https://link.springer.com/book/10.1007/978-3-030-01731-6), Springer (Liang Xiao, Weihua Zhuang, **Sheng Zhou**, Cailian Chen)
-- [*Energy Harvesting Wireless Communications*](https://onlinelibrary.wiley.com/doi/book/10.1002/9781119295952), Wiley (Chuan Huang, **Sheng Zhou**, Jie Xu, **Zhisheng Niu**, Rui Zhang, and Shuguang Cui)
-- [*Wireless Traffic Steering for Green Cellular Networks*](https://link.springer.com/book/10.1007/978-3-319-32721-1), Springer (Shang Zhang, Ning Zhang, **Sheng Zhou**, **Zhisheng Niu**, and Xuemin (Sherman) Shen)
-- [*Radio Resource Management Using Geometric Water-Filling*](https://link.springer.com/book/10.1007/978-3-319-04636-5), Springer (Peter He, Lian Zhao, **Sheng Zhou**, and **Zhisheng Niu**)
+- [**《通信网理论基础》**](https://www.ee.tsinghua.edu.cn/info/1076/3984.htm), Tsinghua University Press (牛志升，**周盛**)
+- [***Learning-based VANET Communication and Security Techniques***](https://link.springer.com/book/10.1007/978-3-030-01731-6), Springer (Liang Xiao, Weihua Zhuang, **Sheng Zhou**, Cailian Chen)
+- [***Energy Harvesting Wireless Communications***](https://onlinelibrary.wiley.com/doi/book/10.1002/9781119295952), Wiley (Chuan Huang, **Sheng Zhou**, Jie Xu, Zhisheng Niu, Rui Zhang, and Shuguang Cui)
+- [***Wireless Traffic Steering for Green Cellular Networks***](https://link.springer.com/book/10.1007/978-3-319-32721-1), Springer (Shang Zhang, Ning Zhang, **Sheng Zhou**, Zhisheng Niu, and Xuemin (Sherman) Shen)
+- [***Radio Resource Management Using Geometric Water-Filling***](https://link.springer.com/book/10.1007/978-3-319-04636-5), Springer (Peter He, Lian Zhao, **Sheng Zhou**, and Zhisheng Niu)
 
 ### Book Chapters
 
-- [Timely Wireless Edge Inference](https://www.cambridge.org/core/books/machine-learning-and-wireless-communications/timely-wireless-edge-inference/80358EE30E56EA7A500D5157A5B79FB9) — **S. Zhou**, W. Shi, X. Huang, and **Z. Niu**, as a book chapter in *Machine Learning and Wireless Communications* published by Cambridge Press (edited by Y.C. Eldaer, A. Goldsmith, D. Gunduz, and H.V. Poor)
-- [Greening 6G: New Horizons](https://onlinelibrary.wiley.com/doi/abs/10.1002/9781119765554.ch4) — **Z. Niu**, **S. Zhou**, and N. Crespi, as a book chapter in *Shaping Future 6G Networks: Needs, Impacts, and Technologies* published by Wiley (edited by E. Bertin, N. Crespi, and T. Magedanz)
-- [Deep Learning-Based Coverage and Capacity Optimization](https://onlinelibrary.wiley.com/doi/abs/10.1002/9781119562306.ch4) — A. Marinescu, Z. Jiang, **S. Zhou**, L.A. Da Silva, **Z. Niu**, as a book chapter in *Machine Learning for Future Wireless Communications* published by Wiley (edited by Fa-Long Luo)
-- [Toward Green Deployment and Operation for C-RANs](https://www.cambridge.org/core/books/cloud-radio-access-networks/toward-green-deployment-and-operation-for-crans/1031DCDCAEE9B8D79E910DCDF09DFBBF) — **S. Zhou**, J. Liu, T. Zhao and **Z. Niu**, as a book chapter in *Cloud Radio Access Networks: Principles, Technology and Applications* published by Cambridge (edited by T.Q.S. Quek, M. Peng, O. Simone, and W. Yu)
-- [Energy-efficient Operations and Management for Mobile Networks](https://www.oreilly.com/library/view/green-communications-principles/9781118759264/c08.xhtml) — **Z. Niu** and **S. Zhou**, as a book chapter in *Green Communications: Principles, Concepts and Practice* published by Wiley (edited by L. Samdanis, P. Rost, A. Maeder, M. Meo and C. Verikoukis)
+- [**Timely Wireless Edge Inference**](https://www.cambridge.org/core/books/machine-learning-and-wireless-communications/timely-wireless-edge-inference/80358EE30E56EA7A500D5157A5B79FB9) — **S. Zhou**, W. Shi, X. Huang, and Z. Niu, as a book chapter in *Machine Learning and Wireless Communications* published by Cambridge Press (edited by Y.C. Eldaer, A. Goldsmith, D. Gunduz, and H.V. Poor)
+- [**Greening 6G: New Horizons**](https://onlinelibrary.wiley.com/doi/abs/10.1002/9781119765554.ch4) — Z. Niu, **S. Zhou**, and N. Crespi, as a book chapter in *Shaping Future 6G Networks: Needs, Impacts, and Technologies* published by Wiley (edited by E. Bertin, N. Crespi, and T. Magedanz)
+- [**Deep Learning-Based Coverage and Capacity Optimization**](https://onlinelibrary.wiley.com/doi/abs/10.1002/9781119562306.ch4) — A. Marinescu, Z. Jiang, **S. Zhou**, L.A. Da Silva, Z. Niu, as a book chapter in *Machine Learning for Future Wireless Communications* published by Wiley (edited by Fa-Long Luo)
+- [**Toward Green Deployment and Operation for C-RANs**](https://www.cambridge.org/core/books/cloud-radio-access-networks/toward-green-deployment-and-operation-for-crans/1031DCDCAEE9B8D79E910DCDF09DFBBF) — **S. Zhou**, J. Liu, T. Zhao and Z. Niu, as a book chapter in *Cloud Radio Access Networks: Principles, Technology and Applications* published by Cambridge (edited by T.Q.S. Quek, M. Peng, O. Simone, and W. Yu)
+- [**Energy-efficient Operations and Management for Mobile Networks**](https://www.oreilly.com/library/view/green-communications-principles/9781118759264/c08.xhtml) — Z. Niu and **S. Zhou**, as a book chapter in *Green Communications: Principles, Concepts and Practice* published by Wiley (edited by L. Samdanis, P. Rost, A. Maeder, M. Meo and C. Verikoukis)
 

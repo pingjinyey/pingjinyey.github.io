@@ -86,18 +86,18 @@ Zhisheng Niu received his B.E. degree from Beijing Jiaotong University, China, i
 - **Outstanding Contribution** (2011), IEEE Standard Association, for the development of "IEEE Standard 1888-2011 for Ubiquitous Green Community Network Control Protocol"
 - **Distinguished Young Scholar Award** (2009), Nature Science Foundation of China, for the research "Collaborative Radio Resource Management in Dense Wireless Networks"
 - **Award for Electronic Sci. & Tech. Advancement** (2008), Chinese Institute of Electronics, for the research on "Game-Theoretical Approach and Optimization for Multi-Dimensional Radio Resource Allocation"
-- **Outstanding Paper Award** (2024), IEEE ComSoc Asia-Pacific Board, for the paper "Joint Device Scheduling and Resource Allocation for Latency Constrained Wireless Federated Learning" (W. Shi, S. Zhou, Z. Niu, M. Jiang, L. Geng)
-- **Best Paper Award** (2023), Chinese Institute of Communications & IEEE ComSoc, for the paper "Energy-optimal and delay-bounded computation offloading in mobile edge computing with heterogeneous clouds" (T. Zhao, S. Zhou, L. Song, Z. Jiang, X. Guo, and Z. Niu)
-- **Excellent Paper Award** (2023), International Telecommunication Union (ITU) & Tsinghua University Press, for the paper "Space-air-ground integrated vehicular network for connected and automated vehicles: Challenges and solutions" (Z. Niu, X. Shen, Q. Zhang, Y. Tang)
-- **Best Paper Award** (2019), Journal of Communications and Information Networks (JCIN), for the paper "Data-Driven User Complaint Prediction for Mobile Access Networks" (H. Pan, S. Zhou, Y. Jia, Z. Niu, M. Zheng, L. Geng)
-- **Best Paper Award** (2017), IEEE ComSoc Green Communications & Computing Technical Committee, for the paper "Energy Efficient Optimization for Computation Offloading in Fog Computing System" (Z. Chang, Z. Zhou, T. Ristaniemi, Z. Niu)
-- **Outstanding Paper Award** (2013), IEEE ComSoc Asia-Pacific Board, for the paper "Cell Zooming for Cost-Efficient Green Cellular Networks" (Z. Niu, Y. Wu, J. Gong, Z. Yang)
-- **Best Paper Award** (2013), IEEE WCSP, for the paper "Recursive Geometric Water-filling for Wireless Links with Hybrid Energy System" (P. He, L. Zhao, S. Zhou, Z. Niu)
-- **Best Student Paper Award** (2013), ITC25, for the paper "Optimal Wake-up Mechanism for Single Base Station with Sleep Mode" (X. Guo, S. Zhou, P. R. Kumar, Z. Niu)
-- **Best Paper Award** (2013), APCC, for the paper "Joint Optimization of Frequency Allocation and User Association with Differentiated Service in Hyper-cellular Networks" (S. Zhang, S. Zhou, Z. Niu)
-- **Best Paper Award** (2011), IEEE ICCT, for the paper "A Traffic-Aware Dynamic Energy-Saving Scheme for Cellular Networks with Heterogeneous Traffic" (J. Wu, Z. Yang, S. Zhou, Z. Niu)
-- **Best Paper Award** (2009), APCC, for the paper "Interference-Aware Relay Selection for Multiple Source-Destination Cooperative Networks" (J. Xu, S. Zhou, Z. Niu)
-- **Best Paper Award** (2007), APCC, for the paper "Random Graph Theory based Connectivity Analysis in Wireless Sensor Networks with Rayleigh fading channels" (J. Dong, Q. Chen, Z. Niu)
+- **Outstanding Paper Award** (2024), IEEE ComSoc Asia-Pacific Board, for the paper "Joint Device Scheduling and Resource Allocation for Latency Constrained Wireless Federated Learning" (W. Shi, S. Zhou, **Z. Niu**, M. Jiang, L. Geng)
+- **Best Paper Award** (2023), Chinese Institute of Communications & IEEE ComSoc, for the paper "Energy-optimal and delay-bounded computation offloading in mobile edge computing with heterogeneous clouds" (T. Zhao, S. Zhou, L. Song, Z. Jiang, X. Guo, and **Z. Niu**)
+- **Excellent Paper Award** (2023), International Telecommunication Union (ITU) & Tsinghua University Press, for the paper "Space-air-ground integrated vehicular network for connected and automated vehicles: Challenges and solutions" (**Z. Niu**, X. Shen, Q. Zhang, Y. Tang)
+- **Best Paper Award** (2019), Journal of Communications and Information Networks (JCIN), for the paper "Data-Driven User Complaint Prediction for Mobile Access Networks" (H. Pan, S. Zhou, Y. Jia, **Z. Niu**, M. Zheng, L. Geng)
+- **Best Paper Award** (2017), IEEE ComSoc Green Communications & Computing Technical Committee, for the paper "Energy Efficient Optimization for Computation Offloading in Fog Computing System" (Z. Chang, Z. Zhou, T. Ristaniemi, **Z. Niu**)
+- **Outstanding Paper Award** (2013), IEEE ComSoc Asia-Pacific Board, for the paper "Cell Zooming for Cost-Efficient Green Cellular Networks" (**Z. Niu**, Y. Wu, J. Gong, Z. Yang)
+- **Best Paper Award** (2013), IEEE WCSP, for the paper "Recursive Geometric Water-filling for Wireless Links with Hybrid Energy System" (P. He, L. Zhao, S. Zhou, **Z. Niu**)
+- **Best Student Paper Award** (2013), ITC25, for the paper "Optimal Wake-up Mechanism for Single Base Station with Sleep Mode" (X. Guo, S. Zhou, P. R. Kumar, **Z. Niu**)
+- **Best Paper Award** (2013), APCC, for the paper "Joint Optimization of Frequency Allocation and User Association with Differentiated Service in Hyper-cellular Networks" (S. Zhang, S. Zhou, **Z. Niu**)
+- **Best Paper Award** (2011), IEEE ICCT, for the paper "A Traffic-Aware Dynamic Energy-Saving Scheme for Cellular Networks with Heterogeneous Traffic" (J. Wu, Z. Yang, S. Zhou, **Z. Niu**)
+- **Best Paper Award** (2009), APCC, for the paper "Interference-Aware Relay Selection for Multiple Source-Destination Cooperative Networks" (J. Xu, S. Zhou, **Z. Niu**)
+- **Best Paper Award** (2007), APCC, for the paper "Random Graph Theory based Connectivity Analysis in Wireless Sensor Networks with Rayleigh fading channels" (J. Dong, Q. Chen, **Z. Niu**)
 
 ### Professional Activities
 
