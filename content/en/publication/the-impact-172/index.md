@@ -1,7 +1,6 @@
 ---
 title: "The Impact of Interference Reflection on Reconfigurable Intelligent Surface-Aided Directional Transmissions"
 authors:
-  - "Yaodan Xu"
   - "Sheng Zhou"
   - "Zhisheng Niu"
 date: '2021-01-01'

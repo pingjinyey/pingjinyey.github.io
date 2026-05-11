@@ -15,6 +15,7 @@ interests:
   - Edge Computing
   - Federated Learning
   - Vehicular Networks
+  - device scheduling in wireless federated learning
 sections:
   - block: resume-biography-3
     content:
@@ -33,7 +34,7 @@ sections:
     content:
       title: Publications
       filters:
-        author: "Tan Chen"
+        author: "T. Chen"
         show_toolbar: false
     design:
       view: pub-item

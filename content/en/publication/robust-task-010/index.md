@@ -1,12 +1,12 @@
 ---
-title: "Robust Task Offloadingand Resource Allocation Un- der Imperfect Computing Capacity Informationin Edge Intelligence Systems"
+title: "Robust Task Offloading and Resource Allocation Under Imperfect Computing Capacity Information in Edge Intelligence Systems"
 authors:
-  - "Zhisheng Niu"
-  - "Yunchu Han"
-  - "Jintao Yan"
-  - "Sheng Zhou"
-  - "Zhisheng Niu"
-date: '2024-01-01'
+  - "Z. Nan"
+  - "Y. Han"
+  - "J. Yan"
+  - "S. Zhou"
+  - "Z. Niu"
+date: '2025-07-01'
 publishDate: '2026-05-02T00:00:00Z'
 publication_types:
   - "article-journal"

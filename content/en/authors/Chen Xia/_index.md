@@ -8,7 +8,7 @@ user_groups:
   - Master Students
 superuser: false
 highlight_name: true
-role: Master Student (2023)
+role: M.S. 
 organizations:
   - name: Dept. of Electronic Engineering, Tsinghua University
 interests:
@@ -38,4 +38,4 @@ sections:
       view: pub-item
       sort_order: "type_year"
 ---
-Chen Xia received his B.Eng. from Huazhong University of Science and Technology (HUST). He is currently a Master student at Tsinghua University. His research interests include collaborative perception and autonomous driving.
+He has been pursuing his M.S. degree in Electronic Engineering at Tsinghua University, Beijing, China, since 2023. He received his B.S. degree in Electronic Engineering from Huazhong University of Science and Technology, Wuhan, China, in 2023.

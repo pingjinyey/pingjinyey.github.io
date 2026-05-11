@@ -1,16 +1,17 @@
 ---
 featured: true
-title: ", Data-Heterogeneous Hierarchical Federated Learningwith Mobility"
+title: "Data-heterogeneous hierarchical federated learning with mobility"
 authors:
-  - "Tan Chen"
-  - "Jintao Yan"
+  - "T. Chen"
+  - "J. Yan"
   - "Y. Sun"
-  - "Sheng Zhou"
+  - "S. Zhou"
   - "D. Gunduz"
-  - "Zhisheng Niu"
-date: '2023-01-01'
+  - "Z. Niu"
+date: '2023-09-01'
 publishDate: '2026-05-02T00:00:00Z'
 publication_types:
   - "paper-conference"
-publication: International Teletraffic Congress
+publication: 35th International Teletraffic Congress (ITC-35)
+pages: '1-5'
 ---

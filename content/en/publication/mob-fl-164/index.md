@@ -2,11 +2,10 @@
 featured: true
 title: ", MOB-FL:Mobility-Aware Federated Learningfor Intelligent Connected Vehicles"
 authors:
-  - "Bowen Xie"
+  - "B. Xie"
   - "Y. Sun"
-  - "Sheng Zhou"
-  - "Zhisheng Niu"
-  - "Yaodan Xu"
+  - "S. Zhou"
+  - "Z. Niu"
   - "J. Chen"
   - "D. Gunduz"
 date: '2023-01-01'

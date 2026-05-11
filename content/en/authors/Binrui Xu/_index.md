@@ -8,11 +8,11 @@ user_groups:
   - Master Students
 superuser: false
 highlight_name: true
-role: Master Student
+role: M.S.
 organizations:
   - name: Dept. of Electronic Engineering, Tsinghua University
 interests:
-  - Intent-Driven Systems
+  - Intent-Driven System Design
   - Autonomous Networked Systems
   - Multi-Agent Collaboration
 sections:
@@ -39,4 +39,4 @@ sections:
       view: pub-item
       sort_order: "type_year"
 ---
-Binrui Xu received his B.Eng. from University of Electronic Science and Technology of China (UESTC). He is currently a Master student at Tsinghua University. His research interests include intent-driven systems, autonomous networked systems, and multi-agent collaboration.
+He received his bachelor’s degree from the University of Electronic Science and Technology of China (UESTC). He is currently pursuing his master’s degree at Tsinghua University.

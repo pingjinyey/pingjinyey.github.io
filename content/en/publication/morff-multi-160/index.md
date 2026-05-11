@@ -5,7 +5,6 @@ authors:
   - "R. Mao"
   - "J. Guo"
   - "Y. Jia"
-  - "Jialin Dong"
   - "Y. Sun"
   - "Sheng Zhou"
   - "Zhisheng Niu"

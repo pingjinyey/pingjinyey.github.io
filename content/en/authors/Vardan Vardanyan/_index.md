@@ -6,14 +6,17 @@ last_name: Vardanyan
 weight: 5
 user_groups:
   - Master Students
+social:
+  - icon: envelope
+    icon_pack: fas
+    link: 'mailto:vrdvardanyan@gmail.com'
 superuser: false
 highlight_name: true
-role: Master Student (2024)
+role: M.S.
 organizations:
   - name: Dept. of Electronic Engineering, Tsinghua University
 interests:
-  - Collaborative Perception
-  - Autonomous Driving
+  - collaborative perception in autonomous driving
 sections:
   - block: resume-biography-3
     content:
@@ -32,10 +35,10 @@ sections:
     content:
       title: Publications
       filters:
-        author: "Vardan Vardanyan"
+        author: "V. Vardanyan"
         show_toolbar: false
     design:
       view: pub-item
       sort_order: "type_year"
 ---
-Vardan Vardanyan received his B.S. in Computer Science from Tsinghua University in 2024. He is currently a Master student at Tsinghua University. His research interests include collaborative perception in autonomous driving.
+He received his bachelor’s degree in Computer Science from Tsinghua University (2020–2024). He is currently pursuing his master’s degree in Electronic Engineering at Tsinghua University (2024–present).

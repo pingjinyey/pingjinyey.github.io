@@ -6,14 +6,18 @@ last_name: Song
 weight: 4
 user_groups:
   - Ph.D. Students
+social:
+  - icon: envelope
+    icon_pack: fas
+    link: 'mailto:songzy24@mails.tsinghua.edu.cn'
 superuser: false
 highlight_name: true
-role: Ph.D. Student (2024)
+role: Ph.D. 
 organizations:
   - name: Dept. of Electronic Engineering, Tsinghua University
 interests:
-  - Cooperative Autonomous Driving
   - Collaborative Perception
+  - Cooperative Autonomous Driving
 sections:
   - block: resume-biography-3
     content:
@@ -38,4 +42,4 @@ sections:
       view: pub-item
       sort_order: "type_year"
 ---
-Ziyi Song received his B.Eng. from Tsinghua University. He is currently a Ph.D. student at Tsinghua University. His research interests include cooperative autonomous driving and collaborative perception.
+She received her bachelor’s degree from Tsinghua University. In Fall 2024, she joined NiuLab as a Ph.D. student.

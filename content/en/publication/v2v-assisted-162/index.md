@@ -1,9 +1,9 @@
 ---
 title: "V2V-Assisted Timely Hierarchical Federated Learning"
 authors:
-  - "Jintao Yan"
-  - "Zhisheng Niu"
-  - "Sheng Zhou"
+  - "J. Yan"
+  - "Z. Nan"
+  - "S. Zhou"
 date: '2023-01-01'
 publishDate: '2026-05-02T00:00:00Z'
 publication_types:

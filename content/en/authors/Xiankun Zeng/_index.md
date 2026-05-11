@@ -6,9 +6,13 @@ last_name: Zeng
 weight: 6
 user_groups:
   - Ph.D. Students
+social:
+  - icon: envelope
+    icon_pack: fas
+    link: 'mailto:zengxk25@mails.tsinghua.edu.cn'
 superuser: false
 highlight_name: true
-role: Incoming Ph.D. Student (2025)
+role: Incoming Ph.D. 
 organizations:
   - name: Dept. of Electronic Engineering, Tsinghua University
 interests:
@@ -38,4 +42,4 @@ sections:
       view: pub-item
       sort_order: "type_year"
 ---
-Xiankun Zeng received his B.Eng. and M.Eng. from Tongji University. He will join NIULAB as a Ph.D. student in 2025. His research interests include low-altitude intelligent networks and AI for communication.
+He received his bachelor’s and master’s degrees from Tongji University. In Fall 2025, he joined NiuLab at Tsinghua University as a Ph.D. student.

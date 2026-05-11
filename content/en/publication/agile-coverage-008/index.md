@@ -1,13 +1,13 @@
 ---
 featured: true
-title: "Agile coverage for low-altitude aerial intelligent networks: Ablendedhyper-cellularsolution"
+title: "Agile Coverage for Low-Altitude Aerial Intelligent Networks: A Blended Hyper-Cellular Solution"
 authors:
-  - "Sheng Zhou"
-  - "Bowen Xie"
+  - "S. Zhou"
+  - "B. Xie"
   - "D. Shen"
   - "W. Feng"
-  - "Zhisheng Niu"
-date: '2024-01-01'
+  - "Z. Niu"
+date: '2025-09-01'
 publishDate: '2026-05-02T00:00:00Z'
 publication_types:
   - "article-journal"

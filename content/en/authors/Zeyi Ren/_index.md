@@ -8,7 +8,7 @@ user_groups:
   - Ph.D. Students
 superuser: false
 highlight_name: true
-role: Incoming Ph.D. Student (2026)
+role: Incoming Ph.D. 
 organizations:
   - name: Dept. of Electronic Engineering, Tsinghua University
 interests:
@@ -39,4 +39,4 @@ sections:
       view: pub-item
       sort_order: "type_year"
 ---
-Zeyi Ren received his B.Eng. from Beijing Institute of Technology and M.Phil. from The University of Hong Kong. He will join NIULAB as a Ph.D. student in 2026. His research interests include AI/ML in RAN, spatial intelligence, and wireless communications.
+He received his B.Eng. degree from Beijing Institute of Technology. He received his M.Phil. degree from The University of Hong Kong. In Fall 2026, he will join NiuLab as a Ph.D. student.

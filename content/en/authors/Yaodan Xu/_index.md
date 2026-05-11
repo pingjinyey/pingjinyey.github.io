@@ -13,7 +13,7 @@ organizations:
   - name: Dept. of Electronic Engineering, Tsinghua University
 interests:
   - Edge Intelligence
-  - ML Systems
+  - Machine Learning Systems
   - Stochastic Network Optimization
 sections:
   - block: resume-biography-3
@@ -39,4 +39,4 @@ sections:
       view: pub-item
       sort_order: "type_year"
 ---
-Yaodan Xu received her B.Eng. from Tsinghua University. She is currently a Ph.D. student at Tsinghua University. Her research interests include edge intelligence, ML systems, and stochastic network optimization.
+She is a Ph.D. student in the Department of Electronic Engineering at Tsinghua University. She received her B.Eng. degree from Tsinghua University.

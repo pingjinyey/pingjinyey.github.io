@@ -8,7 +8,7 @@ user_groups:
   - Ph.D. Students
 superuser: false
 highlight_name: true
-role: Ph.D. Student (2025)
+role: Ph.D. 
 organizations:
   - name: Dept. of Electronic Engineering, Tsinghua University
 interests:
@@ -38,4 +38,4 @@ sections:
       view: pub-item
       sort_order: "type_year"
 ---
-Wencheng Yan received his B.Eng. from Tsinghua University. He is currently a Ph.D. student at Tsinghua University. His research interests include AI for networking and edge intelligence.
+He received his bachelor’s degree from Tsinghua University. In Fall 2025, he joined NiuLab as a PhD student.

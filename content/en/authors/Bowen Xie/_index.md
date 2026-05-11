@@ -8,7 +8,7 @@ user_groups:
   - Ph.D. Students
 superuser: false
 highlight_name: true
-role: Ph.D. Candidate (2022)
+role: Ph.D. 
 organizations:
   - name: Dept. of Electronic Engineering, Tsinghua University
 interests:
@@ -33,10 +33,10 @@ sections:
     content:
       title: Publications
       filters:
-        author: "Bowen Xie"
+        author: "B. Xie"
         show_toolbar: false
     design:
       view: pub-item
       sort_order: "type_year"
 ---
-Bowen Xie received his B.Eng. from Tsinghua University. He is currently a Ph.D. candidate at Tsinghua University. His research interests include low-altitude intelligent networks, AI for network, and mobility management.
+He received his bachelor’s degree from Tsinghua University. In Fall 2022, he joined NiuLab as a Ph.D. student at Tsinghua University.

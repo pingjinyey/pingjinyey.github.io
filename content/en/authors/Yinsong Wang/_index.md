@@ -8,12 +8,12 @@ user_groups:
   - Master Students
 superuser: false
 highlight_name: true
-role: Master Student
+role: M.S.
 organizations:
   - name: Dept. of Electronic Engineering, Tsinghua University
 interests:
-  - Cooperative Perception
-  - Sim2Real Adaptation
+  - Multi-Agent Cooperative Perception
+  - Sim2Real Adaptation in V2X Autonomous Driving
 sections:
   - block: resume-biography-3
     content:
@@ -38,4 +38,4 @@ sections:
       view: pub-item
       sort_order: "type_year"
 ---
-Yinsong Wang received his B.Eng. from Tsinghua University. He is currently a Master student at Tsinghua University. His research interests include cooperative perception and Sim2Real adaptation.
+He is currently a master’s student at Tsinghua University. His research interests include Cooperative Perception and Sim-to-Real Adaptation.

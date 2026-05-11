@@ -1,12 +1,12 @@
 ---
 featured: true
-title: "MEET:Mobility-Enhanced Edgein Telligencefor Smartand Green 6GNetworks"
+title: "MEET: Mobility-Enhanced Edge inTelligence for Smart and Green 6G Networks"
 authors:
   - "Y. Sun"
-  - "Bowen Xie"
-  - "Sheng Zhou"
-  - "Zhisheng Niu"
-date: '2024-01-01'
+  - "B. Xie"
+  - "S. Zhou"
+  - "Z. Niu"
+date: '2023-01-01'
 publishDate: '2026-05-02T00:00:00Z'
 publication_types:
   - "article-journal"

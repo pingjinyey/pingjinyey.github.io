@@ -8,13 +8,14 @@ user_groups:
   - Ph.D. Students
 superuser: false
 highlight_name: true
-role: Ph.D. Student (2023)
+role: Ph.D. 
 organizations:
   - name: Dept. of Electronic Engineering, Tsinghua University
 interests:
   - Speculative Decoding
   - Cloud-Edge-End Collaboration
   - LLM Inference
+  - Distributed Speculative Decoding Algorithm
 sections:
   - block: resume-biography-3
     content:
@@ -33,10 +34,10 @@ sections:
     content:
       title: Publications
       filters:
-        author: "Jialin Dong"
+        author: "J. Dong"
         show_toolbar: false
     design:
       view: pub-item
       sort_order: "type_year"
 ---
-Jialin Dong received his B.Eng. from Tsinghua University. He is currently a Ph.D. student at Tsinghua University. His research interests include speculative decoding, cloud-edge-end collaboration, and LLM inference optimization.
+He received his bachelor’s degree from Tsinghua University. In Fall 2023, he joined NiuLab as a Ph.D. student.
