@@ -5,10 +5,10 @@ first_name: Chenbing
 last_name: Wang
 weight: 1
 user_groups:
-  - Undergraduate Students
+  - Master Students
 superuser: false
 highlight_name: true
-role: Student
+role: M.S.
 organizations:
   - name: Dept. of Electronic Engineering, Tsinghua University
 interests:
@@ -37,4 +37,4 @@ sections:
       view: pub-item
       sort_order: "type_year"
 ---
-Chenbing Wang is a student from Chongqing University. His research interests include wireless communication.
+Chenbing Wang received his bachelor’s degree from Chongqing University and is currently pursuing his master’s degree at Tsinghua University. His research interests include wireless communications.
